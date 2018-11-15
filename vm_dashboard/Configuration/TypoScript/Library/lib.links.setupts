@@ -1,0 +1,35 @@
+# Logout Link
+lib.logoutLink = TEXT
+lib.logoutLink {
+	# This is the defined text.
+	value = <span><i class="fa fa-power-off" aria-hidden="true"></i></span>
+	# Here comes the typolink function.
+	typolink {
+		# This is the destination of the link...
+		parameter = t3://page?uid={$vm_loginPage}
+		additionalParams = &logintype=logout
+	}
+}
+
+lib.typo3grafManualLink = TEXT
+lib.typo3grafManualLink {
+	# This is the defined text.
+	value = <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+	# Here comes the typolink function.
+	typolink {
+		# This is the destination of the link...
+		parameter = t3://page?uid={$manualPage}
+	}
+}
+
+# Typo3graf Mail-Link
+lib.typo3grafMailLink = TEXT
+lib.typo3grafMailLink {
+	# This is the defined text.
+	value = smartverein@typo3graf.de
+	# Here comes the typolink function.
+	typolink {
+		# This is the destination of the link...
+		parameter = mailto:smartverein@typo3graf.de
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-14T13:58:04Z" product-name="vm_member">
+		<header/>
+		<body>
+			<trans-unit id="tx_vm_member_domain_model_memberlist">
+				<source>Member List</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberlist.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil">
+				<source>Member Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="contribution_rate_title.description">
+				<source>Title of the contribution rate.</source>
+			</trans-unit>
+			<trans-unit id="contribution_rate_amount.description">
+				<source>Amount of contribution rate</source>
+			</trans-unit>
+			<trans-unit id="contribute_rate_description.description">
+				<source>Description of the contribution rate.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

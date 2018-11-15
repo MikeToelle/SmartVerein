@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-04-30T09:15:00Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="auto_member_i_d.description">
+			<source>Automatic memberID yes/no</source>
+		</trans-unit>
+		<trans-unit id="club_anniversaries.description">
+			<source>Club anniversaries of the mebers. Comma seperated.</source>
+		</trans-unit>
+		<trans-unit id="member_i_d_format.description">
+			<source>Format of the automatic memberID. IS NOT IMPLEMENTED YET!</source>
+		</trans-unit>
+		<trans-unit id="show_member_birthdays.description">
+			<source>Members Birthdays to be displayed. If empty all bithdays will displayed</source>
+		</trans-unit>
+		<trans-unit id="supplement_member_i_d.description">
+			<source>Supplement memberID if not set</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_fesettings">
+			<source>FE Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_fesettings.description">
+			<source>Basic functions for Vereinsmeier club management.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings">
+			<source>Member Area Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings.description">
+			<source>Basic functions for Vereinsmeier club management.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings">
+			<source>Systems Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings.description">
+			<source>Basic functions for Vereinsmeier club management.</source>
+		</trans-unit>
+			<trans-unit id="sent_anniversaries_email.description">
+				<source>Automatic email for an anniversary
+				</source>
+			</trans-unit>
+			<trans-unit id="sent_birthday_email.description">
+			<source>Automatic email for an Birthday</source>
+		</trans-unit>
+
+		</body>
+	</file>
+</xliff>

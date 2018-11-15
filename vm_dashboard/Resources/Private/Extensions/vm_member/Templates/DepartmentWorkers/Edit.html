@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+<h1>Edit DepartmentWorkers</h1>
+
+<f:flashMessages />
+
+<f:render partial="FormErrors" arguments="{object:DepartmentWorkers}" />
+
+<f:form action="update" name="departmentWorkers" object="{departmentWorkers}" >
+<f:render partial="DepartmentWorkers/FormFields" arguments="{departmentWorkers:departmentWorkers}" />
+	<f:form.submit value="Save" />
+</f:form>
+</f:section>
+</html>

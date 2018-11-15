@@ -1,0 +1,34 @@
+# customcategory=dashboard=SmartVerein-Dashboard
+# customsubcategory=pages=Pages
+# customsubcategory=storages=Datenspeicher
+
+# cat=dashboard/pages/1; type=int; label = Loginpage
+vm_loginPage = 2
+# cat=dashboard/pages/2; type=int; label = Dashboardpage
+vm_dashboardPage = 5
+# cat=dashboard/pages/3; type=int; label = Memberpage
+vm_memberPage = 15
+# cat=dashboard/pages/4; type=int; label = Setuppage
+vm_setupPage = 45
+# cat=dashboard/pages/5; type=int; label = Clubpage
+vm_clubPage = 30
+# cat=dashboard/pages/6; type=int; label = Profilpage
+vm_profilPage = 31
+# cat=dashborad/pages/7; type=int; lable = CSV Import Page
+vm_csvImportPage = 46
+# cat=dashborad/pages/8; type=int; lable = CSV Export Page
+vm_csvExportPage = 50
+
+# cat=dashboard/storages/a; type=int; label = SmartVerein Storage
+vm_storagePid = 3
+# cat=dashboard/storages/b; typo=int; label = Login Storage
+vm_login_storagePid = 42
+# cat=dashboard/storages/c; type=int; label = Club Storage
+vm_club_storagePid = 41
+# cat=dashboard/storages/d; type=int; label = Department Storage
+vm_department_storagePid = 47
+# cat=dashboard/storages/e; type=int; label = Member Storage
+vm_member_storagePid = 45
+
+
+

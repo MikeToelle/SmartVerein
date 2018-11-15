@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-20T10:36:50Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="club.form.errorText">
+			<source>Please check your form input.</source>
+		</trans-unit>
+		<trans-unit id="club.form.error">
+			<source>Error!</source>
+		</trans-unit>
+		<trans-unit id="newClub">
+			<source>Club successfully created!</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager">
+			<source>Club</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager.description">
+			<source>Club module for SmartVerein.</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club">
+			<source>Club</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_b_i_c">
+			<source>Club BIC</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_bankname">
+			<source>Club Bankname</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_city">
+			<source>Club City</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_d_id" xml:space="preserve">
+			<source>Club devout-identification number
+</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_email">
+			<source>Club Email</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_founding_year">
+			<source>Club Founding Year</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_i_b_a_n">
+			<source>Club IBAN</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_logo">
+			<source>Club Logo</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_name">
+			<source>Club Name</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_organisation">
+			<source>Club Organisation</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_organisation_number">
+			<source>Club Organisation Number</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_phone">
+			<source>Club Phone</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_registration_court">
+			<source>Club Registration Court</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_registration_number">
+			<source>Club Registration Number</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_short_name">
+			<source>Club Short Name</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_street">
+			<source>Club Street</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_tax_number">
+			<source>Club Tax Number</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_tax_office">
+			<source>Club Tax Office</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_vat_number">
+			<source>Club Vat Number</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_website">
+			<source>Club Website</source>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_zip_code">
+			<source>Club Zip Code</source>
+		</trans-unit>
+		<trans-unit id="updateClub">
+			<source>Master data changed successfully!</source>
+		</trans-unit>
+		<trans-unit id="1221560718">
+			<source>Please enter a club name.</source>
+		</trans-unit>
+			<trans-unit id="tx_vmclub_domain_model_club.club_social_media_facebook">
+				<source>Club Social Media Facebook</source>
+			</trans-unit>
+			<trans-unit id="tx_vmclub_domain_model_club.club_social_media_twitter">
+				<source>Club Social Media Twitter</source>
+			</trans-unit>
+			<trans-unit id="tx_vmclub_domain_model_club.club_social_media_google">
+				<source>Club Social Media Google</source>
+			</trans-unit>
+			<trans-unit id="tx_vmclub_domain_model_club.club_social_media_instagram">
+				<source>Club Social Media Instagram</source>
+			</trans-unit>
+			<trans-unit id="tx_vmclub_domain_model_club.club_social_media_printerest">
+				<source>Club Social Media Printerest</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

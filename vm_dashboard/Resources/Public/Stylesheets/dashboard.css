@@ -1,0 +1,208 @@
+/*----------------------------------------
+    Typo3graf Links
+------------------------------------------*/
+.typo3graf.logincopyright,.typo3graf a, .typo3graf a:hover{
+	color: #88B04B;
+}
+
+.required {
+	color:#dd4b39;
+}
+/*----------------------------------------
+    Landingpages
+------------------------------------------*/
+.img-center {
+	margin: 0 auto;
+}
+
+.wrapper-page {
+	/*margin-top: 80px;
+	margin-bottom: 20px;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	max-width: 500px;
+	padding: 30px 38px 66px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 4px 5px 2px 0px rgba(81, 81, 81, 1);
+	-moz-box-shadow: 4px 5px 2px 0px rgba(81, 81, 81, 1);
+	box-shadow: 4px 5px 2px 0px rgba(81, 81, 81, 1);
+}
+
+.wrapper-page-inner {
+	width: 300px;
+}
+
+/*.form-signin {
+    max-width: 420px;
+    padding: 30px 38px 66px;
+    margin: 0 auto;
+    background-color: #fff;
+}*/
+.logincopyright{
+	padding-top:10px;
+	text-align:center;
+}
+.form-signin-heading {
+	margin-bottom: 30px;
+}
+
+/*.form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+}
+
+input[type="text"] {
+	margin-bottom: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+input[type="email"] {
+	margin-bottom: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+	margin-bottom: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.felogin-backlink {
+	padding-top: 10px;
+}
+*/
+/*----------------------------------------
+    Mobile Menu Since - 3.1
+------------------------------------------*/
+
+@media (max-width: 767px) {
+	.mobil-hidden {
+		display: none;
+	}
+
+	.main-wrapper {
+		padding: 15px 0 0 0px;
+	}
+
+	#main-content {
+		margin-left: 60px;
+		z-index: 2;
+	}
+}
+
+/*----------------------------------------
+    EXT:reswiz
+------------------------------------------*/
+.skin-blue .mainheader-form {
+	border-radius: 3px;
+	border: 1px solid #ffffff;
+	margin: 5px 5px;
+	width: 200px;
+}
+
+.skin-blue .mainheader-form input[type="text"], .skin-blue .mainheader-form .btn {
+	box-shadow: none;
+	background-color: #ffffff;
+	border: 1px solid transparent;
+	height: 35px;
+}
+/*------------------------------------------
+ Tags
+--------------------------------------------*/
+.tag {
+	display: inline;
+	padding: .2em .6em .3em;
+	/* font-size: 75%; */
+	font-weight: 700;
+	line-height: 1;
+	background-color: #3c8dbc;
+	border-color: #367fa9;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+
+}
+
+.tag-green {
+background-color: #00a65a;
+	display: inline;
+	padding: .2em .6em .3em;
+	/* font-size: 75%; */
+	font-weight: 700;
+	line-height: 1;
+	border-color: #367fa9;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+
+.tag-red {
+	display: inline;
+	padding: .2em .6em .3em;
+	/* font-size: 75%; */
+	font-weight: 700;
+	line-height: 1;
+	border-color: #367fa9;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	background-color: #dd4b39;
+}
+
+/* Guest Search autocomplete */
+.tx-indexedsearch-autocomplete {
+	background: #F5F5F5;
+	width: 500px; /* This value is set in the javascript code, to match the width of the search box */
+	cursor: pointer;
+	position: absolute;
+
+	font-size: 90%;
+	z-index: 101;
+}
+.tx-indexedsearch-autocomplete ul {
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #AAAAAA;
+}
+
+/*.tx-indexedsearch-autocomplete ul li:nth-child(odd) {
+	color: #777;
+}
+.tx-indexedsearch-autocomplete ul li:nth-child(even) {
+	color: #333;
+	background: #fff;
+}*/
+.tx-indexedsearch-autocomplete li {
+	padding: 2px 5px;
+	font-size: 14px;
+}
+
+.tx-indexedsearch-autocomplete li:hover {
+background-color: #333;
+color: #fff;
+}
+.tx-indexedsearch-autocomplete a {
+	width: 100%;
+}
+.tx-indexedsearch-autocomplete .autocomplete_searching {
+	background:#FFFFFF url('../Images/Indicator.gif') no-repeat right center;
+}
+.tx-indexedsearch-autocomplete .highlighted {
+	background-color: #A7CDF0 !important;
+}

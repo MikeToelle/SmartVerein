@@ -1,0 +1,16 @@
+<div class="image" style="position: absolute">
+
+	<f:if condition="{vmclub.clubLogo}">
+		<f:then>
+			<f:image src="{vmclub.clubLogo.0.uid}" alt="clubLogo" width="40" height="40" treatIdAsReference="TRUE" class="img-circle" style="margin-bottom: 25px;"/>
+		</f:then>
+		<f:else>
+			<f:image src="EXT:vm_dashboard/Resources/Public/Images/placeholder_logo.svg" class="img-circle" style="width: 40px; height: 40px; margin-bottom: 25px;"/>
+		</f:else>
+	</f:if>
+</div>
+<div class="pull-left info" style="word-break: break-word; white-space:normal; position: relative; left:40px; width:170px">
+	<p><f:link.typolink parameter="{settings.clubPage}">{vmclub.clubName}</f:link.typolink></p>
+	<!-- Status -->
+	<f:link.typolink parameter="{settings.profilPage}"><i class="fas fa-user text-success"></i> {vmmember.memberFirstname} {vmmember.memberLastname}</f:link.typolink>
+</div>

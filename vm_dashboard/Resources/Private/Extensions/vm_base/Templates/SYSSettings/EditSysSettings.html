@@ -1,0 +1,53 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+	<div class="box box-primary">
+		<div class="box-body">
+			<!-- Custom Tabs -->
+			<div class="nav-tabs-custom">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#syssettings" data-toggle="tab">Systemeinstellungen</a></li>
+					<li><a href="#masettings" data-toggle="tab">Mitgliedsbereich</a></li>
+					<!--li><a href="#fesettings" data-toggle="tab">Frontend</a></li-->
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="syssettings">
+						<f:form action="updateSysSettings" name="sysSettings" object="{sysSettings}" >
+							<f:render partial="SYSSettings/FormFields" arguments="{sysSettings:sysSettings}" />
+							<div class="form-group">
+								<button type="submit" class="btn btn-success"><i class="fas fa-save"></i> System einstellungen speichern</button>
+							</div>
+						</f:form>
+					</div>
+					<!-- /.tab-pane -->
+					<div class="tab-pane" id="masettings">
+						<f:form action="updateMaSettings" name="mASettings" object="{mASettings}" >
+							<f:render partial="MASettings/FormFields" arguments="{mASettings:mASettings}" />
+							<button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Mitgliederbereich Einstellungen speichern</button>
+						</f:form>
+					</div>
+					<!-- /.tab-pane -->
+					<div class="tab-pane" id="fesettings">
+						<f:form action="update" name="fESettings" object="{fESettings}" >
+							<f:render partial="FESettings/FormFields" arguments="{fESettings:fESettings}" />
+							<f:form.submit value="Save" />
+						</f:form>
+					</div>
+					<!-- /.tab-pane -->
+				</div>
+				<!-- /.tab-content -->
+			</div>
+			<!-- nav-tabs-custom -->
+
+		</div>
+		<!-- /.box-body -->
+		<div class="box-footer">
+		</div>
+		<!-- box-footer -->
+	</div>
+	<!-- /.box -->
+</f:section>
+</html>

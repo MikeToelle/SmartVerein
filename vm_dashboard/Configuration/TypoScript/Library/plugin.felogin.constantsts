@@ -1,0 +1,6 @@
+# customcategory=dashboard=SmartVerein-Dashboard
+# customsubcategory=felogin=Anmeldeformular
+
+# cat=dashboard/felogin/2; type=text; label = E-Mail Adesse des Vereins
+emailfrom = smartverein@test8.typo3graf.de
+emailfromname = SmartVerein Passwort zurücksetzen

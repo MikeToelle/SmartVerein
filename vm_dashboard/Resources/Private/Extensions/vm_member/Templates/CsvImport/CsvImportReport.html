@@ -1,0 +1,50 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+	<f:flashMessages />
+	<div class="box box-primary">
+		<div class="box-header with-border">
+			<h4 class="box-title">Import starten</h4>
+		</div>
+		<div class="box-body">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Import abgeschlossen</h3>
+					<f:if condition="{importSuccess}">
+						<f:then>
+							Es wurden {membercount} Zeilen von {datarows} erfolgreich importiert.<br/><br/>
+							FEHELER:<br/>
+							<ul>
+								<f:for each="{errors}" as="rowerrors" key="row">
+									<li>Datenzeile: {row}</li>
+									<ul>
+										<f:for each="{rowerrors}" as="error">
+											<li>{error}</li>
+										</f:for>
+									</ul>
+								</f:for>
+							</ul>
+						</f:then>
+						<f:else>
+
+								<f:for each="{errors}" as="rowerrors" key="row">
+									<ul class="list-unstyled">
+										<f:for each="{rowerrors}" as="error">
+											<li>{error}</li>
+										</f:for>
+									</ul>
+								</f:for>
+
+						</f:else>
+					</f:if>
+
+				</div>
+				<div class="col-md-6">
+					<f:render partial="CsvImport/Description"/>
+				</div>
+				</div>
+			</div>
+		</div>
+</f:section>
+</html>

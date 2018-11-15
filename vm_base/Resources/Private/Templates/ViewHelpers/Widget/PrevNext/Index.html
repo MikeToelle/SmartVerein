@@ -1,0 +1,6 @@
+<nav>
+	<ul class="pager">
+		<li class="previous {f:if(condition: '!{prev}', then: 'disabled')}"><f:link.action extensionName="vmmember" pluginName="memberlist" controller="Member" action="editMember" arguments="{member : prev}"><i class="fas fa-angle-left" aria-hidden="true"></i></f:link.action></li>
+		<li class="next {f:if(condition: '!{next}', then: 'disabled')}"><f:link.action extensionName="vmmember" pluginName="memberlist" controller="Member" action="editMember" arguments="{member : next}"><i class="fas fa-angle-right" aria-hidden="true"></i></f:link.action></li>
+	</ul>
+</nav>

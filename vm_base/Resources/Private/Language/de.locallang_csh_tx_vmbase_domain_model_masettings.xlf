@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-04-30T09:57:30Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="edit_own_member_data.description" approved="yes">
+			<source>Member can edit his own Data.</source>
+			<target>Erlaube deinen Mitgliedern ihre eigenen Daten (Adressen, Bilder, etc.) selbstständig über die Oberfläche zu verändern.</target>
+		</trans-unit>
+		<trans-unit id="show_bulletin_board.description" approved="yes">
+			<source>Show the bulletin board</source>
+			<target>Erlaube deinen MItgliedern den Zugriff auf das schwarze Brett.</target>
+		</trans-unit>
+		<trans-unit id="show_club_finances.description" approved="yes">
+			<source>Show the club finances</source>
+			<target>Zeige deinen Mitgliedern die Auswertungen über den Finanzhaushalt deines Vereins. Es werden nur Statistiken und keine detaillierten Zahlungen gezeigt (Ausgaben pro Monat).</target>
+		</trans-unit>
+		<trans-unit id="show_events.description" approved="yes">
+			<source>Shows the event calendar.</source>
+			<target>Erlaube deinen Mitgliedern sich für Veranstaltungen anzumelden.</target>
+		</trans-unit>
+		<trans-unit id="show_member_list_all.description" approved="yes">
+			<source>Shoes all members in list.</source>
+			<target>Erlaube deinen Mitgliedern die Namen und Kontaktdaten der anderen Mitglieder deines Vereins zu sehen.</target>
+		</trans-unit>
+		<trans-unit id="show_member_list_by_groups.description" approved="yes">
+			<source>Shows meberlist only with mebergroups.</source>
+			<target>Wenn diese Option ausgeschaltet ist und der Zugriff auf Mitgliederlisten generell gestattet ist können Mitglieder die Adressen aller anderen Mitglieder sehen. Wenn die Mitgliederlisten freigegeben sind und diese Option ist eingeschaltet sehen Mitglieder nur die Adressen der Mitglieder, die die selbe Mitgliedschaftsgruppe haben.</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings" approved="yes">
+			<source>Member Area Settings</source>
+			<target>Mitgliederbereich Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings" approved="yes">
+			<source>Systems Settings</source>
+			<target>System Einstellungen</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

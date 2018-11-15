@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubTaxOffice">
+		<f:translate key="tx_vmclub_domain_model_club.club_tax_office" />
+	</label>
+	<f:security.ifHasRole role="6">
+		<f:then>
+			<f:form.textfield property="clubTaxOffice" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubTaxOffice" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

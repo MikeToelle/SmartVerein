@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:section name="Default">
+<ul class="nav navbar-nav">
+	<!--li class="manual">
+		<f:cObject typoscriptObjectPath="lib.typo3grafManualLink"/>
+	</li-->
+	<!-- User Account: style can be found in dropdown.less -->
+	<!--li class="dropdown user user-menu" >
+		<!-- Menu Toggle -->
+		<!--a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<div class="hidden-xs" style="max-width: 300px; max-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Vereinsname</div>
+		</a>
+		<ul class="dropdown-menu">
+			<li class="user-header">
+				<br>
+				<img src="/typo3conf/ext/vm_dashboard/Resources/Public//Images/placeholder-man.jpg" style="max-width: 220px; max-height: 80px">
+				<p>
+					Vereinsname
+					<small>Professional Kostenlose DEMO</small>
+				</p>
+			</li>
+			<!-- Menu Footer-->
+			<!--li class="user-footer">
+
+				<div class="pull-left">
+					<a href="/public/KGRW" class="btn btn-default btn-flat" target="_blank">Mitglieder-Zugang</a>
+				</div>
+
+				<div class="pull-right">
+					<a href="/app/logout/" class="btn btn-default btn-flat">Ausloggen</a>
+				</div>
+			</li>
+		</ul>
+	</li-->
+	<li class="dropdown user user-menu">
+		<form action="#" method="get" class="mainheader-form">
+			<div class="input-group">
+				<input type="text" name="q" class="form-control" placeholder="Suche...">
+          <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+			</div>
+			<ul class="dropdown-menu search-results">
+			</ul>
+		</form>
+
+	</li>
+
+	<!-- Logout Button -->
+	<li class="logout">
+			<f:cObject typoscriptObjectPath="lib.logoutLink"/>
+	</li>
+
+	<!-- SidebarRight Toggle Button (optional) -->
+	<f:if condition="{settings.sidebarRight}">
+	<li>
+		<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears" aria-hidden="true"></i></a>
+	</li>
+	</f:if>
+</ul>
+</f:section>
+</html>

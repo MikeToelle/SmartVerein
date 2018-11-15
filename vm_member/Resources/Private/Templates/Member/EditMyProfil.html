@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+	<h1>Edit Member</h1>
+
+	<f:flashMessages />
+
+	<f:render partial="FormErrors" arguments="{object:Member}" />
+
+	<f:form action="updateMember" name="member" object="{member}" >
+		<f:render partial="Member/FormFields" arguments="{member:member}" />
+		<f:form.submit value="Save" />
+	</f:form>
+</f:section>
+</html>

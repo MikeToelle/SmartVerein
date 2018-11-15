@@ -1,0 +1,36 @@
+<div class="btn-group pull-right" style="margin-top: 20px;">
+
+    <button type="button" id="js-memberlist-button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-list-alt"></i> Listenansicht <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" id="js-memberlist">
+        <li>
+            <f:link.action action="memberList">
+                Mitglieder Kurzinfo
+            </f:link.action>
+        </li>
+        <li>
+            <f:link.action action="birthdayList">
+                <f:translate key="birthdayList" />
+            </f:link.action>
+        </li>
+        <li>
+            <f:link.action action="addressList">
+                Adressenliste
+            </f:link.action>
+        </li>
+        <li role="separator" class="divider"></li>
+        <li>
+            <f:link.action action="wholeMemberList">
+                Mitgliederliste (gesamt)
+            </f:link.action>
+        </li>
+        <li role="separator" class="divider"></li>
+        <li>
+            <f:link.action action="signatureList">
+                Unterschriftenliste
+            </f:link.action>
+        </li>
+    </ul>
+</div>

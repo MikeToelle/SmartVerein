@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml"
+	  lang="en">
+<f:layout name="Default"/>
+<f:section name="MainContent">
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) (optional)-->
+		<section class="content-header">
+
+			<h1>
+				{data.title}
+				<small>{data.subtitle}</small>
+			</h1>
+			<!-- Breadcrumbs Menu (optional) -->
+			<f:if condition="{settings.breadcrumbs}">
+				<f:render partial="Navigation/Breadcrumbs" section="Default" arguments="{_all}"/>
+			</f:if>
+		</section>
+
+		<!-- Main content -->
+		<section class="content container-fluid">
+
+			<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}"/>
+
+		</section>
+
+		<!-- /.content -->
+	</div>
+</f:section>
+</html>

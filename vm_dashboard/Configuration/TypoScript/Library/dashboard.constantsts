@@ -1,0 +1,16 @@
+# customcategory=dashboard=SmartVerein-Dashboard
+# customsubcategory=layout=Layout
+# customsubcategory=seo=SEO-Einstellungen
+
+# cat=dashboard/layout/1; type=boolean; label = Show User-Panel
+userPanel = 1
+# cat=dashboard/layout/2; type=boolean; label = Show sidebar searchbox
+sidebarSearchbox = 0
+# cat=dashboard/layout/3; type=boolean; label = Enable right sidebar
+sidebarRight = 0
+# cat=dashboard/layout/4; type=boolean; label = Enable breadcrumbs
+breadcrumbs = 0
+
+# cat=dashboard/seo/1; type=text; label = Vereinsname
+vereinsname = Vereinsname
+

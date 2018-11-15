@@ -1,0 +1,57 @@
+<div class="box box-primary hidden-xs">
+	<div class="box-header with-border">
+		<h4 class="box-title">Vereinsmitglieder nach Geschlecht</h4>
+		<div class="box-tools pull-right">
+			<button type="button" class="btn btn-box-tool" data-widget="collapse">
+				<i class="fa fa-minus"></i>
+			</button>
+			<i class="fa fa-question-circle helper" data-toggle="tooltip" title="Verlauf der Mitgliederzahlen im letzten Jahr"></i>
+		</div>
+	</div>
+	<div class="box-body">
+		<canvas id="groupByGender" height="90"></canvas>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	$(function () {
+
+		var ctx = document.getElementById("groupByGender").getContext("2d");
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			maintainAspectRatio: false,
+			data: {
+				labels: ['Mitgliederzahlen'],
+				datasets: [
+					{
+						label: 'Männer',
+						data: [{males}],
+						backgroundColor: '#23985D',
+						borderColor: '#BBB',
+						borderWidth: 1
+					},
+
+					{
+						label: 'Frauen',
+						data: [{females}],
+						backgroundColor: '#ED1416',
+						borderColor: '#BBB',
+						borderWidth: 1
+					},
+
+				]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true,
+						}
+					}]
+				}
+			}
+		});
+	});
+
+</script>

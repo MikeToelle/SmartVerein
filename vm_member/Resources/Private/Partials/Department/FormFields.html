@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="departmentName">
+	<f:translate key="tx_vmmember_domain_model_department.department_name" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="departmentName" /><br />
+<label for="isFunctionDepartment">
+	<f:translate key="tx_vmmember_domain_model_department.is_function_department" />
+</label><br />
+	<f:form.checkbox property="isFunctionDepartment" value="1" /><br />
+<label for="departmentDescription">
+	<f:translate key="tx_vmmember_domain_model_department.department_description" />
+</label><br />
+	<f:form.textarea property="departmentDescription" cols="40" rows="15" /><br />
+<label for="departmentLogo">
+	<f:translate key="tx_vmmember_domain_model_department.department_logo" />
+</label><br />
+	<span>File upload is not implemented!</span><br  /><br />
+</html>

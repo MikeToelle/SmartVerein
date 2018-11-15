@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:vm_dashboard/Configuration/PageTS/Library/" extensions="pagets">

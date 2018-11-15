@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-05-07T21:44:31Z" product-name="vm_base">
+		<header/>
+		<body>
+			<trans-unit id="tx_vm_base_domain_model_fesettings">
+				<source>FE Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_fesettings.description">
+				<source>Basic functions for Vereinsmeier club management.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_syssettings">
+				<source>Systems Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_syssettings.description">
+				<source>Basic functions for Vereinsmeier club management.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_masettings">
+				<source>Member Area Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_masettings.description">
+				<source>Basic functions for Vereinsmeier club management.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_placeholderllist">
+				<source>Placeholder List</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_placeholderllist.description">
+				<source>Basic functions for Vereinsmeier club management.</source>
+			</trans-unit>
+			<trans-unit id="template_title.description">
+				<source>Title of the Template</source>
+			</trans-unit>
+			<trans-unit id="template_source.description">
+				<source>Source HTML code.</source>
+			</trans-unit>
+			<trans-unit id="template_type.description">
+				<source>Typ of the Template. E-Mail,PDF or so.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

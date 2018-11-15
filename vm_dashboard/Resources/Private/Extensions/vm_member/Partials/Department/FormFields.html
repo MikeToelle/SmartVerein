@@ -1,0 +1,52 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="row">
+	<div class="col-md-6">
+
+				<div class="form-group">
+					<label for="departmentName">
+						<f:translate key="tx_vmmember_domain_model_department.department_name" /> <span class="required">*</span>
+					</label>
+					<f:form.textfield property="departmentName" class="form-control"/>
+				</div>
+
+
+				<div class="checkbox">
+					<label for="isFunctionDepartment">
+						<f:form.checkbox property="isFunctionDepartment" value="1" additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}"/>
+						<b><f:translate key="tx_vmmember_domain_model_department.is_function_department" /></b>
+					</label>
+				</div>
+
+
+
+
+		<div class="form-group">
+		<label for="departmentDescription">
+			<f:translate key="tx_vmmember_domain_model_department.department_description" />
+		</label>
+		<f:form.textfield property="departmentDescription" class="form-control"/>
+			</div>
+	</div>
+	<div class="col-md-6">
+		<label for="departmentLogo">
+			<f:translate key="tx_vmmember_domain_model_department.department_logo" />
+		</label><br />
+		<f:if condition="{department.departmentLogo}">
+			<f:then>
+
+				<f:image image="{department.departmentLogo.0}" alt="" class="profile-user-img img-responsive img-circle" width="145c" height="145c"/>
+			</f:then>
+			<f:else>
+				<f:image src="EXT:vm_dashboard/Resources/Public/Images/placeholder_logo.svg" class="profile-user-img img-responsive img-circle" alt="department logo"  width="145c" height="145c"/>
+			</f:else>
+		</f:if>
+		<br/>
+		<vm:form.upload property="departmentLogo.0" id="js-image-upload" additionalAttributes="{accept: 'image/png, image/jpeg, image/gif, image/svg+xml'}">
+		</vm:form.upload><br />
+	</div>
+</div>
+
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Templates for felogin</title>
+</head>
+<body>
+
+<h1>Common markers</h1>
+<p>These are substituted in all felogin item displaying templates.</p>
+
+<h2>Markers</h2>
+<ul>
+	<li>###ACTION_URI### - URI of the request for the login/logout form</li>
+	<li>###EXTRA_HIDDEN### - Hook required (additional hidden field used by kb_md5fepw extension by Kraft Bernhard)</li>
+	<li>###ON_SUBMIT### - Hook required (used by kb_md5fepw extension by Kraft Bernhard)</li>
+	<li>###PREFIXID### - Same as class name ('tx_felogin_pi1') useful to get a unique classname prefix</li>
+	<li>###REDIRECT_URL### - URL of redirection upon login</li>
+	<li>###NOREDIRECT### - if set, no redirect will be done</li>
+	<li>###STORAGE_PID### - explicit enough I guess (if not : id of the page where user are stored)</li>
+	<li>###STATUS_HEADER### - depends of the template</li>
+	<li>###STATUS_MESSAGE### - depends of the template</li>
+</ul>
+
+<h2>Wrap parts</h2>
+<ul>
+	<li>###HEADER_VALID### - useful to define what to show/hide</li>
+	<li>###MESSAGE_VALID### - useful to define what to show/hide</li>
+	<li>###FORGOTP_VALID### - useful to define what to show/hide</li>
+	<li>###PERMALOGIN_VALID### - useful to define what to show/hide</li>
+</ul>
+
+<h2>felogin Language Markers (see pi/locallang.xlf)</h2>
+<ul>
+	<li>###EMAIL_LABEL### - corresponding to 'your_email'</li>
+	<li>###FORGOT_PASSWORD### - corresponding to 'forgot_password'</li>
+	<li>###FORGOT_PASSWORD_BACKTOLOGIN### - corresponding to 'forgot_password_backToLogin'</li>
+	<li>###FORGOT_PASSWORD_ENTEREMAIL### - corresponding to 'forgot_password_enterEmail'</li>
+	<li>###LOGIN_LABEL### - corresponding to 'login'</li>
+	<li>###PASSWORD_LABEL### - corresponding to 'password'</li>
+	<li>###SEND_PASSWORD### - corresponding to 'send_password'</li>
+	<li>###USERNAME_LABEL### - corresponding to 'username'</li>
+</ul>
+
+<!--###TEMPLATE_LOGIN###-->
+<div class="wrapper-page-inner">
+	<img src="typo3conf/ext/vm_dashboard/Resources/Public/Images/PublicImages/vereinsmeier_logo.png"
+		 class="img-responsive img-center" alt=""/>
+	<!--h3 class="form-signin-heading">Anmeldung bei <b>Vereins</b>Meier</h3-->
+	<p><br></p>
+	<p class="text-center">Melde dich mit deinen Zugangsdaten an.</p>
+	###STATUS_MESSAGE###
+	<!-- ###LOGIN_FORM### -->
+	<form action="###ACTION_URI###" method="post" onsubmit="###ON_SUBMIT###" id="login" class="form-horizontal">
+
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" id="user" name="user" value="" placeholder="Benutzername"
+					   required="" autofocus="1" autocomplete="off" aria-describedby="einfaches-addon1"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				<input type="password" class="form-control" id="pass" name="pass" value="" data-rsa-encryption=""
+					   placeholder="Passwort" required="" autocomplete="off"/>
+				<span class="input-group-addon"><i class="fa fa-eye"></i></span>
+			</div>
+		</div>
+		<div class="felogin-hidden">
+			<input type="hidden" name="logintype" value="login"/>
+			<input type="hidden" name="pid" value="###STORAGE_PID###"/>
+			<input type="hidden" name="redirect_url" value="###REDIRECT_URL###"/>
+			<input type="hidden" name="###PREFIXID###[noredirect]" value="###NOREDIRECT###"/>
+			###EXTRA_HIDDEN###
+		</div>
+		<p class="forgot_password"><!--###FORGOT_PASSWORD_LINK###-->###FORGOT_PASSWORD###
+			<!--###FORGOT_PASSWORD_LINK###--></p>
+		<button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Anmelden</button>
+		<div class="typo3graf logincopyright">&copy; 2018 Typo3graf media-agentur Tölle</div>
+
+	</form>
+</div>
+<!--###FORGOTP_VALID###-->
+
+<!--###FORGOTP_VALID###-->
+
+<!-- ###LOGIN_FORM### -->
+
+<!--###TEMPLATE_LOGIN###-->
+
+<!--###TEMPLATE_LOGOUT###-->
+
+###STATUS_HEADER###
+###STATUS_MESSAGE###
+
+<form action="###ACTION_URI###" target="_top" method="post">
+	<fieldset>
+		<legend>###LEGEND###</legend>
+		<div>
+			<label>###USERNAME_LABEL###</label>
+			###USERNAME###
+		</div>
+		<div>
+			<input type="submit" name="submit" value="###LOGOUT_LABEL###"/>
+		</div>
+
+		<div class="felogin-hidden">
+			<input type="hidden" name="logintype" value="logout"/>
+			<input type="hidden" name="pid" value="###STORAGE_PID###"/>
+			<input type="hidden" name="###PREFIXID###[noredirect]" value="###NOREDIRECT###"/>
+		</div>
+	</fieldset>
+</form>
+
+<!--###TEMPLATE_LOGOUT###-->
+
+<!--###TEMPLATE_FORGOT###-->
+<div class="wrapper-page-inner">
+	<h3 class="form-signin-heading">###STATUS_HEADER###</h3>
+	###STATUS_MESSAGE###
+	<!-- ###FORGOT_FORM### -->
+	<form action="###ACTION_URI###" method="post" class="form-horizontal">
+
+		<div class="felogin-hidden">
+			<input type="hidden" name="tx_felogin_pi1[forgot_hash]" value="###FORGOTHASH###"/>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+				<input type="text" class="form-control" name="###FORGOT_EMAIL###" id="tx_felogin_pi1-forgot-email"
+					   placeholder="Benutzername" autofocus="1"/>
+			</div>
+		</div>
+		<p></p>
+		<button class="btn btn-lg btn-primary btn-block" name="Submit" value="###SEND_PASSWORD###" type="Submit">
+			###SEND_PASSWORD###
+		</button>
+	</form>
+</div>
+<!-- ###FORGOT_FORM### -->
+<div class="felogin-backlink">###BACKLINK_LOGIN###&nbsp;</div>
+<!--###TEMPLATE_FORGOT###-->
+
+<!--###TEMPLATE_CHANGEPASSWORD###-->
+
+<h3 class="form-signin-heading">###STATUS_HEADER###</h3>
+###STATUS_MESSAGE###
+
+
+<!-- ###CHANGEPASSWORD_FORM### -->
+<form action="###ACTION_URI###" method="post" class="form-horizontal">
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+			<input type="password" class="form-control" id="pass" name="###NEWPASSWORD1###" placeholder="Neues Passwort"
+				   required=""/>
+			<span class="input-group-addon"><i class="fa fa-eye"></i></span>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+			<input type="password" class="form-control" name="###NEWPASSWORD2###" id="pass"
+				   placeholder="Passwort wiederholen" required=""/>
+			<span class="input-group-addon"><i class="fa fa-eye"></i></span>
+		</div>
+	</div>
+
+	<div>
+		<button class="btn btn-lg btn-primary btn-block" name="tx_felogin_pi1[changepasswordsubmit]"
+				value="###SEND_PASSWORD###" type="Submit">###SEND_PASSWORD###
+		</button>
+
+	</div>
+
+</form>
+<!-- ###CHANGEPASSWORD_FORM### -->
+###BACKLINK_LOGIN###
+<!--###TEMPLATE_CHANGEPASSWORD###-->

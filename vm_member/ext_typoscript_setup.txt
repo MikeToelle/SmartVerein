@@ -1,0 +1,19 @@
+config.tx_extbase{
+	persistence{
+		classes{
+			Typo3graf\VmMember\Domain\Model\User {
+				mapping {
+					tableName = fe_users
+					recordType =
+				}
+			}
+			Typo3graf\VmMember\Domain\Model\UserGroup {
+				mapping {
+					tableName = fe_groups
+					recordType =
+				}
+			}
+}
+}
+}
+

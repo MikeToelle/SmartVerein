@@ -1,0 +1,24 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<f:if condition="{member.memberCopyMandate}">
+	<f:then><f:link.typolink parameter="{member..memberCopyMandate.0.originalResource.publicUrl}" target="_blank"><i class="fas fa-external-link-alt"></i> SEPA-Mandat ansehen</f:link.typolink></f:then>
+	<f:else><br/></f:else>
+</f:if>
+<p></p>
+<f:security.ifHasRole role="25">
+	<f:then>
+
+	</f:then>
+	<f:else>
+		<div class="form-group">
+			<label for="memberCopyMandate">
+				<f:translate key="tx_vmmember_domain_model_member.member_copy_mandate" />
+			</label>
+			<div>
+				<vm:form.upload property="memberCopyMandate.0" id="js-memberCopyMandate-upload" additionalAttributes="{accept: 'image/png, image/jpeg, application/pdf'}">
+				</vm:form.upload>
+			</div>
+			<span class="help-block"><small class="label bg-green">png</small> <small class="label  bg-green">jpg/jpeg</small> <small class="label bg-green">pdf</small></span>
+		</div>
+	</f:else>
+</f:security.ifHasRole>
+

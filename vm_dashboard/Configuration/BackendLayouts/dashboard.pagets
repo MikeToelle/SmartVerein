@@ -1,0 +1,36 @@
+mod.web_layout.BackendLayouts {
+  dashboard {
+    title = Dashboard
+    icon = EXT:vm_dashboard/Resources/Public/Images/BackendLayouts/Dashboard.svg
+   config {
+         backend_layout {
+           colCount = 6
+           rowCount = 2
+           rows {
+             1 {
+               columns {
+                 1 {
+                   name = Topbar
+                   colspan = 6
+                   colPos =
+                 }
+               }
+             }
+             2 {
+               columns {
+                 1 {
+                   name = Sidebar
+                   colPos =
+                 }
+                 2 {
+                   name = Inhaltsbereich
+                   colspan = 5
+                   colPos = 0
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+   }

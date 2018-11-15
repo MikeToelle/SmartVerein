@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+<h1>Listing for Department</h1>
+
+<f:flashMessages />
+
+<table  class="tx_vmmember" >
+	<tr>
+		<th><f:translate key="tx_vmmember_domain_model_department.department_name" /></th>
+		<th><f:translate key="tx_vmmember_domain_model_department.department_description" /></th>
+		<th>Funktionäre</th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{departments}" as="department">
+		<tr>
+			<td>{department.departmentName}</td>
+			<td>{department.departmentDescription}</td>
+			<td>
+				<f:for each="{department.departmentHasWorkers}" as="worker">
+					{worker.clubFunction.functionName} : {worker.departmentWorker.memberFirstname} {worker.departmentWorker.memberLastname}<br/>
+				</f:for>
+			</td>
+			<td><f:link.action action="editDepartment" arguments="{department : department}">Edit </f:link.action></td>
+			<td><f:link.action action="editWorkers" arguments="{department : department}">Workers </f:link.action></td>
+			<td><f:link.action action="deleteDepartment" arguments="{department : department}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="newDepartment">New Department</f:link.action>
+</f:section>
+</html>

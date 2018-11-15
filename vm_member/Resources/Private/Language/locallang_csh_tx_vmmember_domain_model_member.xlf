@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-14T21:34:45Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="member_folder.description">
+				<source>The folder of the member</source>
+			</trans-unit>
+			<trans-unit id="member_first_payment_date.description">
+				<source>Date of the first payment.</source>
+			</trans-unit>
+		<trans-unit id="member_account_owner.description">
+			<source>Account Owner name of the meber.</source>
+		</trans-unit>
+		<trans-unit id="member_b_i_c.description">
+			<source>BIC of the member account.</source>
+		</trans-unit>
+		<trans-unit id="member_birthday.description">
+			<source>Birthday of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_city.description">
+			<source>City of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_contribution_rate.description">
+			<source>memberContributionRate</source>
+		</trans-unit>
+		<trans-unit id="member_copy_mandate.description">
+			<source>A copy of mandate reference from the member.</source>
+		</trans-unit>
+		<trans-unit id="member_country.description">
+			<source>County of the member.</source>
+		</trans-unit>
+			<trans-unit id="member_is_admin.description">
+				<source>Is member admin from SmartVerein</source>
+			</trans-unit>
+		<trans-unit id="member_country_zone.description">
+			<source>Country zone of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_dashboard_layout.description">
+			<source>Dashboard Layout form the member (for future use)</source>
+		</trans-unit>
+		<trans-unit id="member_departments.description">
+			<source>Departemnts the member belongs to.</source>
+		</trans-unit>
+		<trans-unit id="member_edit_history.description">
+			<source>memberEditHistory</source>
+		</trans-unit>
+		<trans-unit id="member_email.description">
+			<source>Email address of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_entry_date.description">
+			<source>Entry date of the member</source>
+		</trans-unit>
+		<trans-unit id="member_firstname.description">
+			<source>Firstname of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_form_of_address.description">
+			<source>Form of address of the member. like Mr. Mrs.</source>
+		</trans-unit>
+		<trans-unit id="member_has_family.description">
+			<source>The familiy members.</source>
+		</trans-unit>
+		<trans-unit id="member_i_b_a_n.description">
+			<source>IBAN of the member account.</source>
+		</trans-unit>
+		<trans-unit id="member_i_d.description">
+			<source>ID number of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_lastname.description">
+			<source>Lastname of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_leaving_date.description">
+			<source>The leaving date of the member</source>
+		</trans-unit>
+			<trans-unit id="member_leaving.description">
+				<source>memberLeaving</source>
+			</trans-unit>
+			<trans-unit id="member_reason_for_leaving.description">
+				<source>memberReasonForLeaving</source>
+			</trans-unit>
+		<trans-unit id="member_login.description">
+			<source>Login data of the member</source>
+		</trans-unit>
+		<trans-unit id="member_mandate_reference.description">
+			<source>The SEPA mandate reference of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_mandate_valid.description">
+			<source>The date mandate reference is valid.</source>
+		</trans-unit>
+		<trans-unit id="member_marital_status.description">
+			<source>Marital Staus of the member</source>
+		</trans-unit>
+		<trans-unit id="member_mobile.description">
+			<source>mobileNumber of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_note.description">
+			<source>Notes of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_payment_interval.description">
+			<source>Payment interval of the member contribution.</source>
+		</trans-unit>
+		<trans-unit id="member_payment_method.description">
+			<source>Payment Method of the meber contribution.</source>
+		</trans-unit>
+		<trans-unit id="member_phone1.description">
+			<source>Phonenumber1 of the member</source>
+		</trans-unit>
+		<trans-unit id="member_phone2.description">
+			<source>Phonenumber2 of the member</source>
+		</trans-unit>
+		<trans-unit id="member_photo.description">
+			<source>Photo of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_salutation.description">
+			<source>memberSalutation</source>
+		</trans-unit>
+		<trans-unit id="member_status.description">
+			<source>memberStatus</source>
+		</trans-unit>
+		<trans-unit id="member_street.description">
+			<source>Street of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_title.description">
+			<source>Titel of the meber</source>
+		</trans-unit>
+		<trans-unit id="member_vita.description">
+			<source>memberVita</source>
+		</trans-unit>
+		<trans-unit id="member_wedding_date.description">
+			<source>Wedding date of the member.</source>
+		</trans-unit>
+		<trans-unit id="member_zip_code.description">
+			<source>Zipcode of the member</source>
+		</trans-unit>
+		<trans-unit id="membership_application.description">
+			<source>Membership application of the member.</source>
+		</trans-unit>
+		<trans-unit id="membership_resignation.description">
+			<source>Resignation of the membership.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberlist">
+			<source>Member List</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberlist.description">
+			<source>Member management module for Vereinsmeier.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberprofil">
+			<source>Member Profil</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberprofil.description">
+			<source>Member management module for Vereinsmeier.</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

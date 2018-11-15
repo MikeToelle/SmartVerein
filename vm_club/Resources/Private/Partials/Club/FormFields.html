@@ -1,0 +1,111 @@
+{namespace vm = Typo3graf\VmClub\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="clubName">
+	<f:translate key="tx_vmclub_domain_model_club.club_name" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="clubName" /><br />
+<label for="clubShortName">
+	<f:translate key="tx_vmclub_domain_model_club.club_short_name" />
+</label><br />
+	<f:form.textfield property="clubShortName" /><br />
+<label for="clubFoundingYear">
+	<f:translate key="tx_vmclub_domain_model_club.club_founding_year" />
+</label><br />
+<f:form.textfield property="clubFoundingYear" /><br />
+<label for="clubStreet">
+	<f:translate key="tx_vmclub_domain_model_club.club_street" />
+</label><br />
+	<f:form.textfield property="clubStreet" /><br />
+<label for="clubZipCode">
+	<f:translate key="tx_vmclub_domain_model_club.club_zip_code" />
+</label><br />
+	<f:form.textfield property="clubZipCode" /><br />
+<label for="clubCity">
+	<f:translate key="tx_vmclub_domain_model_club.club_city" />
+</label><br />
+	<f:form.textfield property="clubCity" /><br />
+<label for="clubPhone">
+	<f:translate key="tx_vmclub_domain_model_club.club_phone" />
+</label><br />
+	<f:form.textfield property="clubPhone" /><br />
+<label for="clubEmail">
+	<f:translate key="tx_vmclub_domain_model_club.club_email" />
+</label><br />
+	<f:form.textfield property="clubEmail" /><br />
+<label for="clubWebsite">
+	<f:translate key="tx_vmclub_domain_model_club.club_website" />
+</label><br />
+	<f:form.textfield property="clubWebsite" /><br />
+<label for="clubTaxOffice">
+	<f:translate key="tx_vmclub_domain_model_club.club_tax_office" />
+</label><br />
+<f:form.textfield property="clubTaxOffice" /><br />
+<label for="clubTaxNumber">
+	<f:translate key="tx_vmclub_domain_model_club.club_tax_number" />
+</label><br />
+	<f:form.textfield property="clubTaxNumber" /><br />
+<label for="clubVatNumber">
+	<f:translate key="tx_vmclub_domain_model_club.club_vat_number" />
+</label><br />
+	<f:form.textfield property="clubVatNumber" /><br />
+<label for="clubRegistrationCourt">
+	<f:translate key="tx_vmclub_domain_model_club.club_registration_court" />
+</label><br />
+	<f:form.textfield property="clubRegistrationCourt" /><br />
+<label for="clubRegistrationNumber">
+	<f:translate key="tx_vmclub_domain_model_club.club_registration_number" />
+</label><br />
+	<f:form.textfield property="clubRegistrationNumber" /><br />
+<label for="clubBankname">
+	<f:translate key="tx_vmclub_domain_model_club.club_bankname" />
+</label><br />
+<f:form.textfield property="clubBankname" /><br />
+<label for="clubIBAN">
+	<f:translate key="tx_vmclub_domain_model_club.club_i_b_a_n" />
+</label><br />
+	<f:form.textfield property="clubIBAN" /><br />
+<label for="clubBIC">
+	<f:translate key="tx_vmclub_domain_model_club.club_b_i_c" />
+</label><br />
+	<f:form.textfield property="clubBIC" /><br />
+<label for="clubDId">
+	<f:translate key="tx_vmclub_domain_model_club.club_d_id" />
+</label><br />
+	<f:form.textfield property="clubDId" /><br />
+<label for="clubOrganisation">
+	<f:translate key="tx_vmclub_domain_model_club.club_organisation" />
+</label><br />
+	<f:form.textfield property="clubOrganisation" /><br />
+<label for="clubOrganisationNumber">
+	<f:translate key="tx_vmclub_domain_model_club.club_organisation_number" />
+</label><br />
+	<f:form.textfield property="clubOrganisationNumber" /><br />
+<label for="clubLogo">
+	<f:translate key="tx_vmclub_domain_model_club.club_logo" />
+</label><br />
+<vm:form.upload property="clubLogo.0" ><br />
+	<f:if condition="{resource}">
+		<f:image image="{resource}" alt="" width="50"/>
+	</f:if>
+</vm:form.upload><br />
+<label for="clubSocialMediaFacebook">
+	<f:translate key="tx_vmclub_domain_model_club.club_social_media_facebook" />
+</label><br />
+<f:form.textfield property="clubSocialMediaFacebook" /><br />
+<label for="clubSocialMediaTwitter">
+	<f:translate key="tx_vmclub_domain_model_club.club_social_media_twitter" />
+</label><br />
+<f:form.textfield property="clubSocialMediaTwitter" /><br />
+<label for="clubSocialMediaGoogle">
+	<f:translate key="tx_vmclub_domain_model_club.club_social_media_google" />
+</label><br />
+<f:form.textfield property="clubSocialMediaGoogle" /><br />
+<label for="clubSocialMediaInstagram">
+	<f:translate key="tx_vmclub_domain_model_club.club_social_media_instagram" />
+</label><br />
+<f:form.textfield property="clubSocialMediaInstagram" /><br />
+<label for="clubSocialMediaPrinterest">
+	<f:translate key="tx_vmclub_domain_model_club.club_social_media_printerest" />
+</label><br />
+<f:form.textfield property="clubSocialMediaPrinterest" /><br />
+</html>

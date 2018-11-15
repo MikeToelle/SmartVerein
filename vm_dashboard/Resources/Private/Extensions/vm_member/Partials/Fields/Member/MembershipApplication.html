@@ -1,0 +1,22 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<f:if condition="{member.membershipApplication}">
+	<f:then><f:link.typolink parameter="{member.membershipApplication.0.originalResource.publicUrl}" target="_blank"><i class="fas fa-external-link-alt"></i> Eintrittserklärung ansehen</f:link.typolink></f:then>
+	<f:else><br/></f:else>
+</f:if>
+<p></p>
+
+	<f:security.ifHasRole role="23">
+		<f:then>
+
+		</f:then>
+		<f:else>
+			<label for="membershipApplication">
+				<f:translate key="tx_vmmember_domain_model_member.membership_application" />
+			</label>
+<div>
+			<vm:form.upload property="membershipApplication.0" id="js-membershipApplication-upload" additionalAttributes="{accept: 'image/png, image/jpeg, application/pdf'}">
+			</vm:form.upload>
+</div>
+		</f:else>
+	</f:security.ifHasRole>
+

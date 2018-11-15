@@ -1,0 +1,434 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<div xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="row">
+	<div class="col-md-6">
+		<!-- Member Profile -->
+		<div class="box box-primary">
+			<div class="box-body box-profile">
+				<f:if condition="{member.memberPhoto}">
+					<f:then>
+
+						<f:image image="{member.memberPhoto.0}" alt="" class="profile-user-img img-responsive img-circle" width="145c" height="145c"/>
+					</f:then>
+					<f:else>
+						<f:image src="EXT:vm_dashboard/Resources/Public/Images/placeholder-man.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture"/>
+					</f:else>
+				</f:if>
+				<h3 class="profile-username text-center">{member.memberFirstname} {member.memberLastname}</h3>
+
+				<p class="text-muted text-center">{member.memberID}</p>
+				<f:if condition="{member.memberleaving}">
+					<h3 class="text-muted text-center"><span class="label label-danger">Ist aus dem Verein ausgetreten.</span></h3>
+				</f:if>
+				<br/>
+				<p class="text-center">
+					<b><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.lastModified" />:</b> {member.tstamp->f:format.date(format: 'd.m.Y - H:i')}
+				</p>
+
+				<br/>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Aktionen <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Brief / E-Mail schreiben</a></li>
+						<li><a href="tel:">Anrufen</a></li>
+						<li><a href="#">Irgendwas anderes</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">DSGVO Datenauskunft</a></li>
+					</ul>
+				</div>
+
+				<f:form.button disabled="{f:if(condition: FESettings.myProfil, then: 'true')}" type="button" class="btn btn-danger pull-right" data="{toggle:'modal', target:'#deleteConfirmModal'}">
+					<i class="fas fa-trash-alt" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:deleteMember" />
+				</f:form.button>
+
+				<br/><hr><br/>
+				<f:render partial="Fields/Member/MemberPhoto" arguments="{_all}"/>
+<div ></div>
+			</div>
+			<!-- /.box-body -->
+		</div>
+		<!-- /.box -->
+	</div>
+	<div class="col-md-6">
+		<!-- Login Data Box -->
+		<div class="box box-primary">
+			<div class="box-header with-border">
+				<h3 class="box-title"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.loginData.header" /></h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+				<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.loginData.message" /><br><br>
+				<f:security.ifHasRole role="28">
+					<f:then>
+						Keinen Zugriff!
+					</f:then>
+					<f:else>
+						<f:render partial="Fields/Member/MemberLoginUsername" arguments="{_all}"/>
+						<f:render partial="Fields/Member/Password" arguments="{_all}"/>
+						<f:render partial="Fields/Member/PasswordConfirm" arguments="{_all}"/>
+						<f:render partial="Fields/Member/MemberLoginUsergroup" arguments="{_all}"/>
+					</f:else>
+				</f:security.ifHasRole>
+
+			</div>
+			<!-- /.box-body -->
+		</div>
+		<!-- /.box -->
+
+	</div>
+</div>
+
+<div class="box box-primary nav-tabs-custom">
+	<br/><br/>
+	<f:render partial="Member/EditTabs" arguments="{_all}"/>
+	<div class="tab-content">
+		<f:security.ifHasRole role="20">
+			<f:then>
+				<div class="tab-pane hidden active" id="personalData">
+			</f:then>
+			<f:else>
+				<div class="tab-pane active" id="personalData">
+			</f:else>
+		</f:security.ifHasRole>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.personalData" />:</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<f:render partial="Fields/Member/MemberFormOfAddress" arguments="{_all}"/>
+						</div>
+						<div class="col-md-6">
+							<f:render partial="Fields/Member/MemberTitle" arguments="{_all}"/>
+						</div>
+					</div>
+					<f:render partial="Fields/Member/MemberSalutation" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberFirstname" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberLastname" arguments="{_all}"/>
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.address" />:</h4>
+					<f:render partial="Fields/Member/MemberStreet" arguments="{_all}"/>
+					<div class="row">
+						<div class="col-md-3">
+							<f:render partial="Fields/Member/MemberZipCode" arguments="{_all}"/>
+						</div>
+						<div class="col-md-9">
+							<f:render partial="Fields/Member/MemberCity" arguments="{_all}"/>
+						</div>
+					</div>
+					<f:render partial="Fields/Member/MemberCountryZone" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberCountry" arguments="{_all}"/>
+				</div>
+				<div class="col-md-6">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.contact" />:</h4>
+					<f:render partial="Fields/Member/MemberPhone1" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberPhone2" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberMobile" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberEmail" arguments="{_all}"/>
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.morePersonalData" />:</h4>
+					<f:render partial="Fields/Member/MemberBirthday" arguments="{_all}"/>
+					<f:render partial="Fields/Member/MemberWeddingDate" arguments="{_all}"/>
+				</div>
+			</div>
+
+
+			</div><!-- personalData -->
+	<f:security.ifHasRole role="22">
+		<f:then>
+			<div class="tab-pane hidden" id="clubData">
+		</f:then>
+		<f:else>
+			<div class="tab-pane" id="clubData">
+		</f:else>
+	</f:security.ifHasRole>
+
+			<div class="row">
+				<div class="col-md-6">
+					<f:render partial="Fields/Member/MemberID" arguments="{_all}"/>
+					<div class="row">
+						<div class="col-md-6">
+							<f:render partial="Fields/Member/MemberStatus" arguments="{_all}"/>
+						</div>
+						<div class="col-md-6">
+							<f:render partial="Fields/Member/MemberEntryDate" arguments="{_all}"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<f:render partial="Fields/Member/MemberLeavingDate" arguments="{_all}"/>
+						</div>
+						<div class="col-md-9">
+							<f:render partial="Fields/Member/MemberReasonForLeaving" arguments="{_all}" />
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<f:render partial="Fields/Member/MemberDepartments" arguments="{_all}"/>
+				</div>
+			</div><br/>
+			<f:render partial="Fields/Member/MemberNote" arguments="{_all}"/>
+
+			<div class="row">
+				<div class="col-md-6">
+					<f:render partial="Fields/Member/MembershipApplication" arguments="{_all}"/>
+				</div>
+				<div class="col-md-6">
+					<f:render partial="Fields/Member/MembershipResignation" arguments="{_all}"/>
+				</div>
+			</div>
+			</div><!-- clubData -->
+<f:security.ifHasRole role="24">
+	<f:then>
+		<div class="tab-pane hidden" id="contributionData">
+	</f:then>
+	<f:else>
+		<div class="tab-pane" id="contributionData">
+	</f:else>
+</f:security.ifHasRole>
+
+
+					<div class="row">
+						<div class="col-md-4">
+							<f:render partial="Fields/Member/MemberContibutionRate" arguments="{_all}"/>
+						</div>
+						<div class="col-md-4">
+							<f:render partial="Fields/Member/MemberPaymentInterval" arguments="{_all}"/>
+						</div>
+						<div class="col-md-4">
+							<f:render partial="Fields/Member/MemberFirstPaymentDate" arguments="{_all}"/>
+						</div>
+					</div>
+						<f:render partial="Fields/Member/MemberPaymentMethod" arguments="{_all}"/>
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.bankDetails" /></h4>
+			<f:render partial="Fields/Member/MemberAccountOwner" arguments="{_all}"/>
+					<div class="row">
+						<div class="col-md-6">
+							<f:render partial="Fields/Member/MemberIBAN" arguments="{_all}"/>
+						</div>
+						<div class="col-md-6">
+							<f:render partial="Fields/Member/MemberBIC" arguments="{_all}"/>
+						</div>
+					</div>
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.sepa" />:</h4>
+					<div class="row">
+						<div class="col-md-4">
+							<f:render partial="Fields/Member/MemberMandateReference" arguments="{_all}"/>
+						</div>
+						<div class="col-md-4">
+							<f:render partial="Fields/Member/MemberMandateValid" arguments="{_all}"/>
+						</div>
+						<div class="col-md-4">
+							<f:render partial="Fields/Member/MemberCopyMandate" arguments="{_all}"/>
+						</div>
+					</div>
+			</div><!-- contributionData -->
+<f:security.ifHasRole role="26">
+	<f:then>
+		<div class="tab-pane hidden" id="DSGVO">
+	</f:then>
+	<f:else>
+		<div class="tab-pane" id="DSGVO">
+	</f:else>
+</f:security.ifHasRole>
+DSGVO Einstellungen
+</div> <!-- DSGVO -->
+		<!-- Vereinsfunktionen -->
+
+		<div class="tab-pane" id="funktion">
+			<h4>Vereinsfunktionen</h4>
+			<f:if condition="{member.memberDepartments}">
+			<f:for each="{member.memberDepartments}" as="department">
+				<f:for each="{department.departmentHasWorkers}" as="worker">
+					<f:if condition="({worker.departmentWorker.uid} == {member.uid})">
+						{department.departmentName} : {worker.clubFunction.functionName}<br/>
+					</f:if>
+				</f:for>
+			</f:for>
+				</f:if>
+			</div><!-- Vereinsfunktionen -->
+<f:security.ifHasRole role="26">
+	<f:then>
+		<div class="tab-pane hidden" id="documents">
+	</f:then>
+	<f:else>
+		<div class="tab-pane" id="documents">
+	</f:else>
+</f:security.ifHasRole>
+
+			<h4>Lehrgangsbescheinigungen, Sportpass oder ähnliches</h4><br/><br/>
+			<f:if condition="{member.memberAttachments}">
+				<f:then>
+					<f:for each="{member.memberAttachments}" as="attachment" iteration="attaIter">
+					<f:link.typolink parameter="{attachment.originalResource.publicUrl}" target="_blank"><i class="fas fa-external-link-alt"></i> Datei</f:link.typolink><br/>
+				</f:for>
+				</f:then>
+				<f:else><br/></f:else>
+			</f:if>
+			<p></p>
+			<div class="form-group">
+				<label for="member.memberAttachments">
+					Datei hinzufügen:
+				</label>
+				<div>
+					<vm:form.multiupload property="memberAttachments" resources="{member.memberAttachments}" additionalAttributes="{accept: 'image/png, image/jpeg, image/gif, image/svg+xml'}">
+
+					</vm:form.multiupload>
+				</div>
+				<span class="help-block"><small class="label bg-green">png</small> <small class="label  bg-green">jpg/jpeg</small> <small class="label bg-green">pdf</small></span>
+				</div>
+			ERSETZEN MIT FILEMANAGER WIGET!!! MUSS NOCH PROGRAMMIERT WERDEN!!!!!!
+		</div><!-- documents -->
+<f:security.ifHasRole role="30">
+	<f:then>
+		<div class="tab-pane hidden" id="memberHistory">
+	</f:then>
+	<f:else>
+		<div class="tab-pane" id="memberHistory">
+	</f:else>
+</f:security.ifHasRole>
+
+			Erfasse Ehrungen, besondere Ereignisse zu Mitgliedern.<br/>
+			Einige Einträge werden von SmartVerein automatisch angelegt.
+			<f:form.button type="button" disabled="true" class="btn btn-success pull-right" data="{toggle:'modal', target:'#vitaCreateModal'}"><i class="fas fa-plus-square" aria-hidden="true"></i> Neuer Eintrag</f:form.button>
+			<p><br/></p>
+			<div class="box">
+				<div class="box-body">
+					<table id="membervita" class="table table-hover table-bordered table-striped">
+						<thead>
+						<tr>
+							<th></th>
+							<th>L:Datum</th>
+
+							<th>L:Beschreibung</th>
+						</tr>
+						</thead>
+						<tbody>
+						<f:for each="{member.memberVita}" as="event">
+							<tr>
+								<td>
+									<f:if condition="{event.vitaIs} == 1">
+										<f:then>
+											<i class="fas fa-calendar" aria-hidden="true"></i><span style="display: none;">Er</span>
+										</f:then>
+										<f:else>
+											<i class="fas fa-trophy" aria-hidden="true"></i><span style="display: none;">Eh</span>
+										</f:else>
+									</f:if>
+								</td>
+								<td style="width: 150px;"><f:format.date format="d.m.Y">{event.vitaDate}</f:format.date></td>
+
+								<td>{event.vitaDescription}</td>
+								<td>
+									<f:link.action class="btn btn-danger" action="deleteVitaAjax" arguments="{member:member, vita:event}"><i class="fas fa-trash-alt" aria-hidden="true"></i></f:link.action>
+								</td>
+							</tr>
+						</f:for>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			</div>
+		<div class="tab-pane" id="editHistory">
+			Alle Einträge werden von SmartVerein automatisch angelegt.
+			<p></p>
+			<div class="box">
+				<div class="box-body">
+					<table id="edithistory" class="table table-hover table-bordered table-striped">
+						<thead>
+						<tr>
+							<th>L:Datum</th>
+							<th>L:Vorgang</th>
+						</tr>
+						</thead>
+						<tbody>
+						<f:for each="{member.memberEditHistory}" as="event">
+							<tr>
+								<td style="width: 150px;" data-order="{event.editHistoryDateTime -> f:format.date(format: 'U')}"><f:format.date format="d.m.Y - H:i">{event.editHistoryDateTime}</f:format.date></td>
+								<td><f:format.html parseFuncTSPath="">{event.editHistoryDescription}</f:format.html></td>
+							</tr>
+						</f:for>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			</div>
+		</div><!-- tab-content-->
+
+	<div class="box-footer">
+		<div class="form-group">
+			<f:link.action action="backToList" arguments="{member : member}" class="btn btn-default"><i class="fas fa-ban"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:cancel" /></f:link.action>
+			<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:save" /></f:form.button>
+		</div>
+	</div>
+</div><!-- Box -->
+
+<!-- Modal deleteMember confirm-->
+<div class="modal fade" id="deleteConfirmModal" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"><i class="fas fa-exclamation-circle" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.modal.deleteMemberHeader" /></h4>
+			</div>
+			<div class="modal-body" align="center">
+				<div style="font-size: 24px;"></div><br/>
+				<b><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.modal.deleteMemberNote" />!</b><br/>
+				<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.modal.deleteMemberMessage" />
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fas fa-ban" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:cancel" /></button>
+				<f:link.action class="btn btn-danger pull-right" action="deleteMember" arguments="{member : member}"><i class="fas fa-trash-alt" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:deleteMember" /></f:link.action>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Modal password-->
+<div class="modal fade" id="passModal" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title"><i class="fas fa-exclamation-circle" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.modal.passwordTitle" /></h4>
+			</div>
+			<div class="modal-body" align="center">
+				<div style="font-size: 24px;"><b><span id="modalmessage"></span></b></div><br/>
+				<b><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.modal.passwordNote" /></b><br/>
+				<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.modal.passwordMessage" />
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-warning" data-dismiss="modal"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:understand" /></button>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Modal file upload -->
+<div class="modal fade" id="mimetypeimage" tabindex="-1" role="dialog" aria-labelledby="mimetype">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title"><f:translate key="club.form.errorText"/></h4>
+			</div>
+			<div class="modal-body">
+				<p>L : Datei darf nur 10 MB groß sein,<br/>
+					Erlaubte Dateien: <small class="label bg-green">png</small> <small class="label  bg-green">jpg/jpeg</small> <small class="label  bg-green">svg</small>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</html>

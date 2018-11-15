@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubSocialMediaTwitter">
+		<i class="fab fa-twitter-square"></i> <f:translate key="tx_vmclub_domain_model_club.club_social_media_twitter" />
+	</label>
+	<f:security.ifHasRole role="10">
+		<f:then>
+			<f:form.textfield property="clubSocialMediaTwitter" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubSocialMediaTwitter" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

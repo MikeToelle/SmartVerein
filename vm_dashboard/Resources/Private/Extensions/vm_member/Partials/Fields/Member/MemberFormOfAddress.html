@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberFormOfAddress">
+		<f:translate key="tx_vmmember_domain_model_member.member_form_of_address" />
+	</label>
+	<f:security.ifHasRole role="21">
+		<f:then>
+			<f:form.select class="form-control" property="memberFormOfAddress" options="{selectOptions.salut}" optionValueField="id" optionLabelField="salutation" disabled="true" />
+		</f:then>
+		<f:else>
+			<f:form.select class="form-control" property="memberFormOfAddress" options="{selectOptions.salut}" optionValueField="id" optionLabelField="salutation" />
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

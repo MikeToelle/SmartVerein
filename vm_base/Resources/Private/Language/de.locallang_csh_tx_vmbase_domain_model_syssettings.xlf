@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-04-30T09:15:00Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="auto_member_i_d.description" approved="yes">
+			<source>Automatic memberID yes/no</source>
+			<target>Neue Mitglieder erhalten automatisch eine Mitgliedernummer, wenn sie erstellt werden.</target>
+		</trans-unit>
+		<trans-unit id="club_anniversaries.description" approved="yes">
+			<source>Club anniversaries of the mebers. Comma seperated.</source>
+			<target>Gib hier mit Komma getrennt an, für welche Jubiläen in der Vereinsübersicht eine Erinnerung angezeigt werden soll.</target>
+		</trans-unit>
+		<trans-unit id="member_i_d_format.description" approved="yes">
+			<source>Format of the automatic memberID. IS NOT IMPLEMENTED YET!</source>
+			<target>Mitgliedsnummer Format für automatische Mitgliedsnummer. Platzhalter {n} : Zufallszahl - {a} : Zufallsgroßbuchstabe - {M}: Eintrittsmonat - {Y}: Eintrittsjahr zweistellig - {VN}: Erster Buchstabe Vorname - {NN}: Erster Buchstabe Nachname</target>
+		</trans-unit>
+		<trans-unit id="show_member_birthdays.description" approved="yes" xml:space="preserve">
+			<source>Members Birthdays to be displayed. If empty all bithdays will displayed</source>
+			<target>Gib hier mit Komma getrennt an, für welche Geburtstage in der Vereinsübersicht eine Erinnerung angezeigt werden soll.
+Um alle Geburtstage anzuzeigen, lasse das Feld leer.</target>
+		</trans-unit>
+		<trans-unit id="supplement_member_i_d.description" approved="yes">
+			<source>Supplement memberID if not set</source>
+			<target>Wenn diese Option aktiviert ist, werden beim Klick auf Speichern die Mitgliedernummern aller Mitglieder ergänzt, die noch keine Nummer haben.</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_fesettings" approved="yes">
+			<source>FE Settings</source>
+			<target>FE-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_fesettings.description" approved="yes">
+			<source>Basic functions for Vereinsmeier club management.</source>
+			<target>Basis Funktionen für SmartVerein Vereinsverwaltung.</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings" approved="yes">
+			<source>Member Area Settings</source>
+			<target>Mitgliedsbereich-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings.description" approved="yes">
+			<source>Basic functions for Vereinsmeier club management.</source>
+			<target>Basis Funktionen für SmartVerein Vereinsverwaltung.</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings" approved="yes">
+			<source>Systems Settings</source>
+			<target>System-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings.description" approved="yes">
+			<source>Basic functions for Vereinsmeier club management.</source>
+			<target>Basis Funktionen für SmartVerein Vereinsverwaltung.</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

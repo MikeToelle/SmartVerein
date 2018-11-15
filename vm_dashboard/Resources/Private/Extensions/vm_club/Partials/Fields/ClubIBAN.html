@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubIBAN">
+		<f:translate key="tx_vmclub_domain_model_club.club_i_b_a_n" />
+	</label>
+	<f:security.ifHasRole role="8">
+		<f:then>
+			<f:form.textfield property="clubIBAN" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubIBAN" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

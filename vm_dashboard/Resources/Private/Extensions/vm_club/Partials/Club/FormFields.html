@@ -1,0 +1,112 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<!-- Custom Tabs -->
+<div class="nav-tabs-custom">
+<f:render partial="Club/ClubTabs" arguments="{_all}"/>
+	<div class="tab-content">
+		<f:security.ifHasRole role="3">
+			<f:then>
+				<div class="tab-pane hidden active" id="tab_1">
+			</f:then>
+			<f:else>
+				<div class="tab-pane active" id="tab_1">
+			</f:else>
+		</f:security.ifHasRole>
+
+			<div class="row">
+				<div class="col-md-4">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.defaultData" /></h4>
+					<f:render partial="Fields/ClubName" arguments="{_all}"/>
+					<f:render partial="Fields/ClubShortName" arguments="{_all}"/>
+					<f:render partial="Fields/ClubFoundingYear" arguments="{_all}"/>
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.address" />:</h4>
+					<f:render partial="Fields/ClubStreet" arguments="{_all}"/>
+					<div class="row">
+						<div class="col-md-3">
+							<f:render partial="Fields/ClubZipCode" arguments="{_all}"/>
+						</div>
+						<div class="col-md-9">
+							<f:render partial="Fields/ClubCity" arguments="{_all}"/>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.contact" />:</h4>
+					<f:render partial="Fields/ClubPhone" arguments="{_all}"/>
+					<f:render partial="Fields/ClubEmail" arguments="{_all}"/>
+					<f:render partial="Fields/ClubWebsite" arguments="{_all}"/>
+
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.association" />:</h4>
+					<f:render partial="Fields/ClubOrganisation" arguments="{_all}"/>
+					<f:render partial="Fields/ClubOrganisationNumber" arguments="{_all}"/>
+				</div>
+				<div class="col-md-4">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.subHeader.clubLogo" /></h4>
+					<f:render partial="Fields/ClubLogo" arguments="{_all}"/>
+				</div>
+			</div>
+		</div>
+		<!-- /.tab-pane -->
+	<f:security.ifHasRole role="5">
+		<f:then>
+			<div class="tab-pane hidden" id="tab_2">
+		</f:then>
+		<f:else>
+			<div class="tab-pane" id="tab_2">
+		</f:else>
+	</f:security.ifHasRole>
+			<div class="row">
+				<div class="col-md-4">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.registerCourt" /></h4>
+					<f:render partial="Fields/ClubTaxOffice" arguments="{_all}"/>
+					<f:render partial="Fields/ClubTaxNumber" arguments="{_all}"/>
+					<f:render partial="Fields/ClubVatNumber" arguments="{_all}"/>
+					<f:render partial="Fields/ClubRegistrationCourt" arguments="{_all}"/>
+					<f:render partial="Fields/ClubRegistrationNumber" arguments="{_all}"/>
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+		<!-- /.tab-pane -->
+<f:security.ifHasRole role="7">
+	<f:then>
+		<div class="tab-pane hidden" id="tab_3">
+	</f:then>
+	<f:else>
+		<div class="tab-pane" id="tab_3">
+	</f:else>
+</f:security.ifHasRole>
+			<div class="row">
+				<div class="col-md-4">
+					<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.bankData" /></h4>
+					<f:render partial="Fields/ClubBankname" arguments="{_all}"/>
+					<f:render partial="Fields/ClubIBAN" arguments="{_all}"/>
+					<f:render partial="Fields/ClubBIC" arguments="{_all}"/>
+					<f:render partial="Fields/ClubDId" arguments="{_all}"/>
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+<f:security.ifHasRole role="9">
+	<f:then>
+		<div class="tab-pane hidden" id="tab_4">
+	</f:then>
+	<f:else>
+		<div class="tab-pane" id="tab_4">
+	</f:else>
+</f:security.ifHasRole>
+			<h4><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.socialMedia" /></h4>
+			<f:render partial="Fields/ClubSocialMediaFacebook" arguments="{_all}"/>
+			<f:render partial="Fields/ClubSocialMediaTwitter" arguments="{_all}"/>
+			<f:render partial="Fields/ClubSocialMediaGoogle" arguments="{_all}"/>
+			<f:render partial="Fields/ClubSocialMediaInstagram" arguments="{_all}"/>
+			<f:render partial="Fields/ClubSocialMediaPrinterest" arguments="{_all}"/>
+			</div>
+		<!-- /.tab-pane -->
+	</div>
+	<!-- /.tab-content -->
+</div>
+<!-- nav-tabs-custom -->

@@ -1,0 +1,302 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-vm-member" >
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_lastname" />
+		</td>
+		<td>
+		{member.memberLastname}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_firstname" />
+		</td>
+		<td>
+		{member.memberFirstname}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_form_of_address" />
+		</td>
+		<td>
+		{member.memberFormOfAddress}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_title" />
+		</td>
+		<td>
+		{member.memberTitle}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_street" />
+		</td>
+		<td>
+		{member.memberStreet}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_zip_code" />
+		</td>
+		<td>
+		{member.memberZipCode}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_city" />
+		</td>
+		<td>
+		{member.memberCity}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_country_zone" />
+		</td>
+		<td>
+		{member.memberCountryZone}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_country" />
+		</td>
+		<td>
+		{member.memberCountry}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_phone1" />
+		</td>
+		<td>
+		{member.memberPhone1}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_phone2" />
+		</td>
+		<td>
+		{member.memberPhone2}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_mobile" />
+		</td>
+		<td>
+		{member.memberMobile}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_email" />
+		</td>
+		<td>
+		{member.memberEmail}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_birthday" />
+		</td>
+		<td>
+		{member.memberBirthday -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_wedding_date" />
+		</td>
+		<td>
+		{member.memberWeddingDate -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_marital_status" />
+		</td>
+		<td>
+		{member.memberMaritalStatus}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_payment_interval" />
+		</td>
+		<td>
+		{member.memberPaymentInterval}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_payment_method" />
+		</td>
+		<td>
+		{member.memberPaymentMethod}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_first_payment_date" />
+		</td>
+		<td>
+		{member.memberFirstPaymentDate -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_account_owner" />
+		</td>
+		<td>
+		{member.memberAccountOwner}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_i_b_a_n" />
+		</td>
+		<td>
+		{member.memberIBAN}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_b_i_c" />
+		</td>
+		<td>
+		{member.memberBIC}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_mandate_reference" />
+		</td>
+		<td>
+		{member.memberMandateReference}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_mandate_valid" />
+		</td>
+		<td>
+		{member.memberMandateValid -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_copy_mandate" />
+		</td>
+		<td>
+				<a href="{member.memberCopyMandate.originalResource.publicUrl}">
+					{member.memberCopyMandate.originalResource.name}
+				</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_note" />
+		</td>
+		<td>
+		{member.memberNote}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_i_d" />
+		</td>
+		<td>
+		{member.memberID}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_entry_date" />
+		</td>
+		<td>
+		{member.memberEntryDate -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_leaving_date" />
+		</td>
+		<td>
+		{member.memberLeavingDate -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_photo" />
+		</td>
+		<td>
+				<f:image src="{member.memberPhoto.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.membership_application" />
+		</td>
+		<td>
+				<a href="{member.membershipApplication.originalResource.publicUrl}">
+					{member.membershipApplication.originalResource.name}
+				</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.membership_resignation" />
+		</td>
+		<td>
+				<a href="{member.membershipResignation.originalResource.publicUrl}">
+					{member.membershipResignation.originalResource.name}
+				</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_attachments" />
+		</td>
+		<td>
+				<f:for each="{member.memberAttachments}" as="file" >
+					<a href="{file.originalResource.publicUrl}">
+						{file.originalResource.name}
+					</a>
+				</f:for>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_dashboard_layout" />
+		</td>
+		<td>
+		{member.memberDashboardLayout}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_is_admin" />
+		</td>
+		<td>
+		{member.memberIsAdmin}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_member.member_folder" />
+		</td>
+		<td>
+		{member.memberFolder}
+		</td>
+	</tr>
+</table>
+</html>

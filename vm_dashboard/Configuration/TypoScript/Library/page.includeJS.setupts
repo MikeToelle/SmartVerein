@@ -1,0 +1,48 @@
+page.includeJSLibs{
+	# JQuery
+	jquery = https://code.jquery.com/jquery-3.2.1.min.js
+	jquery.forceOnTop = 1
+}
+#TODO Ladereihenfolge ändern DATATABLES
+page.includeJSFooterlibs {
+
+	# Color Palette
+	palette = {$resDir}/Public/JavaScript/Libs/colorpalette/palette.js
+
+	moments = {$resDir}/Public/JavaScript/Libs/moment/moment-with-locales.min.js
+	moment-de = {$resDir}/Public/JavaScript/Libs/moment/locale/de.js
+	pace = {$resDir}/Public/JavaScript/Libs/pace/pace.min.js
+	bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+	bootstrap-toggle = {$resDir}/Public/JavaScript/Libs/bootstrapToogle/bootstrap-toggle.min.js
+	chartjs = https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js
+	slimScroll = {$resDir}/Public/JavaScript/Libs/slimscroll/slimscroll.min.js
+	select2 = {$resDir}/Public/JavaScript/Libs/select2/select2.min.js
+	select2de = {$resDir}/Public/JavaScript/Libs/select2/i18n/de.js
+	dropzone = {$resDir}/Public/JavaScript/Libs/fileuploader/jquery.ezdz.js
+	#DataTables JS
+	dataTableZip = https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js
+	dataTablePDF1 = {$resDir}/Public/JavaScript/Libs/dataTable/pdfmake.min.js
+	dataTablePDF2 = {$resDir}/Public/JavaScript/Libs/dataTable/vfs_fonts.js
+	dataTables = {$resDir}/Public/JavaScript/Libs/dataTable/jquery.dataTables.min.js
+	dataTableBS = {$resDir}/Public/JavaScript/Libs/dataTable/dataTables.bootstrap.min.js
+	dataTableButtons = {$resDir}/Public/JavaScript/Libs/dataTable/dataTables.buttons.min.js
+	dataTable2 = {$resDir}/Public/JavaScript/Libs/dataTable/buttons.bootstrap.min.js
+	dataTablesVis = {$resDir}/Public/JavaScript/Libs/dataTable/buttons.colVis.min.js
+	dataTableDate = {$resDir}/Public/JavaScript/Libs/dataTable/datetime-moment.js
+	dataTableHTML = {$resDir}/Public/JavaScript/Libs/dataTable/buttons.html5.min.js
+	dataTablesPrint = {$resDir}/Public/JavaScript/Libs/dataTable/buttons.print.min.js
+	dataTablesres1 = {$resDir}/Public/JavaScript/Libs/dataTable/dataTables.responsive.min.js
+	dataTablesres2 = {$resDir}/Public/JavaScript/Libs/dataTable/responsive.bootstrap.min.js
+	passwordGen = {$resDir}/Public/JavaScript/Libs/password-generator/password-generator.min.js
+
+	datepicker = {$resDir}/Public/JavaScript/Libs/bootstrap DateTimePicker/bootstrap-datepicker.js
+	datepickerDE = {$resDir}/Public/JavaScript/Libs/bootstrap DateTimePicker/locals/bootstrap-datepicker.de.min.js
+	datetimepicker = {$resDir}/Public/JavaScript/Libs/bootstrap DateTimePicker/bootstrap-datetimepicker.min.js
+
+	dashboard_app = {$resDir}/Public/JavaScript/Libs/adminlte.js
+}
+
+page.includeJSFooter {
+	dashboard = {$resDir}/Public/JavaScript/dashboard.js
+
+}

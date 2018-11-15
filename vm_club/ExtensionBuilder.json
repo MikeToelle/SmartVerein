@@ -1,0 +1,270 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    59,
+                    80
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": []
+                },
+                "name": "Club",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": false,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "Master data of the club.",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1428888884026"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Fullname of the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "clubName",
+                            "propertyType": "String",
+                            "uid": "21673158297"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Shortname of the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubShortName",
+                            "propertyType": "String",
+                            "uid": "603105862300"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Street of the club address.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubStreet",
+                            "propertyType": "String",
+                            "uid": "408535644708"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Zipcode of the club address.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubZipCode",
+                            "propertyType": "String",
+                            "uid": "815515923499"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "City of the club address.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubCity",
+                            "propertyType": "String",
+                            "uid": "1422014330518"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Phonenuber of the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubPhone",
+                            "propertyType": "String",
+                            "uid": "387115820893"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Email address of the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubEmail",
+                            "propertyType": "String",
+                            "uid": "1072607571761"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Website address of the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubWebsite",
+                            "propertyType": "String",
+                            "uid": "1324000289490"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Tax number for the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubTaxNumber",
+                            "propertyType": "String",
+                            "uid": "209590786404"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "VAT number for the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubVatNumber",
+                            "propertyType": "String",
+                            "uid": "1231336881617"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Registration Court of the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubRegistrationCourt",
+                            "propertyType": "String",
+                            "uid": "420635547420"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Registration number for the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubRegistrationNumber",
+                            "propertyType": "String",
+                            "uid": "702489318770"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "IBAN of the club account.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubIBAN",
+                            "propertyType": "String",
+                            "uid": "798121028815"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "BIC of the club account.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubBIC",
+                            "propertyType": "String",
+                            "uid": "1295656505926"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Devout-identification number for the club.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubDId",
+                            "propertyType": "String",
+                            "uid": "1278140679980"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Organisation the club belongs to.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubOrganisation",
+                            "propertyType": "String",
+                            "uid": "766325945982"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "ID number of the club from the organisation.",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubOrganisationNumber",
+                            "propertyType": "String",
+                            "uid": "98765899512"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "Logo of the Club",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "clubLogo",
+                            "propertyType": "Image",
+                            "uid": "210170838440"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Club module for Vereinsmeier.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": true,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "vm_club",
+        "name": "Vereinsmeier - Club module",
+        "originalExtensionKey": "vm_club",
+        "originalVendorName": "Typo3graf",
+        "persons": [
+            {
+                "company": "",
+                "email": "development@typo3gtraf.de",
+                "name": "Typo3graf Developer-Team",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Club => list, show",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "clubmanager",
+                "name": "Club"
+            }
+        ],
+        "vendorName": "Typo3graf"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-03-06 01:57",
+        "extension_builder_version": "7.6.18",
+        "be_user": "Typo3graf media-agentur (1)"
+    }
+}

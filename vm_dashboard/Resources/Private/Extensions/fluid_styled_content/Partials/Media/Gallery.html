@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{gallery.rows}">
+	<f:switch expression="{gallery.count.columns}">
+		<f:case value="1">
+			<f:variable name="imageColumnClass">col-xs-12</f:variable>
+		</f:case>
+		<f:case value="2">
+			<f:variable name="imageColumnClass">col-md-6 col-xs-12</f:variable>
+		</f:case>
+		<f:case value="3">
+			<f:variable name="imageColumnClass">col-md-4 col-sm-4 col-xs-4</f:variable>
+		</f:case>
+		<f:case value="4">
+			<f:variable name="imageColumnClass">col-md-3 col-sm-3 col-xs-6</f:variable>
+		</f:case>
+		<f:case value="6">
+			<f:variable name="imageColumnClass">col-md-2 col-sm-3 col-xs-4</f:variable>
+		</f:case>
+		<f:defaultCase>
+			<f:variable name="imageColumnClass">col-xs-12</f:variable>
+		</f:defaultCase>
+	</f:switch>
+	<div class="ce-gallery{f:if(condition: data.imageborder, then: ' ce-border')}" data-ce-columns="{gallery.count.columns}" data-ce-images="{gallery.count.files}">
+		<f:if condition="{gallery.position.horizontal} == 'center'">
+			<div class="ce-outer">
+				<div class="ce-inner">
+		</f:if>
+		<f:for each="{gallery.rows}" as="row">
+			<div class="row">
+				<f:for each="{row.columns}" as="column">
+					<f:if condition="{column.media}">
+						<div class="{imageColumnClass}">
+							<f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
+						</div>
+					</f:if>
+				</f:for>
+			</div>
+		</f:for>
+		<f:if condition="{gallery.position.horizontal} == 'center'">
+				</div>
+			</div>
+		</f:if>
+	</div>
+</f:if>
+</html>

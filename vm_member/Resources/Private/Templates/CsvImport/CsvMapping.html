@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+		<f:flashMessages />
+
+	<f:form action="csvImport" enctype="multipart/form-data">
+		<f:form.hidden name="csvFile" value="{csvFile}" />
+		<table class="table">
+			<tr><th>Spalte der Datei</th><th>Bedeutung / Systemwert</th></tr>
+		<f:for each="{csvFields}" as="field" key="key">
+			<tr>
+				<td>{field}</td>
+				<td>
+					<select class="mapping" name="tx_vmmember_csvimport[mapping][{key}]"><option value="">-- Ignorieren --</option>
+					<f:for each="{sysDbFields}" as="item" key="itemkey">
+						<f:if condition="{field}=={itemkey}">
+							<f:then><option value="{item}" selected></f:then>
+							<f:else><option value="{item}" ></f:else>
+						</f:if>
+						{itemkey}</option>
+					</f:for>
+						</select>
+				</td>
+			</tr>
+		</f:for>
+			</table>
+
+		<f:form.submit value="Start Import" />
+	</f:form>
+
+</f:section>
+</html>

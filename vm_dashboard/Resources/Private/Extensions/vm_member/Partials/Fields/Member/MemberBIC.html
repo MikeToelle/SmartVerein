@@ -1,0 +1,15 @@
+<div class="form-group {vm:form.hasError(property:'memberBIC', then: 'has-error')}">
+	<label for="memberBIC">
+		<f:translate key="tx_vmmember_domain_model_member.member_b_i_c" />
+	</label>
+	<f:security.ifHasRole role="25">
+		<f:then>
+			<f:form.textfield property="memberBIC" class="form-control" readonly="true"/>
+		</f:then>
+		<f:else>
+			<f:form.textfield property="memberBIC" class="form-control" />
+		</f:else>
+	</f:security.ifHasRole>
+
+	<f:render partial="FieldErrors" arguments="{for: 'member.memberBIC'}" />
+</div>

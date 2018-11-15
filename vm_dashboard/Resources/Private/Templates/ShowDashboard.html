@@ -1,0 +1,22 @@
+{namespace vm = Typo3graf\VmDashboard\ViewHelpers}
+
+<f:switch expression="{dashboard.layout}">
+	<f:case value="20/80">
+		<f:render partial="DashboardGrids/20-80" arguments="{_all}"/>
+	</f:case>
+	<f:case value="80/20">
+		<f:render partial="DashboardGrids/80-20" arguments="{_all}"/>
+	</f:case>
+	<f:case value="50/25/25">
+		<f:render partial="DashboardGrids/50-25-25" arguments="{_all}"/>
+	</f:case>
+	<f:case value="25/50/25">
+		<f:render partial="DashboardGrids/25-50-25" arguments="{_all}"/>
+	</f:case>
+	<f:case value="25/25/50">
+		<f:render partial="DashboardGrids/25-25-50" arguments="{_all}"/>
+	</f:case>
+	<f:defaultCase>
+		<f:render partial="DashboardGrids/20-80" arguments="{_all}"/>
+	</f:defaultCase>
+</f:switch>

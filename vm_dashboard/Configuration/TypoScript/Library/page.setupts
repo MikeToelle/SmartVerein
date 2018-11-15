@@ -1,0 +1,93 @@
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+	partialRootPath = {$resDir}/Private/Partials
+	layoutRootPath = {$resDir}/Private/Layouts
+	file.stdWrap.cObject = CASE
+	file.stdWrap.cObject {
+		# slide the template
+		key.data = levelfield:-1, backend_layout_next_level, slide
+		key.override.field = backend_layout
+		# default template file
+		default = TEXT
+		default.value = {$resDir}/Private/Templates/Dashboard.html
+		# template file for backend-layout with ID 1
+		pagets__dashboard < .default
+		# template file for backend-layout with ID 2
+		pagets__landingpage = TEXT
+		pagets__landingpage.value = {$resDir}/Private/Templates/Landingpage.html
+		# template file for backend-layout with ID 3
+		pagets__memberarea = TEXT
+		pagets__memberarea.value = {$resDir}/Private/Templates/Memberarea.html
+	}
+	settings {
+		userPanel = {$userPanel}
+		sidebarSearchbox = {$sidebarSearchbox}
+		sidebarRight = {$sidebarRight}
+		breadcrumbs = {$breadcrumbs}
+	}
+	##########################
+	### DATA PREPROCESSING ###
+	##########################
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+		10 {
+			special = directory
+			special.value = 2
+			levels = 7
+			as = menuMain
+			includeSpacer = 1
+		}
+
+		50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+		50 {
+			special = rootline
+			special.range = 0|-1
+			includeNotInMenu = 0
+			as = menuBreadcrumb
+		}
+	}
+}
+
+[page|backend_layout = default][page|backend_layout = pagets__dashboard]
+	page.bodyTag >
+	page.bodyTagCObject = COA
+	page.bodyTagCObject.wrap = <body class="hold-transition skin-blue sidebar-mini fixed"|>
+[global]
+
+[page | backend_layout = pagets__landingpage]
+	page.bodyTagCObject = COA
+	page.bodyTagCObject {
+		10 = FILES
+		10.references {
+			table = pages
+			uid.data = page:uid
+			fieldName = media
+		}
+
+		10.renderObj = TEXT
+		10.renderObj {
+			data = file:current:publicUrl
+			wrap = background-image:url(/|); background-repeat:no-repeat; background-position:center top;
+		}
+	}
+
+	page.bodyTagCObject.wrap = <body style="|">
+[global]
+
+[page | backend_layout = pagets__memberarea]
+	page.headerData {
+		10 = TEXT
+		10 {
+			value = <title>Mitgliederbereich - {$vereinsname}</title>
+		}
+
+	}
+
+[globalVar = TSFE:id={$vm_loginPage}]
+	page.headerData {
+		10 = TEXT
+		10 {
+			value = <title>{$vereinsname} - Login</title>
+		}
+[global]

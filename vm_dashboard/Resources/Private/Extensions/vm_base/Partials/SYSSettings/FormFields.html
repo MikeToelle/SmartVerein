@@ -1,0 +1,43 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="row">
+	<div class="col-md-9">
+<f:render partial="Fields/SysSettings/MemberIdFormat" arguments="{_all}"/>
+	</div>
+	<div class="col-md-3">
+	</div>
+</div>
+<f:render partial="Fields/SysSettings/AutoMemberId" arguments="{_all}"/>
+<f:render partial="Fields/SysSettings/SupplementMemberId" arguments="{_all}"/>
+<f:render partial="Fields/SysSettings/ClubAnniversaries" arguments="{_all}"/>
+<f:render partial="Fields/SysSettings/SentAnniversariesEmail" arguments="{_all}"/>
+<f:render partial="Fields/SysSettings/ShowMemberBirthdays" arguments="{_all}"/>
+<f:render partial="Fields/SysSettings/SentBirthdayEmail" arguments="{_all}"/>
+
+<!-- Modal placeholder -->
+<div class="modal fade" id="placeholder" tabindex="-1" role="dialog" aria-labelledby="placeholder">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Platzhalter</h4>
+			</div>
+			<div class="modal-body">
+				<f:alias map="{ocb: '{', ccb: '}'}">
+					<ul>
+						<li>{ocb}n{ccb} : Zufallszahl</li>
+						<li>{ocb}a{ccb} : Zufallsgroßbuchstabe</li>
+						<li>{ocb}M{ccb}: Eintrittsmonat</li>
+						<li>{ocb}Y{ccb}: Eintrittsjahr zweistellig</li>
+						<li>{ocb}VN{ccb}: Erster Buchstabe Vorname</li>
+						<li>{ocb}NN{ccb}: Erster Buchstabe Nachname</li>
+					</ul>
+					<b>Voreinstellung: {ocb}M{ccb}{ocb}Y{ccb}-{ocb}n{ccb}{ocb}n{ccb}{ocb}n{ccb}{ocb}n{ccb}</b>
+					</f:alias>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</html>

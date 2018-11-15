@@ -1,0 +1,15 @@
+<div class="form-group">
+	<label for="memberPaymentInterval">
+		<f:translate key="tx_vmmember_domain_model_member.member_payment_interval" />
+	</label>
+	<f:security.ifHasRole role="25">
+	<f:then>
+		<f:form.select class="form-control" property="memberPaymentInterval" options="{selectOptions.intervall}" optionValueField="id" optionLabelField="interval" disabled="true" />
+	</f:then>
+	<f:else>
+		<f:form.select class="form-control" property="memberPaymentInterval" options="{selectOptions.intervall}" optionValueField="id" optionLabelField="interval" />
+	</f:else>
+</f:security.ifHasRole>
+
+
+</div>

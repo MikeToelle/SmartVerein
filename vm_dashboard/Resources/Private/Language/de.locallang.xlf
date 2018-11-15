@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages"
+		  date="2018-03-28T09:53:38Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="cancel" approved="yes">
+				<source>Cancel</source>
+				<target>Abbrechen</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.dashboard" approved="yes">
+				<source>Allow access to the VereinMeister dashboard</source>
+				<target>Zugriff auf die VereinMeister-Oberfläche erlauben</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.emailSend" approved="yes">
+				<source>Inform users via email about the new credentials</source>
+				<target>Benutzer per Email über die neuen Anmeldedaten informieren</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.header" approved="yes">
+				<source>Change login data</source>
+				<target>Zugangsdaten ändern</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.message" approved="yes">
+				<source>Here you can change the access data, with which the member logs in the system.</source>
+				<target>Hier kannst du die Zugangsdaten verändern, mit denen sich das Mitglied im System anmeldet.
+				</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.password" approved="yes">
+				<source>Password</source>
+				<target>Passwort</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.repeatPassword" approved="yes">
+				<source>Repeat password</source>
+				<target>Passwort wiederholen</target>
+			</trans-unit>
+			<trans-unit id="dashboard.loginData.user" approved="yes">
+				<source>Username or E-mail</source>
+				<target>Benutzername oder E-Mail</target>
+			</trans-unit>
+			<trans-unit id="dashboard.modal.deleteMemberHeader" approved="yes">
+				<source>Delete member</source>
+				<target>Mitglied entfernen</target>
+			</trans-unit>
+			<trans-unit id="dashboard.modal.deleteMemberMessage" approved="yes">
+				<source>Under &quot;Member Profile&quot;, you can instead set the exit date so that the member will be
+					listed as &quot;former&quot; in the future. Former members are skipped automatically for all
+					actions, they only appear in the member list.
+				</source>
+				<target>Unter &quot;Mitgliederprofil&quot; kannst du stattdessen das Austrittsdatum setzen, sodass das
+					Mitglied in Zukunft als &quot;ausgetreten&quot; gelistet wird. Ausgetretene Mitglieder werden bei
+					allen Aktionen automatisch ausgelassen, diese erscheinen nur noch in der Mitgliederliste.
+				</target>
+			</trans-unit>
+			<trans-unit id="dashboard.modal.deleteMemberNote" approved="yes">
+				<source>It is not recommended to delete members</source>
+				<target>Es wird nicht empfohlen Mitglieder zu löschen!</target>
+			</trans-unit>
+			<trans-unit id="dashboard.modal.passwordMessage" approved="yes">
+				<source>Please note the password or choose the option &quot;send by e-mail&quot;. The new password
+					becomes active when you save the access data.
+				</source>
+				<target>Bitte notiere das Passwort oder wähle die Option &quot;per E-Mail versenden&quot;. Das neue
+					Passwort wird mit dem Speichern der Zugangsdaten aktiv.
+				</target>
+			</trans-unit>
+			<trans-unit id="dashboard.modal.passwordNote" approved="yes">
+				<source>The password has not been saved yet!</source>
+				<target>Das Passwort wurde noch nicht gespeichert!</target>
+			</trans-unit>
+			<trans-unit id="dashboard.modal.passwordTitle" approved="yes">
+				<source>Password generated</source>
+				<target>Password wurde generiert</target>
+			</trans-unit>
+			<trans-unit id="dashboard.select.pleaseChoose" approved="yes">
+				<source>Please choose</source>
+				<target>Bitte wählen...</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.address" approved="yes">
+				<source>Address</source>
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.association" approved="yes">
+				<source>Association</source>
+				<target>Verband</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.bankDetails" approved="yes">
+				<source>Bank details</source>
+				<target>Bankverbindung</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.clubLogo" approved="yes">
+				<source>Club logo</source>
+				<target>Vereins Logo</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.contact" approved="yes">
+				<source>Contact</source>
+				<target>Kontaktdaten</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.morePersonalData" approved="yes">
+				<source>More personal data</source>
+				<target>weitere persönliche Angaben</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.personalData" approved="yes">
+				<source>Personal data</source>
+				<target>Persönliche Angaben</target>
+			</trans-unit>
+			<trans-unit id="dashboard.subHeader.sepa" approved="yes">
+				<source>SEPA direct debit mandate</source>
+				<target>SEPA Lastschriftmandat</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.bankData" approved="yes">
+				<source>Bank and SEPA</source>
+				<target>Bank und SEPA</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.clubData" approved="yes">
+				<source>Club Data</source>
+				<target>Vereinsdaten</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.contributions" approved="yes">
+				<source>Contribution / Bank details</source>
+				<target>Beiträge/Bankverbindung</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.defaultData" approved="yes">
+				<source>Default Data</source>
+				<target>Stammdaten</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.editHistory" approved="yes">
+				<source>Edit history</source>
+				<target>Bearbeitungsverlauf</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.memberDocuments" approved="yes">
+				<source>Member Documents</source>
+				<target>Mitglieder Dokumente</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.memberHistory" approved="yes">
+				<source>Member history</source>
+				<target>Mitglieder Historie</target>
+			</trans-unit>
+			<trans-unit id="dashboard.tab.registerCourt" approved="yes">
+				<source>Tax office/Register court</source>
+				<target>Finanzamt/Amtsgericht</target>
+			</trans-unit>
+			<trans-unit id="dashboard.text.accountOwner" approved="yes">
+				<source>Alternative account holder</source>
+				<target>abweichender Kontoinhaber</target>
+			</trans-unit>
+			<trans-unit id="dashboard.text.age" approved="yes">
+				<source>Age</source>
+				<target>Alter</target>
+			</trans-unit>
+			<trans-unit id="dashboard.text.lastModified" approved="yes">
+				<source>Last modified</source>
+				<target>Zuletzt bearbeitet</target>
+			</trans-unit>
+			<trans-unit id="dashboard.text.memberSince" approved="yes">
+				<source>Member since</source>
+				<target>Mitglied seit</target>
+			</trans-unit>
+			<trans-unit id="dashboard.text.years" approved="yes">
+				<source>years</source>
+				<target>Jahre</target>
+			</trans-unit>
+			<trans-unit id="dashboard.text.years2" approved="yes">
+				<source>year(s)</source>
+				<target>Jahr(e)</target>
+			</trans-unit>
+			<trans-unit id="delete" approved="yes">
+				<source>Delete</source>
+				<target>Löschen</target>
+			</trans-unit>
+			<trans-unit id="deleteMember" approved="yes">
+				<source>delete member</source>
+				<target>Mitglied entfernen</target>
+			</trans-unit>
+			<trans-unit id="generate" approved="yes">
+				<source>generate</source>
+				<target>generieren</target>
+			</trans-unit>
+			<trans-unit id="memberlist.address" approved="yes">
+				<source>Address</source>
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="memberlist.bankDetails" approved="yes">
+				<source>Bank details</source>
+				<target>Bankverbindung</target>
+			</trans-unit>
+			<trans-unit id="memberlist.birthday" approved="yes">
+				<source>Birthday</source>
+				<target>Geburtstag</target>
+			</trans-unit>
+			<trans-unit id="memberlist.email" approved="yes">
+				<source>Email</source>
+				<target>E-Mail</target>
+			</trans-unit>
+			<trans-unit id="memberlist.entryDate" approved="yes">
+				<source>Entry date</source>
+				<target>Einrittsdatum</target>
+			</trans-unit>
+			<trans-unit id="memberlist.leavingDate" approved="yes">
+				<source>Leaving Date</source>
+				<target>Austrittsdatum</target>
+			</trans-unit>
+			<trans-unit id="memberlist.memberID" approved="yes">
+				<source>Member ID</source>
+				<target>Mitgliedsnr.</target>
+			</trans-unit>
+			<trans-unit id="memberlist.name" approved="yes">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="memberlist.telephone" approved="yes">
+				<source>Telephone</source>
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="newMember" approved="yes">
+				<source>add Member</source>
+				<target>Mitglied anlegen</target>
+			</trans-unit>
+			<trans-unit id="save" approved="yes">
+				<source>Save</source>
+				<target>Speichern</target>
+			</trans-unit>
+			<trans-unit id="understand" approved="yes">
+				<source>Understand</source>
+				<target>Verstanden</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

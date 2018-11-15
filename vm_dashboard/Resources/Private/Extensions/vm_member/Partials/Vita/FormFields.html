@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="vitaTitle">
+	<f:translate key="tx_vmmember_domain_model_vita.vita_title" />
+</label><br />
+	<f:form.textfield property="vitaTitle" /><br />
+<label for="vitaDescription">
+	<f:translate key="tx_vmmember_domain_model_vita.vita_description" />
+</label><br />
+	<f:form.textarea property="vitaDescription" cols="40" rows="15" /><br />
+<label for="vitaDate">
+	<f:translate key="tx_vmmember_domain_model_vita.vita_date" />
+</label><br />
+	<f:form.textfield property="vitaDate" value="{vita.vitaDate->f:format.date()}" /><br />
+<label for="vitaIs">
+	<f:translate key="tx_vmmember_domain_model_vita.vita_is" />
+</label><br />
+	<f:form.textfield property="vitaIs" /><br />
+</html>

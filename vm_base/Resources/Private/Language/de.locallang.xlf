@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-03-29T23:28:16Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="tx_vm_base_domain_model_fesettings" approved="yes">
+			<source>FE Settings</source>
+			<target>FE-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings" approved="yes">
+			<source>Member Area Settings</source>
+			<target>Mitgliedsbereich-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings" approved="yes">
+			<source>Systems Settings</source>
+			<target>System-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_fesettings" approved="yes">
+			<source>F E Settings</source>
+			<target>FE-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_fesettings.my_profil" approved="yes">
+			<source>My Profil</source>
+			<target>Mein Profil</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings" approved="yes">
+			<source>M A Settings</source>
+			<target>Mitgliedsbereich-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.edit_own_member_data" approved="yes">
+			<source>Edit Own Member Data</source>
+			<target>Eigene Daten bearbeiten</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.show_bulletin_board" approved="yes">
+			<source>Show Bulletin Board</source>
+			<target>Schwarzes Brett</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.show_club_finances" approved="yes">
+			<source>Show Club Finances</source>
+			<target>Zugriff auf Buchhaltung erlauben</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.show_download_area" approved="yes">
+			<source>Show Download Area</source>
+			<target>Dateifreigabe</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.show_events" approved="yes">
+			<source>Show Events</source>
+			<target>Veranstaltungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.show_member_list_all" approved="yes">
+			<source>Show Member List All</source>
+			<target>Zugriff auf Mitgliederliste freigeben</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_masettings.show_member_list_by_groups" approved="yes">
+			<source>Show Member List By Groups</source>
+			<target>Zugriff auf Mitgliederlisten anhand Mitgliedschaftsgruppen einschränken</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_syssettings" approved="yes">
+			<source>S Y S Settings</source>
+			<target>System-Einstellungen</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_syssettings.auto_member_i_d" approved="yes">
+			<source>Auto Member I D</source>
+			<target>Mitgliedernummern automatisch vergeben</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_syssettings.club_anniversaries" approved="yes">
+			<source>Club Anniversaries</source>
+			<target>Vereinsjubiläen für Mitglieder</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_syssettings.member_i_d_format" approved="yes">
+			<source>Member I D Format</source>
+			<target>MItgliedsnummer Format</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_syssettings.show_member_birthdays" approved="yes">
+			<source>Show Member Birthdays</source>
+			<target>Geburtstage anzeigen</target>
+		</trans-unit>
+		<trans-unit id="tx_vmbase_domain_model_syssettings.supplement_member_i_d" approved="yes">
+			<source>Supplement Member I D</source>
+			<target>Mitgliedernummer für bestehende Mitglieder ergänzen</target>
+		</trans-unit>
+		<trans-unit id="widget.AtoZ.all" approved="yes">
+			<source>ALL</source>
+			<target>ALLE</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

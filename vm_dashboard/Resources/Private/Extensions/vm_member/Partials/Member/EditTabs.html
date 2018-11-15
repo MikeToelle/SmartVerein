@@ -1,0 +1,13 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<ul class="nav nav-tabs">
+	<li class="active"><a class="tab-link" href="#personalData" data-toggle="tab"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.defaultData" /></a></li>
+	<li {vm:security.deny(then: 'disabled', frontendUserGroup: 100)}><a class="tab-link" href="#clubData" data-toggle="tab"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.clubData" /></a></li>
+	<li><a class="tab-link" href="#contributionData" data-toggle="tab"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.contributions" /></a></li>
+	<li><a class="tab-link" href="#DSGVO" data-toggle="tab">DSGVO</a></li>
+	<li><a class="tab-link" href="#funktion" data-toggle="tab">Vereinsfunktionen</a></li>
+	<li><a class="tab-link" href="#documents" data-toggle="tab"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.memberDocuments" /></a></li>
+	<li><a class="tab-link" href="#memberHistory" data-toggle="tab"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.memberHistory" /></a></li>
+	<li><a class="tab-link" href="#editHistory" data-toggle="tab"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.tab.editHistory" /></a></li>
+</ul>
+</html>

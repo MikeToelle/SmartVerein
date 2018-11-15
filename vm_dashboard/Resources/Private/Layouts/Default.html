@@ -1,0 +1,21 @@
+<!-- SmartVerein Dashboard: Layout/Default.html [Begin] -->
+
+<div class="wrapper">
+
+	<!-- Main Header -->
+	<f:render partial="MainHeader/MainHeader" section="Default" arguments="{_all}"/>
+	<!-- Left side column. contains the logo and sidebar (left) -->
+	<f:render partial="Sidebars/SidebarLeft" section="Default" arguments="{_all}"/>
+	<f:render section="MainContent" />
+	<!-- Main Footer -->
+	<f:render partial="/Footer/Footer" section="Default" arguments="{_all}"/>
+	<!-- Control Sidebar (right) (optional)-->
+	<f:if condition="{settings.sidebarRight}">
+		<f:render partial="Sidebars/SidebarRight" section="Default" arguments="{_all}"/>
+	</f:if>
+</div> <!-- ./wrapper -->
+<!-- SmartVerein Dashboard: Layout/Default.html [End] -->
+
+<!-- REQUIRED JS Libs & SCRIPTS -->
+
+

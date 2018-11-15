@@ -1,0 +1,20 @@
+plugin.tx_vmclub_clubmanager {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_club/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_club/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_club/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_club_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+	settings {
+		loginPage = {$vm_loginPage}
+	}
+}

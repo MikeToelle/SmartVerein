@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-04T21:17:32Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+            <trans-unit id="widget0.title">
+                <source>Welcome</source>
+            </trans-unit>
+            <trans-unit id="widget0.description">
+                <source>Show a welcome message (until Dashboard is set).</source>
+            </trans-unit>
+            <trans-unit id="widget1.title">
+                <source>Member Overview</source>
+            </trans-unit>
+            <trans-unit id="widget1.description">
+                <source>Show the evolution of membership in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget2.title">
+                <source>Member Department Overview</source>
+            </trans-unit>
+            <trans-unit id="widget2.description">
+                <source>Show membership by departments in the Overview.</source>
+            </trans-unit>
+            <trans-unit id="widget3.title">
+                <source>Gender Overview</source>
+            </trans-unit>
+            <trans-unit id="widget3.description">
+                <source>Show the membership by gender in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget4.title">
+                <source>Birthdays Overview</source>
+            </trans-unit>
+            <trans-unit id="widget4.description">
+                <source>Show upcoming birthdays in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget5.title">
+                <source>Anniversary Overview</source>
+            </trans-unit>
+            <trans-unit id="widget5.description">
+                <source>Show upcoming anniversaries in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget6.title">
+                <source>Next Events Overview</source>
+            </trans-unit>
+            <trans-unit id="widget6.description">
+                <source>Show upcoming events in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget7.title">
+                <source>Next Events With Clubs</source>
+            </trans-unit>
+            <trans-unit id="widget7.description">
+                <source>Show upcoming events with friendly clubs in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget8.title">
+                <source>My Tasks</source>
+            </trans-unit>
+            <trans-unit id="widget8.description">
+                <source>Show your tasks in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget9.title">
+                <source>OverdueTasks</source>
+            </trans-unit>
+            <trans-unit id="widget9.description">
+                <source>Show overdue tasks in the overview.</source>
+            </trans-unit>
+            <trans-unit id="widget10.title">
+                <source>News about SmartVerein</source>
+            </trans-unit>
+            <trans-unit id="widget10.description">
+                <source>Show news about SmartVerein in the overview.</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

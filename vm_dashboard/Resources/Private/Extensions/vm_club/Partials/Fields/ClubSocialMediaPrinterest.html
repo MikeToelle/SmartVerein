@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubSocialMediaPrinterest">
+		<i class="fab fa-pinterest-square"></i> <f:translate key="tx_vmclub_domain_model_club.club_social_media_printerest" />
+	</label>
+	<f:security.ifHasRole role="10">
+		<f:then>
+			<f:form.textfield property="clubSocialMediaPrinterest" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubSocialMediaPrinterest" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="form-group"><label for="contributionRateTitle">
+	<f:translate key="tx_vmmember_domain_model_contributionrate.contribution_rate_title" /> <span class="required">*</span>
+</label>
+	<f:form.textfield property="contributionRateTitle" class="form-control"/>
+	<f:render partial="FieldErrors" arguments="{for: 'newContributionRate.contributionRateTitle'}" />
+</div>
+<div class="form-group">
+	<label for="contributionRateAmount">
+		<f:translate key="tx_vmmember_domain_model_contributionrate.contribution_rate_amount" /> <span class="required">*</span>
+	</label>
+	<f:form.textfield property="contributionRateAmount" class="form-control" />
+	<f:render partial="FieldErrors" arguments="{for: 'newContributionRate.contributionRateAmount'}" />
+</div>
+<div class="form-group">
+	<label for="contributeRateDescription">
+		<f:translate key="tx_vmmember_domain_model_contributionrate.contribute_rate_description" />
+	</label>
+	<f:form.textfield property="contributeRateDescription" class="form-control" />
+</div>
+<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> Beitragsatz hinzufügen</f:form.button>
+</html>

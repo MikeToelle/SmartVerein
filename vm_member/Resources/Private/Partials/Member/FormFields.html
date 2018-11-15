@@ -1,0 +1,146 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="memberLastname">
+	<f:translate key="tx_vmmember_domain_model_member.member_lastname" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="memberLastname" /><br />
+<label for="memberFirstname">
+	<f:translate key="tx_vmmember_domain_model_member.member_firstname" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="memberFirstname" /><br />
+<label for="memberFormOfAddress">
+	<f:translate key="tx_vmmember_domain_model_member.member_form_of_address" />
+</label><br />
+	<f:form.textfield property="memberFormOfAddress" /><br />
+<label for="memberTitle">
+	<f:translate key="tx_vmmember_domain_model_member.member_title" />
+</label><br />
+	<f:form.textfield property="memberTitle" /><br />
+<label for="memberStreet">
+	<f:translate key="tx_vmmember_domain_model_member.member_street" />
+</label><br />
+	<f:form.textfield property="memberStreet" /><br />
+<label for="memberZipCode">
+	<f:translate key="tx_vmmember_domain_model_member.member_zip_code" />
+</label><br />
+	<f:form.textfield property="memberZipCode" /><br />
+<label for="memberCity">
+	<f:translate key="tx_vmmember_domain_model_member.member_city" />
+</label><br />
+	<f:form.textfield property="memberCity" /><br />
+<label for="memberCountryZone">
+	<f:translate key="tx_vmmember_domain_model_member.member_country_zone" />
+</label><br />
+	<f:form.textfield property="memberCountryZone" /><br />
+<label for="memberCountry">
+	<f:translate key="tx_vmmember_domain_model_member.member_country" />
+</label><br />
+	<f:form.textfield property="memberCountry" /><br />
+<label for="memberPhone1">
+	<f:translate key="tx_vmmember_domain_model_member.member_phone1" />
+</label><br />
+	<f:form.textfield property="memberPhone1" /><br />
+<label for="memberPhone2">
+	<f:translate key="tx_vmmember_domain_model_member.member_phone2" />
+</label><br />
+	<f:form.textfield property="memberPhone2" /><br />
+<label for="memberMobile">
+	<f:translate key="tx_vmmember_domain_model_member.member_mobile" />
+</label><br />
+	<f:form.textfield property="memberMobile" /><br />
+<label for="memberEmail">
+	<f:translate key="tx_vmmember_domain_model_member.member_email" />
+</label><br />
+	<f:form.textfield property="memberEmail" /><br />
+<label for="memberBirthday">
+	<f:translate key="tx_vmmember_domain_model_member.member_birthday" />
+</label><br />
+	<f:form.textfield property="memberBirthday" value="{member.memberBirthday->f:format.date()}" /><br />
+<label for="memberWeddingDate">
+	<f:translate key="tx_vmmember_domain_model_member.member_wedding_date" />
+</label><br />
+	<f:form.textfield property="memberWeddingDate" value="{member.memberWeddingDate->f:format.date()}" /><br />
+<label for="memberMaritalStatus">
+	<f:translate key="tx_vmmember_domain_model_member.member_marital_status" />
+</label><br />
+	<f:form.textfield property="memberMaritalStatus" /><br />
+<label for="memberPaymentInterval">
+	<f:translate key="tx_vmmember_domain_model_member.member_payment_interval" />
+</label><br />
+	<f:form.textfield property="memberPaymentInterval" /><br />
+<label for="memberPaymentMethod">
+	<f:translate key="tx_vmmember_domain_model_member.member_payment_method" />
+</label><br />
+	<f:form.textfield property="memberPaymentMethod" /><br />
+<label for="memberFirstPaymentDate">
+	<f:translate key="tx_vmmember_domain_model_member.member_first_payment_date" />
+</label><br />
+	<f:form.textfield property="memberFirstPaymentDate" value="{member.memberFirstPaymentDate->f:format.date()}" /><br />
+<label for="memberAccountOwner">
+	<f:translate key="tx_vmmember_domain_model_member.member_account_owner" />
+</label><br />
+	<f:form.textfield property="memberAccountOwner" /><br />
+<label for="memberIBAN">
+	<f:translate key="tx_vmmember_domain_model_member.member_i_b_a_n" />
+</label><br />
+	<f:form.textfield property="memberIBAN" /><br />
+<label for="memberBIC">
+	<f:translate key="tx_vmmember_domain_model_member.member_b_i_c" />
+</label><br />
+	<f:form.textfield property="memberBIC" /><br />
+<label for="memberMandateReference">
+	<f:translate key="tx_vmmember_domain_model_member.member_mandate_reference" />
+</label><br />
+	<f:form.textfield property="memberMandateReference" /><br />
+<label for="memberMandateValid">
+	<f:translate key="tx_vmmember_domain_model_member.member_mandate_valid" />
+</label><br />
+	<f:form.textfield property="memberMandateValid" value="{member.memberMandateValid->f:format.date()}" /><br />
+<label for="memberCopyMandate">
+	<f:translate key="tx_vmmember_domain_model_member.member_copy_mandate" />
+</label><br />
+	<span>File upload is not implemented!</span><br /><br />
+<label for="memberNote">
+	<f:translate key="tx_vmmember_domain_model_member.member_note" />
+</label><br />
+	<f:form.textarea property="memberNote" cols="40" rows="15" /><br />
+<label for="memberID">
+	<f:translate key="tx_vmmember_domain_model_member.member_i_d" />
+</label><br />
+	<f:form.textfield property="memberID" /><br />
+<label for="memberEntryDate">
+	<f:translate key="tx_vmmember_domain_model_member.member_entry_date" />
+</label><br />
+	<f:form.textfield property="memberEntryDate" value="{member.memberEntryDate->f:format.date()}" /><br />
+<label for="memberLeavingDate">
+	<f:translate key="tx_vmmember_domain_model_member.member_leaving_date" />
+</label><br />
+	<f:form.textfield property="memberLeavingDate" value="{member.memberLeavingDate->f:format.date()}" /><br />
+<label for="memberPhoto">
+	<f:translate key="tx_vmmember_domain_model_member.member_photo" />
+</label><br />
+	<span>File upload is not implemented!</span><br  /><br />
+<label for="membershipApplication">
+	<f:translate key="tx_vmmember_domain_model_member.membership_application" />
+</label><br />
+	<span>File upload is not implemented!</span><br /><br />
+<label for="membershipResignation">
+	<f:translate key="tx_vmmember_domain_model_member.membership_resignation" />
+</label><br />
+	<span>File upload is not implemented!</span><br /><br />
+<label for="memberAttachments">
+	<f:translate key="tx_vmmember_domain_model_member.member_attachments" />
+</label><br />
+	<span>File upload is not implemented!</span><br /><br />
+<label for="memberDashboardLayout">
+	<f:translate key="tx_vmmember_domain_model_member.member_dashboard_layout" />
+</label><br />
+	<f:form.textarea property="memberDashboardLayout" cols="40" rows="15" /><br />
+<label for="memberIsAdmin">
+	<f:translate key="tx_vmmember_domain_model_member.member_is_admin" />
+</label><br />
+	<f:form.checkbox property="memberIsAdmin" value="1" /><br />
+<label for="memberFolder">
+	<f:translate key="tx_vmmember_domain_model_member.member_folder" />
+</label><br />
+	<f:form.textfield property="memberFolder" /><br />
+</html>

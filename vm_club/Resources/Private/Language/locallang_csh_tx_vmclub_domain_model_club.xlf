@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-08T14:48:49Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="club_b_i_c.description">
+			<source>BIC of the club account.</source>
+		</trans-unit>
+		<trans-unit id="club_bankname.description">
+			<source>Bank of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_city.description">
+			<source>City of the club address.</source>
+		</trans-unit>
+		<trans-unit id="club_d_id.description">
+			<source>Devout-identification number for the club.</source>
+		</trans-unit>
+		<trans-unit id="club_email.description">
+			<source>Email address of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_founding_year.description">
+			<source>Founding year of the club</source>
+		</trans-unit>
+		<trans-unit id="club_i_b_a_n.description">
+			<source>IBAN of the club account.</source>
+		</trans-unit>
+		<trans-unit id="club_logo.description">
+			<source>Logo of the Club</source>
+		</trans-unit>
+		<trans-unit id="club_name.description">
+			<source>Fullname of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_organisation.description">
+			<source>Organisation the club belongs to.</source>
+		</trans-unit>
+		<trans-unit id="club_organisation_number.description">
+			<source>ID number of the club from the organisation.</source>
+		</trans-unit>
+		<trans-unit id="club_phone.description">
+			<source>Phonenumber of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_registration_court.description">
+			<source>Registration Court of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_registration_number.description">
+			<source>Registration number for the club.</source>
+		</trans-unit>
+		<trans-unit id="club_short_name.description">
+			<source>Shortname of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_street.description">
+			<source>Street of the club address.</source>
+		</trans-unit>
+		<trans-unit id="club_tax_number.description">
+			<source>Tax number for the club.</source>
+		</trans-unit>
+		<trans-unit id="club_tax_office.description">
+			<source>Tax office of the club</source>
+		</trans-unit>
+		<trans-unit id="club_vat_number.description">
+			<source>VAT number for the club.</source>
+		</trans-unit>
+		<trans-unit id="club_website.description">
+			<source>Website address of the club.</source>
+		</trans-unit>
+		<trans-unit id="club_zip_code.description">
+			<source>Zipcode of the club address.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager">
+			<source>Club</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager.description">
+			<source>Club module for SmartVerein - Club management.</source>
+		</trans-unit>
+			<trans-unit id="club_social_media_facebook.description">
+				<source>Facebook Link of the club</source>
+			</trans-unit>
+			<trans-unit id="club_social_media_twitter.description">
+				<source>Twitter link of the club</source>
+			</trans-unit>
+			<trans-unit id="club_social_media_google.description">
+				<source>Google+ link of the club</source>
+			</trans-unit>
+			<trans-unit id="club_social_media_instagram.description">
+				<source>Instagram link of the club</source>
+			</trans-unit>
+			<trans-unit id="club_social_media_printerest.description">
+				<source>Printerest link of the club</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

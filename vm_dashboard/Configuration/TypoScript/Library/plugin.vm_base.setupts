@@ -1,0 +1,71 @@
+plugin.tx_vmbase_fesettings {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmbase_syssettings {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_storagePid}, {$vm_member_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmbase_masettings {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmbase_placeholderllist {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_base/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}

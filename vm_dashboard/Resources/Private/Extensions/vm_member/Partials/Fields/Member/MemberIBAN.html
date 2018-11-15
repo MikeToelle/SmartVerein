@@ -1,0 +1,15 @@
+<div class="form-group {vm:form.hasError(property:'memberIBAN', then: 'has-error')}">
+	<label for="memberIBAN">
+		<f:translate key="tx_vmmember_domain_model_member.member_i_b_a_n" />
+	</label>
+	<f:security.ifHasRole role="21">
+		<f:then>
+			<f:form.textfield property="memberIBAN" class="form-control" readonly="true"/>
+		</f:then>
+		<f:else>
+			<f:form.textfield property="memberIBAN" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+	<f:render partial="FieldErrors" arguments="{for: 'member.memberIBAN'}" />
+</div>

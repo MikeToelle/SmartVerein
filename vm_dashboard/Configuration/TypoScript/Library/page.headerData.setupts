@@ -1,0 +1,28 @@
+page.meta {
+	X-UA-Compatible = IE=edge
+	X-UA-Compatible.httpEquivalent = 1
+	viewport = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no
+}
+
+page.headerData {
+	1 = TEXT
+	1.value (
+		<link rel="apple-touch-icon" sizes="180x180" href="typo3conf/ext/vm_dashboard/Resources/Public/Icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="typo3conf/ext/vm_dashboard/Resources/Public/Icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="typo3conf/ext/vm_dashboard/Resources/Public/Icons/favicon-16x16.png">
+<link rel="manifest" href="typo3conf/ext/vm_dashboard/Resources/Public/Icons/site.webmanifest">
+<link rel="mask-icon" href="typo3conf/ext/vm_dashboard/Resources/Public/Icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="typo3conf/ext/vm_dashboard/Resources/Public/Icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="typo3conf/ext/vm_dashboard/Resources/Public/Icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-title" content="{$vereinsname} - Vereinsverwaltung"/>
+		<meta name="application-name" content="{$vereinsname} - Vereinsverwaltung"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	)
+	10 = TEXT
+	10 {
+		value = <title>{$vereinsname} - Vereinsverwaltung</title>
+	}
+}

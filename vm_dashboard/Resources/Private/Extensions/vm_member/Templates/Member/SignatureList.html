@@ -1,0 +1,154 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="main">
+
+    <br/><br/>
+    <f:flashMessages/>
+
+    <div class="box box-primary">
+        <div class="box-header">
+            <h4>Unterschriftenliste</h4>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive">
+            <f:render partial="Member/ListViewButton" arguments="{_all}"/>
+            <vm:widget.AtoZNav objects="{members}" as="sortedMembers" property="memberLastname">
+
+                <table id="memberlist" class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.memberID"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.name"/>
+                        </th>
+                        <th>Unterschrift</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <f:for each="{sortedMembers}" as="member">
+                        <f:if condition="{member.memberLeaving} != 1">
+                        <tr>
+                            <td>{member.memberID}</td>
+                            <td>{member.memberLastname} {member.memberFirstname}<br/>
+                            </td>
+                            <td></td>
+                        </tr>
+                        </f:if>
+                    </f:for>
+                    </tbody>
+                </table>
+            </vm:widget.AtoZNav>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+
+
+    <script type="text/javascript">
+        var header = 'Unterschriftenliste - {club.clubShortName}';
+        var subheader = 'Stand: {f:format.date(date: "now", format: "d.m.Y H:i")} Uhr';
+        var printFooter = '<b>{club.clubName} - {club.clubStreet} - {club.clubZipCode} {club.clubCity} -- <i class="fas fa-phone"></i> {club.clubPhone} - <i class="far fa-envelope"></i> {club.clubEmail}</b><br/><h6>Erstellt mit SmartVerein - https://www.typo3graf.de</h6>';
+        var clublogo = '';
+        var pdfFooter = '{club.clubName} - {club.clubStreet} - {club.clubZipCode} {club.clubCity} -- {club.clubPhone} - {club.clubEmail}\nErstellt mit SmartVerein - https://www.typo3graf.de';
+        var filename = 'Unterschriftenliste {f:format.date(date: "now", format: "d.m.Y")}';
+        // Member List Data Table
+        //$.fn.dataTable.moment( 'DD.MM.YYYY' );
+
+        $(document).ready(function () {
+            $('#memberlist').DataTable({
+
+                dom: 'lBfrtip',
+                stateSave: true,
+                buttons: [
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fas fa-file-pdf" aria-hidden="true"></i>',
+                        titleAttr: 'PDF',
+                        title: header,
+                        messageTop: subheader,
+                        messageBottom: pdfFooter,
+                        filename: filename,
+                        orientation: 'landscape',
+                        exportOptions: {
+                            columns: ':visible',
+                            /*format: {
+                             body: function ( data, row, column, node ) {
+                             return (column === 0)||(column === 2) ?
+                             data.replace(/<br\/>/ig, "\n") :
+                             data;
+                             }
+                             }*/
+
+
+                        }
+
+                    },
+                    {
+                        extend: 'print',
+                        text: '<i class="fas fa-print" aria-hidden="true"></i>',
+                        title: header,
+                        messageTop: subheader,
+                        messageBottom: printFooter,
+                        customize: function (win) {
+                            $(win.document.body)
+                                .css('font-size', '10pt')
+                                .prepend(
+                                    clublogo
+                                );
+                        },
+                        exportOptions: {
+                            columns: ':visible:not(.noVis)',
+                            stripHtml: false
+
+                        }
+                    },
+                ],
+                'paging': true,
+                'lengthChange': true,
+                'searching': true,
+                'order': [[1, 'asc']],
+                'ordering': true,
+                'info': true,
+                language: {
+                    "sEmptyTable": "Keine Daten in der Tabelle vorhanden",
+                    "sInfo": "_START_ bis _END_ von _TOTAL_ Einträgen",
+                    "sInfoEmpty": "0 bis 0 von 0 Einträgen",
+                    "sInfoFiltered": "(gefiltert von _MAX_ Einträgen)",
+                    "sInfoPostFix": "",
+                    "sInfoThousands": ".",
+                    "sLengthMenu": "_MENU_ Einträge/Seite",
+                    "sLoadingRecords": "Wird geladen...",
+                    "sProcessing": "Bitte warten...",
+                    "sSearch": "Suchen",
+                    "sZeroRecords": "Keine Einträge vorhanden.",
+                    "oPaginate": {
+                        "sFirst": "Erste",
+                        "sPrevious": "Zurück",
+                        "sNext": "Nächste",
+                        "sLast": "Letzte"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": aktivieren, um Spalte aufsteigend zu sortieren",
+                        "sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
+                    },
+                    select: {
+                        rows: {
+                            _: '%d Zeilen ausgewählt',
+                            0: 'Zum Auswählen auf eine Zeile klicken',
+                            1: '1 Zeile ausgewählt'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</f:section>
+</html>
+

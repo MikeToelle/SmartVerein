@@ -1,0 +1,16 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<div class="form-group {vm:form.hasError(property:'clubName', then: 'has-error')}">
+	<label for="clubName">
+		<f:translate key="tx_vmclub_domain_model_club.club_name" /> <span class="required">*</span>
+	</label>
+	<f:security.ifHasRole role="4">
+		<f:then>
+			<f:form.textfield property="clubName" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubName" class="form-control" />
+		</f:else>
+	</f:security.ifHasRole>
+
+	<f:render partial="FieldErrors" arguments="{for: 'club.clubName'}" />
+</div>

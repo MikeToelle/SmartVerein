@@ -1,0 +1,19 @@
+<div class="form-group">
+	<label for="memberFirstPaymentDate">
+		<f:translate key="tx_vmmember_domain_model_member.member_first_payment_date" />
+	</label>
+	<div class="input-group">
+		<div class="input-group-addon">
+			<i class="fas fa-calendar"></i>
+		</div>
+		<f:security.ifHasRole role="25">
+			<f:then>
+				<f:form.textfield id="paymentdate" class="form-control" property="memberFirstPaymentDate" value="{member.memberFirstPaymentDate->f:format.date()}" readonly="true" />
+			</f:then>
+			<f:else>
+				<f:form.textfield id="paymentdate" class="form-control" property="memberFirstPaymentDate" value="{member.memberFirstPaymentDate->f:format.date()}" />
+			</f:else>
+		</f:security.ifHasRole>
+
+	</div>
+</div>

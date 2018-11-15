@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="form-group">
+	<label for="salutationTitle">
+		<f:translate key="tx_vmmember_domain_model_salutation.salutation_title" /> <span class="required">*</span>
+	</label>
+	<f:form.textfield property="salutationTitle" class="form-control"/>
+	<f:render partial="FieldErrors" arguments="{for: 'salutation.salutationTitle'}" />
+</div>
+<div class="form-group">
+	<label for="salutationDescription">
+		<f:translate key="tx_vmmember_domain_model_salutation.salutation_description" />
+	</label><br />
+	<f:form.textfield property="salutationDescription" class="form-control" /><br />
+</div>
+<f:link.action action="salutationList" controller="Salutation" class="btn btn-default"><i class="fas fa-ban"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:cancel" /></f:link.action>
+<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> Briefanrede ändern</f:form.button>
+</html>

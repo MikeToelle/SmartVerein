@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberPhone1">
+		<f:translate key="tx_vmmember_domain_model_member.member_phone1" />
+	</label>
+	<f:security.ifHasRole role="21">
+		<f:then>
+			<f:form.textfield property="memberPhone1" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="memberPhone1" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

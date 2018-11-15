@@ -1,0 +1,35 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:vm_dashboard/Configuration/TypoScript/Library" extensions="constantsts">
+
+plugin.tx_vmdashboard_userpanel {
+	view {
+		# cat=plugin.tx_vmdashboard_init/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:vm_dashboard/Resources/Private/Templates/
+		# cat=plugin.tx_vmdashboard_init/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:vm_dashboard/Resources/Private/Partials/
+		# cat=plugin.tx_vmdashboard_init/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:vm_dashboard/Resources/Private/Layouts/
+	}
+	persistence {
+
+		storagePid = {$vm_club_storagePid}, {$vm_member_storagePid}
+		recursive = 1
+	}
+
+}
+
+plugin.tx_vmdashboard_dashboard {
+	view {
+
+		templateRootPath = {$plugin.tx_vmdashboard_userpanel.view.templateRootPath}
+
+		partialRootPath = {$plugin.tx_vmdashboard_userpanel.view.partialRootPath}
+
+		layoutRootPath = {$plugin.tx_vmdashboard_userpanel.view.layoutRootPath}
+	}
+	persistence {
+
+		storagePid = {$vm_club_storagePid}, {$vm_member_storagePid}
+		recursive = 1
+	}
+
+}

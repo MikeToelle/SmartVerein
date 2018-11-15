@@ -1,0 +1,68 @@
+plugin.tx_felogin_pi1 {
+	# Eigenes Template-File angeben
+	templateFile = EXT:vm_dashboard/Resources/Private/Extensions/felogin/FrontendLogin.html
+
+	# Ordner mit FE-Benutzern
+		storagePid = {$vm_login_storagePid}
+		recursive = 1
+
+	#feloginBaseURL = test8.typo3graf.de/
+	# Weiterleitungen
+	redirectMode = login
+	#redirectFirstMethod = 0
+	redirectPageLogin = {$vm_dashboardPage}
+	#redirectPageLoginError = 9
+	redirectPageLogout = {$vm_loginPage}
+	#redirectDisable = 0
+
+	# Wichtig für Weiterleitung. Wenn aktiviert, funktioniert diese nicht!
+	showLogoutFormAfterLogin = 0
+
+	showForgotPasswordLink = 1
+
+	# Evtl. vorhandene GET-Parameter erhalten
+	#preserveGETvars = all
+
+	welcomeHeader_stdWrap.wrap = <h1>|</h1>
+	welcomeMessage_stdWrap.wrap = <div class="hidden">|</div>
+	successHeader_stdWrap.wrap = <h1>|</h1>
+	successMessage_stdWrap.wrap = <p>|</p>
+	logoutHeader_stdWrap.wrap = <h1>|</h1>
+	logoutMessage_stdWrap.wrap = <div class="hidden">|</div>
+	errorHeader_stdWrap.wrap = <h1>|</h1>
+	errorMessage_stdWrap.wrap = <div class="alert alert-danger" role="alert">|</div>
+	forgotHeader_stdWrap.wrap = <h1>|</h1>
+	forgotMessage_stdWrap.wrap = <div class="alert alert-warning" role="alert">|</div>
+	forgotErrorMessage_stdWrap.wrap = <div class="alert alert-danger" role="alert">|</div>
+	forgotResetMessageEmailSentMessage_stdWrap.wrap = <div class="alert alert-success" role="alert">|</div>
+	changePasswordNotValidMessage_stdWrap.wrap = <div class="alert alert-danger" role="alert">|</div>
+	changePasswordTooShortMessage_stdWrap.wrap = <div class="alert alert-danger" role="alert">|</div>
+	changePasswordNotEqualMessage_stdWrap.wrap = <div class="alert alert-danger" role="alert">|</div>
+	changePasswordMessage_stdWrap.wrap = <div class="alert alert-warning" role="alert">|</div>
+	changePasswordDoneMessage_stdWrap.wrap = <div class="alert alert-success" role="alert">|</div>
+
+	# Email Einstellungen
+
+	email_from = {$emailfrom}
+	email_fromName = {$emailfromname}
+	replyTo = {$emailfrom}
+
+	_LOCAL_LANG.de {
+		ll_forgot_validate_reset_password (
+SmartVerein Password zurücksetzen.
+Hallo %s,
+
+Sie erhalten diese Nachricht, da Sie Ihr Passwort zurücksetzen lassen wollen. Zur Bestätigung bitte nachstehenden Link aufrufen:
+%s
+
+Aus Sicherheitsgründen ist dieser Link nur bis %s aktiv. Falls Sie den Link nicht bis dahin aufgerufen haben, müssen Sie die Schritte zum Zurücksetzen des Passworts wiederholen.
+
+Wenn Sie diese Änderung nicht veranlasst haben, ignorieren Sie diese E-Mail bitte.
+		)
+	}
+}
+[usergroup = 99]
+	plugin.tx_felogin_pi1 {
+		redirectPageLogin = {$vm_memberPage}
+		}
+[global]

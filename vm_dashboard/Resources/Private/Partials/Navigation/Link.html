@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:if condition="{mainItem.children}">
+	<f:then>
+		<a href="javascript:;">
+			<f:if condition="{mainItem.data.page_icon}">
+				<i class="{mainItem.data.page_icon}" aria-hidden="true"></i>
+			</f:if>
+			<span>{mainItem.title}</span>
+			<span class="pull-right-container">
+				<i class="fa fa-angle-left pull-right" aria-hidden="true"></i>
+			</span>
+	</f:then>
+	<f:else>
+		<a href="{mainItem.link}" target="{mainItem.target}">
+			<f:if condition="{mainItem.data.page_icon}">
+				<i class="{mainItem.data.page_icon}" aria-hidden="true"></i>
+			</f:if>
+			<span class="title">{mainItem.title}</span>
+	</f:else>
+</f:if>
+
+</a>
+
+</html>

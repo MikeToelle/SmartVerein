@@ -1,0 +1,22 @@
+mod.web_layout.BackendLayouts {
+  landingpage {
+    title = Landingpage
+    icon = EXT:vm_dashboard/Resources/Public/Images/BackendLayouts/Landingpage.svg
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Content-Area
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

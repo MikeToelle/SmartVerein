@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberReasonForLeaving">
+		Austrittsgrund
+	</label>
+	<f:security.ifHasRole role="23">
+		<f:then>
+			<f:form.textfield property="memberReasonForLeaving" class="form-control" readonly="true"/>
+		</f:then>
+		<f:else>
+			<f:form.textfield property="memberReasonForLeaving" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+	</div>

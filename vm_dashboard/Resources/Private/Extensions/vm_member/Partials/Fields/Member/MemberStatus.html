@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberStatus">
+		<f:translate key="tx_vmmember_domain_model_member.member_status" />
+	</label>
+	<f:security.ifHasRole role="23">
+		<f:then>
+			<f:form.select options="{status}"  class="form-control" property="memberStatus" optionLabelField="statusTitle" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}" disabled="true" />
+		</f:then>
+		<f:else>
+			<f:form.select options="{status}"  class="form-control" property="memberStatus" optionLabelField="statusTitle" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

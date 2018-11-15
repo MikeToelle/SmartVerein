@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-14T13:58:04Z" product-name="vm_member">
+		<header/>
+		<body>
+			<trans-unit id="tx_vm_member_domain_model_memberlist">
+				<source>Member List</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberlist.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil">
+				<source>Member Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="vita_title.description">
+				<source>Title of an vita event for a member.</source>
+			</trans-unit>
+			<trans-unit id="vita_description.description">
+				<source>Descrition of an vita event of a member.</source>
+			</trans-unit>
+			<trans-unit id="vita_date.description">
+				<source>vitaDate</source>
+			</trans-unit>
+			<trans-unit id="vita_is.description">
+				<source>vitaIs</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

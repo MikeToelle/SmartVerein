@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-05-17T21:24:45Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="editHistory.createNewMember">
+			<source>created the Member</source>
+		</trans-unit>
+		<trans-unit id="0">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="editHistory.dataChange">
+			<source>has changed the following data</source>
+		</trans-unit>
+		<trans-unit id="editHistory.deleteMember">
+			<source>deleted the member</source>
+		</trans-unit>
+		<trans-unit id="editHistory.memberCreate">
+			<source>Member created</source>
+		</trans-unit>
+		<trans-unit id="editHistory.memberDelete">
+			<source>Member deleted</source>
+		</trans-unit>
+		<trans-unit id="editHistory.memberUpdate">
+			<source>Member updated</source>
+		</trans-unit>
+		<trans-unit id="member.form.error">
+			<source>Error!</source>
+		</trans-unit>
+		<trans-unit id="member.form.errorText">
+			<source>Please check your form input.</source>
+		</trans-unit>
+		<trans-unit id="member.vita.event">
+			<source>Event</source>
+		</trans-unit>
+		<trans-unit id="member.vita.honor">
+			<source>Honor</source>
+		</trans-unit>
+		<trans-unit id="member.vita.joined">
+			<source>Joined the club.</source>
+		</trans-unit>
+			<trans-unit id="member.vita.leave">
+				<source>Left the club.</source>
+			</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberdata">
+			<source>Member Data</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberdata.description">
+			<source>Member data management module for Vereinsmeier.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberlist">
+			<source>Member List</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberlist.description">
+			<source>Member management module for Vereinsmeier.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberprofil">
+			<source>Member Profil</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberprofil.description">
+			<source>Member management module for Vereinsmeier.</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_adminrole">
+			<source>Admin Role</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_clubfunction">
+			<source>Club Function</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_clubfunction.function_description">
+			<source>Function Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_clubfunction.function_name">
+			<source>Function Name</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_contributionrate">
+			<source>Contribution Rate</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_contributionrate.contribute_rate_description">
+			<source>Contribute Rate Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_contributionrate.contribution_rate_amount">
+			<source>Contribution Rate Amount</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_contributionrate.contribution_rate_title">
+			<source>Contribution Rate Title</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department">
+			<source>Department</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department.department_description">
+			<source>Department Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department.department_has_employee">
+			<source>Department Has Employee</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department.department_has_workers">
+			<source>Department Has Workers</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department.department_logo">
+			<source>Department Logo</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department.department_name">
+			<source>Department Name</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_department.is_function_department">
+			<source>Is Function Department</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_departmentworkers">
+			<source>Department Workers</source>
+		</trans-unit>
+			<trans-unit id="tx_vmmember_domain_model_departmentworkers.department_worker_email">
+				<source>Department Worker Email</source>
+			</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_departmentworkers.club_function">
+			<source>Club Fuction</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_departmentworkers.department_worker">
+			<source>Department Worker</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_edithistory">
+			<source>Edit History</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_edithistory.edit_history_date_time">
+			<source>Edit History Date Time</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_edithistory.edit_history_description">
+			<source>Edit History Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_edithistory.edit_history_title">
+			<source>Edit History Title</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_edithistory.edit_history_user">
+			<source>Edit History User</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_employeefunction">
+			<source>Employee Function</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_employeefunction.employee_function">
+			<source>Employee Function</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_employeefunction.employee_member">
+			<source>Employee Member</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_families">
+			<source>Families</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_families.family_i_d">
+			<source>Family I D</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_families.family_members">
+			<source>Family Members</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_families.member_is_family_head">
+			<source>Member Is Family Head</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member">
+			<source>Member</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_account_owner">
+			<source>Member Account Owner</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_b_i_c">
+			<source>Member B I C</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_birthday">
+			<source>Member Birthday</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_city">
+			<source>Member City</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_contribution_rate">
+			<source>Member Contribution Rate</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_copy_mandate">
+			<source>Member Copy Mandate</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_country">
+			<source>Member Country</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_country_zone">
+			<source>Member Country Zone</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_dashboard_layout">
+			<source>Member Dashboard Layout</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_departments">
+			<source>Member Departments</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_edit_history">
+			<source>Member Edit History</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_email">
+			<source>Member Email</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_entry_date">
+			<source>Member Entry Date</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_first_payment_date">
+			<source>Member First Payment Date</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_firstname">
+			<source>Member Firstname</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_folder">
+			<source>Member Folder</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_form_of_address">
+			<source>Member Form Of Address</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_has_family">
+			<source>Member Has Family</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_i_b_a_n">
+			<source>Member I B A N</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_i_d">
+			<source>Member I D</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_is_admin">
+			<source>Member Is Admin</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_lastname">
+			<source>Member Lastname</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_leaving_date">
+			<source>Member Leaving Date</source>
+		</trans-unit>
+			<trans-unit id="tx_vmmember_domain_model_member.member_leaving">
+				<source>Member Leaving</source>
+			</trans-unit>
+			<trans-unit id="tx_vmmember_domain_model_member.member_reason_for_leaving">
+				<source>Member Reason For Leaving</source>
+			</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_login">
+			<source>Member Login</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_login_password_changed">
+			<source>Password changed</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_login_username">
+			<source>Username</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_mandate_reference">
+			<source>Member Mandate Reference</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_mandate_valid">
+			<source>Member Mandate Valid</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_marital_status">
+			<source>Member Marital Status</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_mobile">
+			<source>Member Mobile</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_note">
+			<source>Member Note</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_payment_interval">
+			<source>Member Payment Interval</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_payment_method">
+			<source>Member Payment Method</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_phone1">
+			<source>Member Phone1</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_phone2">
+			<source>Member Phone2</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_photo">
+			<source>Member Photo</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_salutation">
+			<source>Member Salutation</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_status">
+			<source>Member Status</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_street">
+			<source>Member Street</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_title">
+			<source>Member Title</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_vita">
+			<source>Member Vita</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_wedding_date">
+			<source>Member Wedding Date</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.member_zip_code">
+			<source>Member Zip Code</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.membership_application">
+			<source>Membership Application</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_memberdepartments">
+			<source>Member Departments</source>
+		</trans-unit>
+		<trans-unit id="0">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_member.membership_resignation">
+			<source>Membership Resignation</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_memberdepartment">
+			<source>Member Department</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_memberdepartment.member_department">
+			<source>Member Department</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_memberdepartments.member_department">
+			<source>Member Department</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_membershipstatus">
+			<source>Membership Status</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_membershipstatus.status_description">
+			<source>Status Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_membershipstatus.status_title">
+			<source>Status Title</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_salutation">
+			<source>Salutation</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_salutation.salutation_description">
+			<source>Salutation Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_salutation.salutation_title">
+			<source>Salutation Title</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_vita">
+			<source>Vita</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_vita.vita_date">
+			<source>Vita Date</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_vita.vita_description">
+			<source>Vita Description</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_vita.vita_is">
+			<source>Vita Is</source>
+		</trans-unit>
+		<trans-unit id="tx_vmmember_domain_model_vita.vita_title">
+			<source>Vita Title</source>
+		</trans-unit>
+		<trans-unit id="1">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="2">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="3">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		<trans-unit id="4">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="5">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="6">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="7">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		<trans-unit id="8">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="9">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="10">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="11">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		<trans-unit id="12">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="13">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="14">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="15">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		<trans-unit id="16">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="17">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="18">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="19">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		<trans-unit id="20">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="21">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="22">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="23">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		<trans-unit id="2343284">
+			<source>Username is not set.</source>
+		</trans-unit>
+		<trans-unit id="2344484">
+			<source>Password is not set.</source>
+		</trans-unit>
+		<trans-unit id="1221560718">
+			<source>Please enter a name.</source>
+		</trans-unit>
+		<trans-unit id="2343422434">
+			<source>Password and password confirmation do not match..</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

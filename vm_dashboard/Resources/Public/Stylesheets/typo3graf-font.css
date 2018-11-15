@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Typo3graf-Font';
+  src:  url('../Fonts/Typo3graf-Font.eot?1rpj8q');
+  src:  url('../Fonts/Typo3graf-Font.eot?1rpj8q#iefix') format('embedded-opentype'),
+    url('../Fonts/Typo3graf-Font.ttf?1rpj8q') format('truetype'),
+    url('../Fonts/Typo3graf-Font.woff?1rpj8q') format('woff'),
+    url('../Fonts/Typo3graf-Font.svg?1rpj8q#Typo3graf-Font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tg,
+.tgs,
+.tgr,
+.tgl,
+.tgb {
+  font-family: 'Typo3graf-Font' !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+.tg-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.tg-xs {
+  font-size: .75em; }
+
+.tg-sm {
+  font-size: .875em; }
+
+.tg-1x {
+  font-size: 1em; }
+
+.tg-2x {
+  font-size: 2em; }
+
+.tg-3x {
+  font-size: 3em; }
+
+.tg-4x {
+  font-size: 4em; }
+
+.tg-5x {
+  font-size: 5em; }
+
+.tg-6x {
+  font-size: 6em; }
+
+.tg-7x {
+  font-size: 7em; }
+
+.tg-8x {
+  font-size: 8em; }
+
+.tg-9x {
+  font-size: 9em; }
+
+.tg-10x {
+  font-size: 10em; }
+
+.tg-fw {
+  text-align: center;
+  width: 1.25em; }
+
+.tg-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0; }
+  .tg-ul > li {
+    position: relative; }
+
+.tg-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit; }
+
+.tg-border {
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+  padding: .2em .25em .15em; }
+
+.tg-pull-left {
+  float: left; }
+
+.tg-pull-right {
+  float: right; }
+
+.tg.tg-pull-left,
+.tgs.tg-pull-left,
+.tgr.tg-pull-left,
+.tgl.tg-pull-left,
+.tgb.tg-pull-left {
+  margin-right: .3em; }
+
+.tg.tg-pull-right,
+.tgs.tg-pull-right,
+.tgr.tg-pull-right,
+.tgl.tg-pull-right,
+.tgb.tg-pull-right {
+  margin-left: .3em; }
+
+.tg-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear; }
+
+.tg-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.tg-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.tg-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.tg-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+.tg-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.tg-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1); }
+
+.tg-flip-horizontal.tg-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1); }
+
+:root .tg-rotate-90,
+:root .tg-rotate-180,
+:root .tg-rotate-270,
+:root .tg-flip-horizontal,
+:root .tg-flip-vertical {
+  -webkit-filter: none;
+          filter: none; }
+
+.tg-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2em; }
+
+.tg-stack-1x,
+.tg-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
+.tg-stack-1x {
+  line-height: inherit; }
+
+.tg-stack-2x {
+  font-size: 2em; }
+
+.tg-inverse {
+  color: #fff; }
+
+.tg-typo3graf:before {
+  content: "\e90d";
+}
+.tg-reswiz:before {
+  content: "\e90e";
+}
+.tg-booking:before {
+  content: "\e90f";
+}
+.tg-booking-o:before {
+  content: "\e910";
+}
+.tg-cafe:before {
+  content: "\e911";
+}
+.tg-couple:before {
+  content: "\e912";
+}
+.tg-feedback:before {
+  content: "\e913";
+}
+.tg-fullscreen:before {
+  content: "\e914";
+  color: #4e4e50;
+}
+.tg-fullscreen-exit:before {
+  content: "\e915";
+  color: #4e4e50;
+}
+.tg-marketing:before {
+  content: "\e916";
+}
+.tg-reservation:before {
+  content: "\e917";
+}
+.tg-table:before {
+  content: "\e918";
+}
+.tg-users:before {
+  content: "\e919";
+}
+.tg-walk-in:before {
+  content: "\e91a";
+}
+.tg-vereinsmeier:before {
+  content: "\e91b";
+}
+.tg-clipboard:before {
+  content: "\e91c";
+}
+.tg-clipboard-tasks:before {
+  content: "\e900";
+}
+.tg-data-storage:before {
+  content: "\e901";
+}
+.tg-accounting:before {
+  content: "\e902";
+}
+.tg-addressbook:before {
+  content: "\e903";
+}
+.tg-calendar:before {
+  content: "\e904";
+}
+.tg-communication:before {
+  content: "\e91d";
+}
+.tg-club:before {
+  content: "\e905";
+}
+.tg-dashboard:before {
+  content: "\e906";
+}
+.tg-members:before {
+  content: "\e907";
+}
+.tg-integration:before {
+  content: "\e908";
+}
+.tg-protocol-o:before {
+  content: "\e909";
+}
+.tg-protocol:before {
+  content: "\e90a";
+}
+.tg-task-o:before {
+  content: "\e90b";
+}
+.tg-task:before {
+  content: "\e90c";
+}
+.tg-paragraph:before {
+  content: "\e91e";
+}
+.tg-abacus:before {
+  content: "\e91f";
+}
+.tg-school-abacus:before {
+  content: "\e920";
+}
+.tg-open-envelope-with-letter:before {
+  content: "\e921";
+}
+.tg-correspondence:before {
+  content: "\e922";
+}
+.tg-bills:before {
+  content: "\e923";
+}
+.tg-bulletin-board:before {
+  content: "\e924";
+}

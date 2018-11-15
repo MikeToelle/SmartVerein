@@ -1,0 +1,15 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+
+<f:security.ifHasRole role="21">
+	<f:then>
+
+	</f:then>
+	<f:else>
+		<label for="memberPhoto">
+			<f:translate key="tx_vmmember_domain_model_member.member_photo" />
+		</label>
+		<vm:form.upload property="memberPhoto.0" id="js-memberPhoto-upload" additionalAttributes="{accept: 'image/png, image/jpeg, image/gif, image/svg+xml'}">
+		</vm:form.upload>
+	</f:else>
+</f:security.ifHasRole>
+

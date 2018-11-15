@@ -1,0 +1,17 @@
+<div class="form-group">
+	<f:security.ifHasRole role="25">
+		<f:then>
+			<label for="accountowner">
+				<input {f:if(condition: member.memberAccountOwner, then: 'checked')} disabled="true" type="checkbox" id="accountowner" onclick="$('input#memberAccountOwner').toggle();"> &nbsp; <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.accountOwner" />
+			</label>
+			<f:form.textfield id="memberAccountOwner" property="memberAccountOwner" class="form-control" style="{f:if(condition: member.memberAccountOwner, then: '', else: 'display: none;')}" readonly="true"/>
+		</f:then>
+		<f:else>
+			<label for="accountowner">
+				<input {f:if(condition: member.memberAccountOwner, then: 'checked')} type="checkbox" id="accountowner" onclick="$('input#memberAccountOwner').toggle();"> &nbsp; <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.accountOwner" />
+			</label>
+			<f:form.textfield id="memberAccountOwner" property="memberAccountOwner" class="form-control" style="{f:if(condition: member.memberAccountOwner, then: '', else: 'display: none;')}"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

@@ -1,0 +1,18 @@
+<f:security.ifHasRole role="29">
+	<f:then>
+	</f:then>
+	<f:else>
+		<div class="form-group">
+			<label>
+				<f:form.checkbox checked="{member.memberIsAdmin}" disabled="{f:if(condition: FESettings.myProfil, then: 'true')}" id="adminrights" property="memberIsAdmin" value="true" onclick="$('#admingroups').toggle();" />
+				<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.loginData.dashboard" />
+			</label>
+			<f:form.select disabled="{f:if(condition: FESettings.myProfil, then: 'true')}" options="{usergroups}"  class="form-control" property="memberLogin.usergroup.0" optionLabelField="title" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}" prependOptionValue="99" id="admingroups" style="display: none;"/>
+			<br><label>
+			<f:form.checkbox property="isEmail" value="1"/>
+			<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.loginData.emailSend" />
+		</label>
+		</div>
+	</f:else>
+</f:security.ifHasRole>
+

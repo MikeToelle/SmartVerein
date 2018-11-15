@@ -1,0 +1,51 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:vm_dashboard/Configuration/TypoScript/Library" extensions="setupts">
+
+plugin.tx_vmdashboard_userpanel {
+	view {
+		templateRootPaths.0 = EXT:vm_dashboard/Resources/Private/Templates/
+		templateRootPaths.1 = {$plugin.tx_vmdashboard_userpanel.view.templateRootPath}
+		partialRootPaths.0 = EXT:vm_dashboard/Resources/Private/Partials/
+		partialRootPaths.1 = {$plugin.tx_vmdashboard_userpanel.view.partialRootPath}
+		layoutRootPaths.0 = EXT:vm_dashboard/Resources/Private/Layouts/
+		layoutRootPaths.1 = {$plugin.tx_vmdashboard_userpanel.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_vmdashboard_userpanel.persistence.storagePid}
+		recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+	settings {
+		clubPage = {$vm_clubPage}
+		profilPage = {$vm_profilPage}
+	}
+}
+
+plugin.tx_vmdashboard_dashboard {
+	view {
+		templateRootPaths.0 = EXT:vm_dashboard/Resources/Private/Templates/
+		templateRootPaths.1 = {$plugin.tx_vmdashboard_userpanel.view.templateRootPath}
+		partialRootPaths.0 = EXT:vm_dashboard/Resources/Private/Partials/
+		partialRootPaths.1 = {$plugin.tx_vmdashboard_userpanel.view.partialRootPath}
+		layoutRootPaths.0 = EXT:vm_dashboard/Resources/Private/Layouts/
+		layoutRootPaths.1 = {$plugin.tx_vmdashboard_userpanel.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$vm_member_storagePid},{$vm_department_storagePid}, {$vm_storagePid}
+		recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+	settings {
+		clubPage = {$vm_clubPage}
+		profilPage = {$vm_profilPage}
+	}
+}

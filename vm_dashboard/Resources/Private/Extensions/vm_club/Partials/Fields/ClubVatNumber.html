@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubVatNumber">
+		<f:translate key="tx_vmclub_domain_model_club.club_vat_number" />
+	</label>
+	<f:security.ifHasRole role="6">
+		<f:then>
+			<f:form.textfield property="clubVatNumber" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubVatNumber" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

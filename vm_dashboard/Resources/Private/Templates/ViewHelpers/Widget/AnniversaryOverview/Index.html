@@ -1,0 +1,41 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<div class="box box-primary hidden-xs">
+	<div class="box-header with-border">
+		<h4 class="box-title">Vereins Jubiläen</h4>
+		<div class="box-tools pull-right">
+			<button type="button" class="btn btn-box-tool" data-widget="collapse">
+				<i class="fa fa-minus"></i>
+			</button>
+			<i class="fa fa-question-circle helper" data-toggle="tooltip" title="Anstehende Vereins Jubiläen der Mitglieder"></i>
+		</div>
+	</div>
+	<div class="box-body limit-height">
+
+		<!-- the events -->
+		<ul class="products-list product-list-in-box">
+			<f:for each="{anniversaries}" as="anni">
+
+				<li class="item">
+					<div class="product-img">
+						<f:if condition="{anni.memberPhoto}">
+							<f:then>
+
+								<f:image image="{anni.memberPhoto.0}" alt="" class="img-responsive img-circle" width="45c" height="45c"/>
+							</f:then>
+							<f:else>
+								<f:image src="EXT:vm_dashboard/Resources/Public/Images/placeholder-man.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture"/>
+							</f:else>
+						</f:if>
+					</div>
+					<div class="product-info">
+						<f:link.action class="product-title" pageUid="6" action="editMember" controller="Member" pluginName="memberlist" extensionName="vmmember" arguments="{member : anni}">{anni.memberFirstname} {anni.memberLastname}</f:link.action>
+                              <span class="product-description">
+                                Mitglied seit {anni.memberEntryDate->f:format.date(format: 'd.m.Y')} <span class="label label-success pull-right"><vm:age date="{anni.memberEntryDate}" option="duration"/> Jahre</span>
+                              </span>
+					</div>
+				</li>
+			</f:for>
+		</ul>
+	</div>
+</div>
+

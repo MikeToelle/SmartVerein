@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-04-30T09:57:30Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="edit_own_member_data.description">
+			<source>Member can edit his own Data.</source>
+		</trans-unit>
+		<trans-unit id="show_bulletin_board.description">
+			<source>Show the bulletin board</source>
+		</trans-unit>
+		<trans-unit id="show_club_finances.description">
+			<source>Show the club finances</source>
+		</trans-unit>
+		<trans-unit id="show_download_area.description">
+			<source>Show the download area.</source>
+		</trans-unit>
+		<trans-unit id="show_events.description">
+			<source>Shows the event calendar.</source>
+		</trans-unit>
+		<trans-unit id="show_member_list_all.description">
+			<source>Shoes all members in list.</source>
+		</trans-unit>
+		<trans-unit id="show_member_list_by_groups.description">
+			<source>Shows meberlist only with mebergroups.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_fesettings">
+			<source>FE Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_fesettings.description">
+			<source>Basic functions for Vereinsmeier club management.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings">
+			<source>Member Area Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_masettings.description">
+			<source>Basic functions for Vereinsmeier club management.</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings">
+			<source>Systems Settings</source>
+		</trans-unit>
+		<trans-unit id="tx_vm_base_domain_model_syssettings.description">
+			<source>Basic functions for Vereinsmeier club management.</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

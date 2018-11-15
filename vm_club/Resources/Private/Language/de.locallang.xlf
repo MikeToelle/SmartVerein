@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-03-20T10:36:50Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="club.form.errorText" approved="yes">
+			<source>Please check your form input.</source>
+			<target>Bitte überprüfen Sie ihre Formulareingaben</target>
+		</trans-unit>
+		<trans-unit id="club.form.error" approved="yes">
+			<source>Error!</source>
+			<target>Fehler!</target>
+		</trans-unit>
+		<trans-unit id="newClub" approved="yes">
+			<source>Club successfully created!</source>
+			<target>Verein erfolgreich angelegt!</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager" approved="yes">
+			<source>Club</source>
+			<target>Verein</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager.description" approved="yes">
+			<source>Club module for SmartVerein.</source>
+			<target>Vereins Modul von SmartVerein - Vereinsverwaltung</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club" approved="yes">
+			<source>Club</source>
+			<target>Verein</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_b_i_c" approved="yes">
+			<source>Club BIC</source>
+			<target>BIC</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_bankname" approved="yes">
+			<source>Club Bankname</source>
+			<target>Bank/Kreditinstitut</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_city" approved="yes">
+			<source>Club City</source>
+			<target>Ort</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_d_id" approved="yes" xml:space="preserve">
+			<source>Club devout-identification number
+</source>
+			<target>Gläubigeridentifikationsnummer</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_email" approved="yes">
+			<source>Club Email</source>
+			<target>E-Mail Adresse</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_founding_year" approved="yes">
+			<source>Club Founding Year</source>
+			<target>Gründungsjahr</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_i_b_a_n" approved="yes">
+			<source>Club IBAN</source>
+			<target>IBAN</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_logo" approved="yes">
+			<source>Club Logo</source>
+			<target>Logo des Vereins</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_name" approved="yes">
+			<source>Club Name</source>
+			<target>Name des Vereins</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_organisation" approved="yes">
+			<source>Club Organisation</source>
+			<target>Mitglied im Verband</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_organisation_number" approved="yes">
+			<source>Club Organisation Number</source>
+			<target>Verbandsnummer</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_phone" approved="yes">
+			<source>Club Phone</source>
+			<target>Telefon</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_registration_court" approved="yes">
+			<source>Club Registration Court</source>
+			<target>Amtsgericht/Registergericht</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_registration_number" approved="yes">
+			<source>Club Registration Number</source>
+			<target>Vereinsnummer/Registernummer</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_short_name" approved="yes">
+			<source>Club Short Name</source>
+			<target>Kurzname des Vereins</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_street" approved="yes">
+			<source>Club Street</source>
+			<target>Straße</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_tax_number" approved="yes">
+			<source>Club Tax Number</source>
+			<target>Steuernummer</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_tax_office" approved="yes">
+			<source>Club Tax Office</source>
+			<target>Finanzamt/Finanzbehörde</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_vat_number" approved="yes">
+			<source>Club Vat Number</source>
+			<target>Umsatzsteuernummer</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_website" approved="yes">
+			<source>Club Website</source>
+			<target>Vereinswebseite</target>
+		</trans-unit>
+		<trans-unit id="tx_vmclub_domain_model_club.club_zip_code" approved="yes">
+			<source>Club Zip Code</source>
+			<target>PLZ</target>
+		</trans-unit>
+		<trans-unit id="updateClub" approved="yes">
+			<source>Master data changed successfully!</source>
+			<target>Stammdaten erfolgreich geändert!</target>
+		</trans-unit>
+		<trans-unit id="1221560718" approved="yes">
+			<source>Please enter a club name.</source>
+			<target>Bitte geben Sie einen Vereinsnamen an.</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

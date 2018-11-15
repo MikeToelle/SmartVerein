@@ -1,0 +1,54 @@
+<div class="box box-primary hidden-xs">
+	<div class="box-header with-border">
+		<h4 class="box-title">Vereinsmitglieder nach Abteilungen</h4>
+		<div class="box-tools pull-right">
+			<button type="button" class="btn btn-box-tool" data-widget="collapse">
+				<i class="fa fa-minus"></i>
+			</button>
+			<i class="fa fa-question-circle helper" data-toggle="tooltip" title="Verlauf der Mitgliederzahlen im letzten Jahr"></i>
+		</div>
+	</div>
+	<div class="box-body">
+		<canvas id="groupByDepartments" height="90"></canvas>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+	var colors = palette(['tol', 'qualitative'], 12);
+	var chartcolor = colors.map(function(hex) {
+		return '#' + hex;
+	});
+	console.log(chartcolor);
+	var ctx = document.getElementById("groupByDepartments").getContext("2d");
+	var myChart = new Chart(ctx, {
+		type: 'bar',
+		maintainAspectRatio: false,
+		data: {
+			labels: ['Abteilungen'],
+			datasets: [
+					<f:for each="{departments}" as="department" iteration="iter">
+						{
+							label: '{department.label}',
+							data: [{department.count} ],
+							backgroundColor: chartcolor[{iter.index}],
+							//borderColor: 'rgba(221, 75, 57, 1.00)',
+							borderWidth: 1
+						},
+					</f:for>
+			]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero: true,
+					}
+				}]
+			}
+		}
+	});
+});
+
+
+</script>

@@ -1,0 +1,18 @@
+<div class="form-group">
+	<label for="clubShortName">
+		<f:translate key="tx_vmclub_domain_model_club.club_short_name" />
+	</label>
+	<div class="row">
+		<div class="col-xs-6">
+			<f:security.ifHasRole role="4">
+				<f:then>
+					<f:form.textfield property="clubShortName" class="form-control" readonly="true" />
+				</f:then>
+				<f:else>
+					<f:form.textfield property="clubShortName" class="form-control" />
+				</f:else>
+			</f:security.ifHasRole>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:section name="Default">
+<header class="main-header">
+
+	<!-- Logo -->
+	<a href="#" class="logo">
+		<!-- mini logo for sidebar mini 50x50 pixels -->
+		<span class="logo-mini"><img alt="SmartVerein-Logo" src="/typo3conf/ext/vm_dashboard/Resources/Public/Icons/favicon-32x32.png"></span>
+		<!-- logo for regular state and mobile devices -->
+		<span class="logo-lg"><img alt="SmartVerein-Logo" src="/typo3conf/ext/vm_dashboard/Resources/Public/Icons/favicon-32x32.png"> <b> Smart</b>Verein</span>
+	</a>
+
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top" role="navigation">
+		<!-- Sidebar toggle button-->
+		<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+			<span class="sr-only">Toggle navigation</span>
+		</a>
+		<!-- Navbar Right Menu -->
+		<div class="navbar-custom-menu">
+			<div class="pull-left">
+				<f:render partial="Navigation/HeaderNavbarLeft" section="Default" />
+			</div>
+			<div class="pull-right">
+				<f:render partial="Navigation/HeaderNavbarRight" section="Default" />
+			</div>
+		</div>
+	</nav>
+</header>
+</f:section>
+</html>

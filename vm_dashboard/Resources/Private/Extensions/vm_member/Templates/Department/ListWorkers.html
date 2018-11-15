@@ -1,0 +1,102 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<f:flashMessages />
+	<div class="box box-primary">
+		<div class="box-header with-border">
+	<h4>Funktionsträger der Abteilung {department.departmentName}:</h4>
+			<table  class="table table-striped" >
+				<tr>
+					<th>Funktion & Funktionsträger</th>
+					<th> </th>
+				</tr>
+<f:for each="{department.departmentHasWorkers}" as="worker" iteration="iter">
+	<tr>
+		<td>
+	{worker.clubFunction.functionName} : {worker.departmentWorker.memberFirstname} {worker.departmentWorker.memberLastname}
+			</td>
+		<td>
+			<div class="btn-toolbar" role="toolbar" aria-label="">
+				<div class="btn-group">
+					<f:link.action class="btn btn-default" action="editWorker" arguments="{department : department,worker:worker}"><i class="fas fa-edit"></i></f:link.action>
+					<f:link.action class="btn btn-danger" action="deleteWorker" arguments="{department : department,worker:worker}"><i class="fas fa-trash-alt"></i></f:link.action>
+				</div>
+				<f:if condition="{iter.total} > 1">
+					<f:then>
+	<f:if condition="{iter.isFirst}">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default" disabled="disabled"><i class="fas fa-caret-square-up" style="visibility:hidden"></i></button>
+		<f:link.action class="btn btn-default" action="downWorker" arguments="{department : department,worker:worker}"><i class="fas fa-caret-square-down"></i></f:link.action>
+	</div>
+	</f:if>
+
+	<f:if condition="{iter.isLast}">
+		<div class="btn-group">
+		<f:link.action class="btn btn-default" action="upWorker" arguments="{department : department,worker:worker}"><i class="fas fa-caret-square-up"></i></f:link.action>
+			<button type="button" class="btn btn-default" disabled="disabled"><i class="fas fa-caret-square-down" style="visibility:hidden"></i></button>
+	</div>
+	</f:if>
+
+	<f:if condition="(!{iter.isFirst} && !{iter.isLast})">
+		<div class="btn-group">
+		<f:link.action class="btn btn-default" action="upWorker" arguments="{department : department,worker:worker}"><i class="fas fa-caret-square-up"></i></f:link.action>
+			<f:link.action class="btn btn-default" action="downWorker" arguments="{department : department,worker:worker}"><i class="fas fa-caret-square-down"></i></f:link.action>
+	</div>
+	</f:if>
+					</f:then>
+					<f:else>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default" disabled="disabled"><i class="fas fa-caret-square-up" style="visibility:hidden"></i></button>
+							<button type="button" class="btn btn-default" disabled="disabled"><i class="fas fa-caret-square-up" style="visibility:hidden"></i></button>
+						</div>
+					</f:else>
+					</f:if>
+				</div>
+	</td></tr>
+</f:for>
+			</table>
+			</div>
+			<div class="box-body">
+	<h4>Funktionsträger anlegen:</h4>
+				<f:render partial="FormErrors" arguments="{object:Worker}" />
+
+				<f:form action="createWorker"  enctype="multipart/form-data"  name="newWorker" object="{newWorker}" arguments="{department:department}">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="clubFunction">
+									Funktion
+								</label>
+								<f:form.select property="clubFunction" options="{clubFunctions}" optionLabelField="functionName" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}" class="form-control select2"/>
+							</div>
+						</div>
+					<div class="col-md-6">
+						<div class="form-group">
+						<label for="departmentWorker">
+							Mitglied
+						</label>
+					<f:form.select property="departmentWorker" options="{members}" optionLabelField="memberFullAddress" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}" class="form-control select2"/>
+							</div>
+						</div>
+						</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="departmentWorkerEmail">
+									Funktionsträger E-Mail
+								</label>
+								<f:form.textfield class="form-control" property="departmentWorkerEmail"/>
+							</div>
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+					<f:link.action action="listDepartment" class="btn btn-default"><i class="fas fa-ban"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:cancel" /></f:link.action>
+					<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:save" /></f:form.button>
+				</f:form>
+
+			</div>
+		</div>
+</f:section>
+</html>

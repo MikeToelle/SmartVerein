@@ -1,0 +1,151 @@
+plugin.tx_vmmember_memberlist {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_member_storagePid}, {$vm_login_storagePid}, {$vm_club_storagePid}, {$vm_storagePid},{$vm_department_storagePid}
+		recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+
+	settings {
+		loginPage = {$vm_loginPage}
+		csvImportPage = {$vm_csvImportPage}
+	}
+}
+
+plugin.tx_vmmember_memberprofil {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_member_storagePid}, {$vm_login_storagePid}, {$vm_club_storagePid}, {$vm_storagePid}
+		recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+	settings {
+		loginPage = {$vm_loginPage}
+	}
+}
+
+plugin.tx_vmmember_personalsetting {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_member_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmmember_csvimport {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_member_storagePid}, {$vm_login_storagePid}, {$vm_club_storagePid}, {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmmember_adminrole {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_login_storagePid},{$vm_member_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmmember_memberdata {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_member_storagePid}, {$vm_login_storagePid}, {$vm_club_storagePid}, {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmmember_departments {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_department_storagePid},{$vm_member_storagePid}, {$vm_login_storagePid}, {$vm_club_storagePid}, {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmmember_functions {
+	view {
+		templateRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Templates/
+		partialRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Partials/
+		layoutRootPaths.99 = EXT:vm_dashboard/Resources/Private/Extensions/vm_member/Layouts/
+	}
+	persistence {
+		storagePid = {$vm_department_storagePid},{$vm_member_storagePid}, {$vm_login_storagePid}, {$vm_club_storagePid}, {$vm_storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}

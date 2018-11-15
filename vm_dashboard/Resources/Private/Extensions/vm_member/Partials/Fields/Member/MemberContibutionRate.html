@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberContibutionRate">
+		<f:translate key="tx_vmmember_domain_model_contributionrate" />
+	</label>
+	<f:security.ifHasRole role="25">
+		<f:then>
+			<f:form.select options="{contributionRate}"  class="form-control" property="memberContributionRate" optionLabelField="contributionRateTitle" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}" disabled="true" />
+		</f:then>
+		<f:else>
+			<f:form.select options="{contributionRate}"  class="form-control" property="memberContributionRate" optionLabelField="contributionRateTitle" prependOptionLabel="{f:translate(key: 'LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.select.pleaseChoose')}"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

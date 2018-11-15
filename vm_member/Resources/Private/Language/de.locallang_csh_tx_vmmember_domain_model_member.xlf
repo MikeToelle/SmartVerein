@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-03-14T21:34:45Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="member_account_owner.description" approved="yes">
+			<source>Account Owner name of the meber.</source>
+			<target>Kontoinhaber</target>
+		</trans-unit>
+		<trans-unit id="member_b_i_c.description" approved="yes">
+			<source>BIC of the member account.</source>
+			<target>BIC/SWIFT Code</target>
+		</trans-unit>
+		<trans-unit id="member_birthday.description" approved="yes">
+			<source>Birthday of the member.</source>
+			<target>Geburtstag</target>
+		</trans-unit>
+		<trans-unit id="member_city.description" approved="yes">
+			<source>City of the member.</source>
+			<target>Ort</target>
+		</trans-unit>
+		<trans-unit id="member_contribution_rate.description" approved="yes">
+			<source>memberContributionRate</source>
+			<target>Beitragssatz</target>
+		</trans-unit>
+		<trans-unit id="member_copy_mandate.description" approved="yes">
+			<source>A copy of mandate reference from the member.</source>
+			<target>Mandatsreferenz Datei</target>
+		</trans-unit>
+		<trans-unit id="member_country.description" approved="yes">
+			<source>County of the member.</source>
+			<target>Land</target>
+		</trans-unit>
+		<trans-unit id="member_country_zone.description" approved="yes">
+			<source>Country zone of the member.</source>
+			<target>Bundesland</target>
+		</trans-unit>
+		<trans-unit id="member_dashboard_layout.description" approved="yes">
+			<source>Dashboard Layout form the member (for future use)</source>
+			<target>Dashboard Anordnung</target>
+		</trans-unit>
+		<trans-unit id="member_departments.description" approved="yes">
+			<source>Departemnts the member belongs to.</source>
+			<target>Abteilungen</target>
+		</trans-unit>
+		<trans-unit id="member_edit_history.description" approved="yes">
+			<source>memberEditHistory</source>
+			<target>Mitglieder Historie</target>
+		</trans-unit>
+		<trans-unit id="member_email.description" approved="yes">
+			<source>Email address of the member.</source>
+			<target>E-Mail</target>
+		</trans-unit>
+		<trans-unit id="member_entry_date.description" approved="yes">
+			<source>Entry date of the member</source>
+			<target>Eintrittsdatum</target>
+		</trans-unit>
+		<trans-unit id="member_firstname.description" approved="yes">
+			<source>Firstname of the member.</source>
+			<target>Vorname</target>
+		</trans-unit>
+		<trans-unit id="member_form_of_address.description" approved="yes">
+			<source>Form of address of the member. like Mr. Mrs.</source>
+			<target>Anrede</target>
+		</trans-unit>
+		<trans-unit id="member_has_family.description" approved="yes">
+			<source>The familiy members.</source>
+			<target>Familienangehörige</target>
+		</trans-unit>
+		<trans-unit id="member_i_b_a_n.description" approved="yes">
+			<source>IBAN of the member account.</source>
+			<target>IBAN</target>
+		</trans-unit>
+		<trans-unit id="member_i_d.description" approved="yes">
+			<source>ID number of the member.</source>
+			<target>Mitgliedsnummer</target>
+		</trans-unit>
+		<trans-unit id="member_lastname.description" approved="yes">
+			<source>Lastname of the member.</source>
+			<target>Nachname</target>
+		</trans-unit>
+		<trans-unit id="member_leaving_date.description" approved="yes">
+			<source>The leaving date of the member</source>
+			<target>Austrittsdatum</target>
+		</trans-unit>
+		<trans-unit id="member_login.description" approved="yes">
+			<source>Login data of the member</source>
+			<target>Zugangsdaten</target>
+		</trans-unit>
+		<trans-unit id="member_mandate_reference.description" approved="yes">
+			<source>The SEPA mandate reference of the member.</source>
+			<target>Mandatsreferenz</target>
+		</trans-unit>
+		<trans-unit id="member_mandate_valid.description" approved="yes">
+			<source>The date mandate reference is valid.</source>
+			<target>SEPA Mandat gültig ab</target>
+		</trans-unit>
+		<trans-unit id="member_marital_status.description" approved="yes">
+			<source>Marital Staus of the member</source>
+			<target>Familienstand</target>
+		</trans-unit>
+		<trans-unit id="member_mobile.description" approved="yes">
+			<source>mobileNumber of the member.</source>
+			<target>Mobiltelefon</target>
+		</trans-unit>
+		<trans-unit id="member_note.description" approved="yes">
+			<source>Notes of the member.</source>
+			<target>Bemerkungen/Notizen</target>
+		</trans-unit>
+		<trans-unit id="member_payment_interval.description" approved="yes">
+			<source>Payment interval of the member contribution.</source>
+			<target>Zahlungsweise</target>
+		</trans-unit>
+		<trans-unit id="member_payment_method.description" approved="yes">
+			<source>Payment Method of the meber contribution.</source>
+			<target>Zahlungsart</target>
+		</trans-unit>
+		<trans-unit id="member_phone1.description" approved="yes">
+			<source>Phonenumber1 of the member</source>
+			<target>Telefon 1</target>
+		</trans-unit>
+		<trans-unit id="member_phone2.description" approved="yes">
+			<source>Phonenumber2 of the member</source>
+			<target>Telefon 2</target>
+		</trans-unit>
+		<trans-unit id="member_photo.description" approved="yes">
+			<source>Photo of the member.</source>
+			<target>Profil Foto</target>
+		</trans-unit>
+		<trans-unit id="member_salutation.description" approved="yes">
+			<source>memberSalutation</source>
+			<target>Briefanrede</target>
+		</trans-unit>
+		<trans-unit id="member_status.description" approved="yes">
+			<source>memberStatus</source>
+			<target>Status</target>
+		</trans-unit>
+		<trans-unit id="member_street.description" approved="yes">
+			<source>Street of the member.</source>
+			<target>Straße und Hausnummer</target>
+		</trans-unit>
+		<trans-unit id="member_title.description" approved="yes">
+			<source>Titel of the meber</source>
+			<target>Titel</target>
+		</trans-unit>
+		<trans-unit id="member_vita.description" approved="yes">
+			<source>memberVita</source>
+			<target>Mitglieder Historie</target>
+		</trans-unit>
+		<trans-unit id="member_wedding_date.description" approved="yes">
+			<source>Wedding date of the member.</source>
+			<target>Hochzeitstag</target>
+		</trans-unit>
+		<trans-unit id="member_zip_code.description" approved="yes">
+			<source>Zipcode of the member</source>
+			<target>Postleitzahl</target>
+		</trans-unit>
+		<trans-unit id="membership_application.description" approved="yes">
+			<source>Membership application of the member.</source>
+			<target>Aufnahmeantrag</target>
+		</trans-unit>
+		<trans-unit id="membership_resignation.description" approved="yes">
+			<source>Resignation of the membership.</source>
+			<target>Austrittserklärung</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberlist" approved="yes">
+			<source>Member List</source>
+			<target>Mitgliederliste</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_member_domain_model_memberprofil" approved="yes">
+			<source>Member Profil</source>
+			<target>Mitglieder Profil</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

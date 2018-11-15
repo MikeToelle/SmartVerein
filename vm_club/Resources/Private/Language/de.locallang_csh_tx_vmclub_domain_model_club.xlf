@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2018-03-08T14:48:49Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="club_b_i_c.description" approved="yes">
+			<source>BIC of the club account.</source>
+			<target>BIC des Vereinskontos.</target>
+		</trans-unit>
+		<trans-unit id="club_bankname.description" approved="yes">
+			<source>Bank of the club.</source>
+			<target>Bank/Kreditinstitut des Vereins</target>
+		</trans-unit>
+		<trans-unit id="club_city.description" approved="yes">
+			<source>City of the club address.</source>
+			<target>Ort</target>
+		</trans-unit>
+		<trans-unit id="club_d_id.description" approved="yes">
+			<source>Devout-identification number for the club.</source>
+			<target>Gläubigeridentifikationsnummer des Vereins.</target>
+		</trans-unit>
+		<trans-unit id="club_email.description" approved="yes">
+			<source>Email address of the club.</source>
+			<target>E-Mail Adresse des Vereins.</target>
+		</trans-unit>
+		<trans-unit id="club_founding_year.description" approved="yes">
+			<source>Founding year of the club</source>
+			<target>Gründungsjahr des Vereins.</target>
+		</trans-unit>
+		<trans-unit id="club_i_b_a_n.description" approved="yes">
+			<source>IBAN of the club account.</source>
+			<target>IBAN des Vereinskontos.</target>
+		</trans-unit>
+		<trans-unit id="club_logo.description" approved="yes">
+			<source>Logo of the Club</source>
+			<target>Logo des Vereins</target>
+		</trans-unit>
+		<trans-unit id="club_name.description" approved="yes">
+			<source>Fullname of the club.</source>
+			<target>Vollständiger Name des Vereins</target>
+		</trans-unit>
+		<trans-unit id="club_organisation.description" approved="yes">
+			<source>Organisation the club belongs to.</source>
+			<target>Verband dem der Verein angehört.</target>
+		</trans-unit>
+		<trans-unit id="club_organisation_number.description" approved="yes">
+			<source>ID number of the club from the organisation.</source>
+			<target>Verbandsnummer des Vereins</target>
+		</trans-unit>
+		<trans-unit id="club_phone.description" approved="yes">
+			<source>Phonenumber of the club.</source>
+			<target>Telefonnummer des Vereins.</target>
+		</trans-unit>
+		<trans-unit id="club_registration_court.description" approved="yes">
+			<source>Registration Court of the club.</source>
+			<target>Amtsgericht/Registergericht </target>
+		</trans-unit>
+		<trans-unit id="club_registration_number.description" approved="yes">
+			<source>Registration number for the club.</source>
+			<target>Vereinsnummer/Registernummer</target>
+		</trans-unit>
+		<trans-unit id="club_short_name.description" approved="yes">
+			<source>Shortname of the club.</source>
+			<target>Kurzname des Vereins</target>
+		</trans-unit>
+		<trans-unit id="club_street.description" approved="yes">
+			<source>Street of the club address.</source>
+			<target>Straße</target>
+		</trans-unit>
+		<trans-unit id="club_tax_number.description" approved="yes">
+			<source>Tax number for the club.</source>
+			<target>Steuernummer des Vereins.</target>
+		</trans-unit>
+		<trans-unit id="club_tax_office.description" approved="yes">
+			<source>Tax office of the club</source>
+			<target>Finanzamt/Finanzbehörde</target>
+		</trans-unit>
+		<trans-unit id="club_vat_number.description" approved="yes">
+			<source>VAT number for the club.</source>
+			<target>Umsatzsteuernummer</target>
+		</trans-unit>
+		<trans-unit id="club_website.description" approved="yes">
+			<source>Website address of the club.</source>
+			<target>Webseite des Vereins</target>
+		</trans-unit>
+		<trans-unit id="club_zip_code.description" approved="yes">
+			<source>Zipcode of the club address.</source>
+			<target>PLZ</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager" approved="yes">
+			<source>Club</source>
+			<target>Verein</target>
+		</trans-unit>
+		<trans-unit id="tx_vm_club_domain_model_clubmanager.description" approved="yes">
+			<source>Club module for SmartVerein - Club management.</source>
+			<target>Club Modul für SmartVerein - Vereinsverwaltung.</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

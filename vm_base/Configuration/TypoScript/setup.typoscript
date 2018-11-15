@@ -1,0 +1,63 @@
+
+plugin.tx_vmbase_fesettings {
+	view {
+		templateRootPaths.0 = EXT:vm_base/Resources/Private/Templates/
+		templateRootPaths.1 = {$plugin.tx_vmbase_fesettings.view.templateRootPath}
+		partialRootPaths.0 = EXT:vm_base/Resources/Private/Partials/
+		partialRootPaths.1 = {$plugin.tx_vmbase_fesettings.view.partialRootPath}
+		layoutRootPaths.0 = EXT:vm_base/Resources/Private/Layouts/
+		layoutRootPaths.1 = {$plugin.tx_vmbase_fesettings.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_vmbase_fesettings.persistence.storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmbase_syssettings {
+	view {
+		templateRootPaths.0 = EXT:vm_base/Resources/Private/Templates/
+		templateRootPaths.1 = {$plugin.tx_vmbase_syssettings.view.templateRootPath}
+		partialRootPaths.0 = EXT:vm_base/Resources/Private/Partials/
+		partialRootPaths.1 = {$plugin.tx_vmbase_syssettings.view.partialRootPath}
+		layoutRootPaths.0 = EXT:vm_base/Resources/Private/Layouts/
+		layoutRootPaths.1 = {$plugin.tx_vmbase_syssettings.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_vmbase_syssettings.persistence.storagePid}
+		recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}
+
+plugin.tx_vmbase_masettings {
+	view {
+		templateRootPaths.0 = EXT:vm_base/Resources/Private/Templates/
+		templateRootPaths.1 = {$plugin.tx_vmbase_masettings.view.templateRootPath}
+		partialRootPaths.0 = EXT:vm_base/Resources/Private/Partials/
+		partialRootPaths.1 = {$plugin.tx_vmbase_masettings.view.partialRootPath}
+		layoutRootPaths.0 = EXT:vm_base/Resources/Private/Layouts/
+		layoutRootPaths.1 = {$plugin.tx_vmbase_masettings.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_vmbase_masettings.persistence.storagePid}
+		#recursive = 1
+	}
+	features {
+		#skipDefaultArguments = 1
+	}
+	mvc {
+		#callDefaultActionIfActionCantBeResolved = 1
+	}
+}

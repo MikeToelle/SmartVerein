@@ -1,0 +1,21 @@
+page.includeCSS {
+
+	bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+	bootstrap-toggle = {$resDir}/Public/Stylesheets/bootstrapToogle/bootstrap-toggle.min.css
+	fontawsome = https://use.fontawesome.com/releases/v5.4.1/css/all.css
+	dashboardfont = {$resDir}/Public/Stylesheets/typo3graf-font.css
+
+	datepicker = {$resDir}/Public/Stylesheets/bootstrap DateTimePicker/bootstrap-datepicker.css
+	datetimepicker = {$resDir}/Public/Stylesheets/bootstrap DateTimePicker/bootstrap-datetimepicker.css
+	select2 = {$resDir}/Public/Stylesheets/select2/select2.css
+	dropboxzone = {$resDir}/Public/Stylesheets/fileuploader/jquery.ezdz.css
+	# DataTables CSS
+	dataTables = {$resDir}/Public/Stylesheets/dataTables/dataTables.bootstrap.min.css
+	dataTableButtons = {$resDir}/Public/Stylesheets/dataTables/buttons.bootstrap.min.css
+	#dataTableButtons = {$resDir}/Public/Stylesheets/dataTables/buttons.dataTables.min.css
+	dataTableRes = {$resDir}/Public/Stylesheets/dataTables/responsive.bootstrap.min.css
+	pace = {$resDir}/Public/Stylesheets/pace/pace-theme-minimal.css
+	dashboard_app = {$resDir}/Public/Stylesheets/less/AdminLTE.less
+	skin = {$resDir}/Public/Stylesheets/less/skins/skin-blue.less
+	styles = {$resDir}/Public/Stylesheets/dashboard.css
+}

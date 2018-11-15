@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberPaymentMethod">
+		<f:translate key="tx_vmmember_domain_model_member.member_payment_method" />
+	</label>
+	<f:security.ifHasRole role="25">
+		<f:then>
+			<f:form.select class="form-control" property="memberPaymentMethod" options="{selectOptions.methode}" optionValueField="id" optionLabelField="methode" disabled="true" />
+		</f:then>
+		<f:else>
+			<f:form.select class="form-control" property="memberPaymentMethod" options="{selectOptions.methode}" optionValueField="id" optionLabelField="methode" />
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

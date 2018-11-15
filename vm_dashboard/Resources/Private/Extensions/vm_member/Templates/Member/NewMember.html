@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="main">
+
+<f:flashMessages />
+
+<f:render partial="FormErrors" arguments="{object:Member}" />
+
+<f:form action="createMember"  enctype="multipart/form-data"  name="member" object="{member}">
+<f:render partial="Member/NewFormFields" arguments="{_all}"/>
+
+</f:form>
+</f:section>
+</html>

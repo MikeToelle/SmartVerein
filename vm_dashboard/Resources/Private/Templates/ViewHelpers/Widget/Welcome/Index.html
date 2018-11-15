@@ -1,0 +1,44 @@
+<f:if condition="{isSetup} == 1">
+	<f:then>
+		<div class="box box-primary hidden-xs">
+			<div class="box-header with-border">
+				<h4 class="box-title">Willkommen bei <b>Vereins</b>Meier</h4>
+			</div>
+			<div class="box-body">
+				Hallo {member.memberFirstname},
+				<br/>
+				Wir begrüßen dich bei <b>Vereins</b>Meier, der Vereinsverwaltung deines Vereins.
+				<br/>
+				<br/>Dies ist der erste Aufruf der Vereinsverwaltung.
+				<br/>
+				<br/>Bitte nimm zunächst die Setup-Einstellungen vor.
+				<br/>1. Vereinsstammdaten unter <b>Mein Verein/Stammdaten verwalten</b>.
+				<br/>2. Lege Abteilungen und Funktionen an.
+				<br/>3. Gib bitte deine Profildaten unter <b>Meine Daten/Profil verwalten</b> ein.
+				<br/><b>Wichtig: Bitte ändere auch die Zugangsdaten.</b>
+				<br/>
+				<br/>
+				Nimm deine persönlichen Einstellungen unter <b>Meine Daten/Persönliche Einstellungen</b> vor.
+			</div>
+		</div>
+	</f:then>
+	<f:else>
+		<div class="box box-primary hidden-xs">
+			<div class="box-header with-border">
+				<h4 class="box-title">Willkommen bei <b>Vereins</b>Meier</h4>
+			</div>
+			<div class="box-body">
+				Hallo {member.memberFirstname},
+				<br/>
+				Wir begrüßen dich bei <b>Vereins</b>Meier, der Vereinsverwaltung deines Vereins.
+				Fusce vel dui. Duis lobortis massa imperdiet quam. Phasellus magna.
+				Sed aliquam ultrices mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum.
+				Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Proin faucibus arcu quis ante. Pellentesque commodo eros a enim.
+				<br/>
+				<br/>
+				Nimm deine persönlichen Einstellungen unter <b>Meine Daten/Persönliche Einstellungen</b> vor.
+			</div>
+		</div>
+	</f:else>
+</f:if>
+

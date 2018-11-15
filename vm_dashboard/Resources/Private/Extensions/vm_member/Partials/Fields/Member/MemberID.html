@@ -1,0 +1,17 @@
+<div class="form-group">
+	<label for="memberID">
+		<f:translate key="tx_vmmember_domain_model_member.member_i_d" />
+	</label>
+	<f:security.ifHasRole role="23">
+		<f:then>
+			<f:form.textfield disabled="{f:if(condition: sysSettings.autoMemberID, then: 'true')}" id="memberID" property="memberID" class="form-control" readonly="true"/>
+		</f:then>
+		<f:else>
+			<f:form.textfield disabled="{f:if(condition: sysSettings.autoMemberID, then: 'true')}" id="memberID" property="memberID" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+	<f:if condition="{sysSettings.autoMemberID}">
+	<span id="hilfeText" class="help-block">L: Mitgliedsnummer wird automatisch vergeben</span>
+		</f:if>
+</div>

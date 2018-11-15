@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:form.validationResults for="{object}">
+	<f:if condition="{validationResults.flattenedErrors}">
+		<div class="alert alert-danger alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<h4><i class="icon fas fa-ban"></i> <f:translate key="member.form.error"/></h4>
+			<br/>
+			<f:translate key="member.form.errorText"/>
+			<ul>
+				<f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors">
+					<li>
+						{propertyPath}
+						<ul>
+						<f:for each="{errors}" as="error"><li>{error}</li></f:for>
+							</ul>
+					</li>
+				</f:for></ul>
+		</div>
+	</f:if>
+</f:form.validationResults>
+</html>

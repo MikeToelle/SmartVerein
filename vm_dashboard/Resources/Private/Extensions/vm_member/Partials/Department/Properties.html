@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-vm-member" >
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_department.department_name" />
+		</td>
+		<td>
+		{department.departmentName}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_department.department_description" />
+		</td>
+		<td>
+		{department.departmentDescription}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmmember_domain_model_department.department_logo" />
+		</td>
+		<td>
+				<f:image src="{department.departmentLogo.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+</table>
+</html>

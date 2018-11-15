@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="form-group"><label for="statusTitle">
+	<f:translate key="tx_vmmember_domain_model_membershipstatus.status_title" /> <span class="required">*</span>
+</label>
+	<f:form.textfield property="statusTitle" class="form-control"/>
+	<f:render partial="FieldErrors" arguments="{for: 'membershipStatus.statusTitle'}" />
+</div>
+<div class="form-group">
+	<label for="statusDescription">
+		<f:translate key="tx_vmmember_domain_model_membershipstatus.status_description" />
+	</label>
+	<f:form.textfield property="statusDescription" class="form-control"/>
+</div>
+<f:link.action action="statusList" controller="MembershipStatus" class="btn btn-default"><i class="fas fa-ban"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:cancel" /></f:link.action>
+<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> Status ändern</f:form.button>
+</html>

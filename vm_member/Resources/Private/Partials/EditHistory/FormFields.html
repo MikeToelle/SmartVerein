@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="editHistoryTitle">
+	<f:translate key="tx_vmmember_domain_model_edithistory.edit_history_title" />
+</label><br />
+	<f:form.textfield property="editHistoryTitle" /><br />
+<label for="editHistoryDescription">
+	<f:translate key="tx_vmmember_domain_model_edithistory.edit_history_description" />
+</label><br />
+	<f:form.textarea property="editHistoryDescription" cols="40" rows="15" /><br />
+<label for="editHistoryDateTime">
+	<f:translate key="tx_vmmember_domain_model_edithistory.edit_history_date_time" />
+</label><br />
+	<f:form.textfield property="editHistoryDateTime" value="{editHistory.editHistoryDateTime->f:format.date()}" /><br />
+</html>

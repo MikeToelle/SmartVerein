@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-03-28T09:53:38Z">
+        <header>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="cancel">
+                <source>Cancel</source>
+            </trans-unit>
+            <trans-unit id="csvImport">
+                <source>CSV Import</source>
+            </trans-unit>
+            <trans-unit id="csvExport">
+                <source>Export</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.dashboard">
+                <source>Allow access to the VereinMeister dashboard</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.emailSend">
+                <source>Inform users via email about the new credentials</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.header">
+                <source>Change login data</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.message">
+                <source>Here you can change the access data, with which the member logs in the system.</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.password">
+                <source>Password</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.repeatPassword">
+                <source>Repeat password</source>
+            </trans-unit>
+            <trans-unit id="dashboard.loginData.user">
+                <source>Username or E-mail</source>
+            </trans-unit>
+            <trans-unit id="dashboard.modal.deleteMemberHeader">
+                <source>Delete member</source>
+            </trans-unit>
+            <trans-unit id="dashboard.modal.deleteMemberMessage">
+                <source>Under &quot;Member Profile&quot;, you can instead set the exit date so that the member will be
+                    listed as &quot;former&quot; in the future. Former members are skipped automatically for all
+                    actions, they only appear in the member list.
+                </source>
+            </trans-unit>
+            <trans-unit id="dashboard.modal.deleteMemberNote">
+                <source>It is not recommended to delete members</source>
+            </trans-unit>
+            <trans-unit id="dashboard.modal.passwordMessage">
+                <source>Please note the password or choose the option &quot;send by e-mail&quot;. The new password
+                    becomes active when you save the access data.
+                </source>
+            </trans-unit>
+            <trans-unit id="dashboard.modal.passwordNote">
+                <source>The password has not been saved yet!</source>
+            </trans-unit>
+            <trans-unit id="dashboard.modal.passwordTitle">
+                <source>Password generated</source>
+            </trans-unit>
+            <trans-unit id="dashboard.select.pleaseChoose">
+                <source>Please choose</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.association">
+                <source>Association</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.bankDetails">
+                <source>Bank details</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.clubLogo">
+                <source>Club logo</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.contact">
+                <source>Contact</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.morePersonalData">
+                <source>More personal data</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.personalData">
+                <source>Personal data</source>
+            </trans-unit>
+            <trans-unit id="dashboard.subHeader.sepa">
+                <source>SEPA direct debit mandate</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.bankData">
+                <source>Bank and SEPA</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.socialMedia">
+                <source>Social media links</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.clubData">
+                <source>Club Data</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.contributions">
+                <source>Contribution / Bank details</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.defaultData">
+                <source>Default Data</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.editHistory">
+                <source>Edit history</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.memberDocuments">
+                <source>Member Documents</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.memberHistory">
+                <source>Member history</source>
+            </trans-unit>
+            <trans-unit id="dashboard.tab.registerCourt">
+                <source>Tax office/Register court</source>
+            </trans-unit>
+            <trans-unit id="dashboard.text.accountOwner">
+                <source>Alternative account holder</source>
+            </trans-unit>
+            <trans-unit id="dashboard.text.age">
+                <source>Age</source>
+            </trans-unit>
+            <trans-unit id="dashboard.text.lastModified">
+                <source>Last modified</source>
+            </trans-unit>
+            <trans-unit id="dashboard.text.memberSince">
+                <source>Member since</source>
+            </trans-unit>
+            <trans-unit id="dashboard.text.years">
+                <source>years</source>
+            </trans-unit>
+            <trans-unit id="dashboard.text.years2">
+                <source>year(s)</source>
+            </trans-unit>
+            <trans-unit id="delete">
+                <source>Delete</source>
+            </trans-unit>
+            <trans-unit id="deleteMember">
+                <source>delete member</source>
+            </trans-unit>
+            <trans-unit id="generate">
+                <source>generate</source>
+            </trans-unit>
+            <trans-unit id="memberlist.address">
+                <source>Address</source>
+            </trans-unit>
+            <trans-unit id="memberlist.bankDetails">
+                <source>Bank details</source>
+            </trans-unit>
+            <trans-unit id="memberlist.birthday">
+                <source>Birthday</source>
+            </trans-unit>
+            <trans-unit id="memberlist.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="memberlist.entryDate">
+                <source>Entry date</source>
+            </trans-unit>
+            <trans-unit id="memberlist.leavingDate">
+                <source>Leaving Date</source>
+            </trans-unit>
+            <trans-unit id="memberlist.memberID">
+                <source>Member ID</source>
+            </trans-unit>
+            <trans-unit id="memberlist.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="memberlist.telephone">
+                <source>Telephone</source>
+            </trans-unit>
+            <trans-unit id="newMember">
+                <source>add Member</source>
+            </trans-unit>
+            <trans-unit id="save">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="understand">
+                <source>Understand</source>
+            </trans-unit>
+            <trans-unit id="birthdayList">
+                <source>Birthdaylist</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

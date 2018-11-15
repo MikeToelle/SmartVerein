@@ -1,0 +1,41 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+
+
+<f:security.ifHasRole role="4">
+	<f:then>
+		<f:if condition="{club.clubLogo.0}">
+			<f:then>
+				<f:if condition="{resource}">
+					<f:image image="{resource}" alt="" width="200"/>
+
+				</f:if>
+			</f:then>
+			<f:else>
+				<f:image src="EXT:vm_dashboard/Resources/Public/Images/placeholder_logo.svg" alt="" width="200"/>
+			</f:else>
+		</f:if>
+	</f:then>
+	<f:else>
+		<f:if condition="{club.clubLogo.0}">
+			<f:then>
+				<vm:form.upload property="clubLogo.0" id="js-image-upload" additionalAttributes="{accept: 'image/png, image/jpeg, image/svg+xml'}"><br />
+					<f:if condition="{resource}">
+						<f:image image="{resource}" alt="" width="200"/>
+						<p></p>
+					</f:if>
+				</vm:form.upload>
+			</f:then>
+			<f:else>
+				<f:image src="EXT:vm_dashboard/Resources/Public/Images/placeholder_logo.svg" alt="" width="200"/>
+				<p></p>
+				<vm:form.upload property="clubLogo.0" id="js-image-upload" additionalAttributes="{accept: 'image/png, image/jpeg, image/svg+xml'}"><br />
+					<f:if condition="{resource}">
+						<f:image image="{resource}" alt="" width="200"/>
+						<p></p>
+					</f:if>
+				</vm:form.upload>
+			</f:else>
+		</f:if>
+		<span class="help-block"><small class="label bg-green">png</small> <small class="label  bg-green">jpg/jpeg</small> <small class="label  bg-green">svg</small></span>
+	</f:else>
+</f:security.ifHasRole>

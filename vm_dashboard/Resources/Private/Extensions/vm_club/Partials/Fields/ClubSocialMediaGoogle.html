@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubSocialMediaGoogle">
+		<i class="fab fa-google-plus-square"></i> <f:translate key="tx_vmclub_domain_model_club.club_social_media_google" />
+	</label>
+	<f:security.ifHasRole role="10">
+		<f:then>
+			<f:form.textfield property="clubSocialMediaGoogle" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubSocialMediaGoogle" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

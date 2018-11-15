@@ -1,0 +1,15 @@
+<div class="form-group {vm:form.hasError(property:'memberLastname', then: 'has-error')}">
+	<label for="memberLastname">
+		<f:translate key="tx_vmmember_domain_model_member.member_lastname" /> <span class="required">*</span>
+	</label>
+	<f:security.ifHasRole role="21">
+		<f:then>
+			<f:form.textfield property="memberLastname" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="memberLastname" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+	<f:render partial="FieldErrors" arguments="{for: 'member.memberLastname'}" />
+</div>

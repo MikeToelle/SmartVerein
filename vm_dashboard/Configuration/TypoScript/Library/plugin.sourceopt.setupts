@@ -1,0 +1,6 @@
+config.sourceopt {
+	enabled = 1
+	removeGenerator = 1
+	removeComments = 0
+	formatHtml = 4
+}

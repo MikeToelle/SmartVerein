@@ -1,0 +1,52 @@
+<f:switch expression="{widget.widgetID}">
+	<f:case value="MemberOverviewWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.MemberOverview/>
+		</f:if>
+	</f:case>
+	<f:case value="MemberDepartmentOverviewWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.MemberDepartmentOverview/>
+		</f:if>
+	</f:case>
+	<f:case value="GenderOverviewWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.GenderOverview/>
+		</f:if>
+	</f:case>
+	<f:case value="BirthdaysOverviewWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.BirthdaysOverview/>
+		</f:if>
+	</f:case>
+	<f:case value="AnniversaryOverviewWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.AnniversaryOverview/>
+		</f:if>
+	</f:case>
+	<f:case value="NextEventsOverviewWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.NextEventsOverview/>
+		</f:if>
+	</f:case>
+	<f:case value="NextEventsWithClubsWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.NextEventsWithClubs/>
+		</f:if>
+	</f:case>
+	<f:case value="MyTasksWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.MyTasks/>
+		</f:if>
+	</f:case>
+	<f:case value="OverdueTasksWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.OverdueTasks/>
+		</f:if>
+	</f:case>
+	<f:case value="SmartVereinNewsWidget">
+		<f:if condition="({widget.widgetSettings.active} == 1 && {widget.widgetSettings.column} == 3)">
+			<vm:widget.SmartVereinNews/>
+		</f:if>
+	</f:case>
+</f:switch>

@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+	<f:flashMessages />
+	<div class="box box-primary">
+		<div class="box-header with-border">
+<h4>Vereinsfunktionen:</h4>
+
+<table  class="table table-striped" >
+	<tr>
+		<th><f:translate key="tx_vmmember_domain_model_clubfunction.function_name" /></th>
+		<th><f:translate key="tx_vmmember_domain_model_clubfunction.function_description" /></th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{clubFunctions}" as="clubFunction">
+		<tr>
+			<td>{clubFunction.functionName}</td>
+			<td>{clubFunction.functionDescription}</td>
+			<td>
+				<div class="btn-group">
+				<f:link.action class="btn btn-default" action="editFunction" arguments="{clubFunction : clubFunction}"><i class="fas fa-edit"></i></f:link.action>
+			<f:link.action class="btn btn-danger" action="deleteFunction" arguments="{clubFunction : clubFunction}"><i class="fas fa-trash-alt" aria-hidden="true"></i></f:link.action>
+					</div>
+			</td>
+		</tr>
+	</f:for>
+</table>
+			</div>
+		<div class="box-body">
+			<h4>Neue Funktion anlegen:</h4>
+			<f:render partial="FormErrors" arguments="{object:NewFunction}" />
+
+			<f:form action="createFunction"  enctype="multipart/form-data"  name="newFunction" object="{newFunction}">
+				<f:render partial="ClubFunction/FormFields" />
+				<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:save" /></f:form.button>
+			</f:form>
+		</div>
+	</div>
+
+
+</f:section>
+</html>

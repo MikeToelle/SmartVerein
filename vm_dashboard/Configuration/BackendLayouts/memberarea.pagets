@@ -1,0 +1,38 @@
+mod.web_layout.BackendLayouts {
+  memberarea {
+    title = Memberarea
+    icon = EXT:vm_dashboard/Resources/Public/Images/BackendLayouts/Memberarea.svg
+    config {
+      backend_layout {
+      	colCount = 1
+      	rowCount = 3
+      	rows {
+      		1 {
+      			columns {
+      				1 {
+      					name = Menüzeile
+      				}
+      			}
+      		}
+      		2 {
+      			columns {
+      				1 {
+      					name = Seitenkopf
+      					colPos = 10
+      				}
+      			}
+      		}
+      		3 {
+      			columns {
+      				1 {
+      					name = Seiteninhalt
+      					colPos = 0
+      				}
+      			}
+      		}
+      	}
+      }
+
+    }
+  }
+}

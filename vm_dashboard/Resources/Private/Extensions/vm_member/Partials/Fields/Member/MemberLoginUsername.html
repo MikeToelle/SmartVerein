@@ -1,0 +1,13 @@
+<div class="form-group {vm:form.hasError(property:'memberLogin.username', then: 'has-error')}">
+	<label><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.loginData.user" /></label>
+	<f:security.ifHasRole role="29">
+		<f:then>
+			<f:form.textfield property="memberLogin.username" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="memberLogin.username" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+	<f:render partial="FieldErrors" arguments="{for: 'member.memberLogin.username'}" />
+</div>

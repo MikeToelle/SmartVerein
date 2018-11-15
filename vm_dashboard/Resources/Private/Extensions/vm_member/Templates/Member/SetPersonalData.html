@@ -1,0 +1,99 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+	<f:form action="savePersonalData" controller="Member" name="personalData" object="{personalData}" >
+<div class="row">
+	<div class="col-md-6">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+				<h3 class="box-title">Dashboard Layout</h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label>
+								Dashboard Spalten:
+							</label>
+							<f:form.select property="layout" options="{selectOptions}" id="js-dashboard-select" class="form-control">
+
+							</f:form.select>
+						</div>
+
+					</div>
+					<div class="col-md-10"></div>
+
+				</div>
+
+				<div id="panel1" class="panel panel-default">
+					<div class="panel-heading">Dashboard Widgets</div>
+					<div class="panel-body">
+						<f:for each="{personalData.widgets}" as="widget" iteration="nr">
+							<f:if condition="{nr.index}==0">
+								<f:then>
+									<f:form.hidden property="widgets.{nr.index}.widgetID" value="{widgets.{nr.index}.widgetID}" />
+									<f:form.hidden property="widgets.{nr.index}.widgetSettings.active" value="0" />
+								</f:then>
+								<f:else>
+									<div class="checkbox">
+										<f:form.hidden property="widgets.{nr.index}.widgetID" value="{widgets.{nr.index}.widgetID}" />
+										<label>
+											<f:form.checkbox property="widgets.{nr.index}.widgetSettings.active" value="1" additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+											<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/dashboardWidgets.xml:widget{nr.index}.title" />
+											<span id="hilfeText" class="help-block"><f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/dashboardWidgets.xml:widget{nr.index}.description" /></span>
+											<label class="radio-inline">
+												<f:form.radio class="rb1" property="widgets.{nr.index}.widgetSettings.column" value="1" /> links
+											</label>
+											<label class="radio-inline">
+												<f:form.radio class="rb2" property="widgets.{nr.index}.widgetSettings.column" value="2" /> mitte
+											</label>
+											<label class="radio-inline">
+												<f:form.radio class="rb3" property="widgets.{nr.index}.widgetSettings.column" value="3" /> rechts
+											</label>
+										</label>
+										<hr>
+									</div>
+								</f:else>
+							</f:if>
+
+						</f:for>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.box-body -->
+			<div class="box-footer">
+				<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:save" /></f:form.button>
+			</div>
+			<!-- box-footer -->
+		</div>
+		<!-- /.box -->
+
+	</div>
+	<div class="col-md-6">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+				<h3 class="box-title">E-Mail Konto IMAP/SMTP</h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+
+				E-Mail Konto Einstellungen<br/>
+				MUSS NOCH PROGRAMMIERT WERDEN!!!!!
+
+			</div>
+			<!-- /.box-body -->
+			<div class="box-footer">
+				The footer of the box
+			</div>
+			<!-- box-footer -->
+		</div>
+		<!-- /.box -->
+	</div>
+</div>
+	</f:form>
+	</f:section>
+</html>

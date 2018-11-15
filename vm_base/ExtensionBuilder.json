@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Basic functions for Vereinsmeier club management.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": true,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "vm_base",
+        "name": "Vereinsmeier - Base module",
+        "originalExtensionKey": "vm_base",
+        "originalVendorName": "Typo3graf",
+        "persons": [
+            {
+                "company": "",
+                "email": "development@typo3graf.de",
+                "name": "Typo3graf Developer-Team",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Typo3graf"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-02-20 01:20",
+        "extension_builder_version": "7.6.18",
+        "be_user": "Typo3graf media-agentur (1)"
+    }
+}

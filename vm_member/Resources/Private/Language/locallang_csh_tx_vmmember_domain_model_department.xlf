@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-05-08T22:29:16Z" product-name="vm_member">
+		<header/>
+		<body>
+			<trans-unit id="tx_vm_member_domain_model_memberlist">
+				<source>Member List</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberlist.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil">
+				<source>Member Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="department_name.description">
+				<source>Name of the department</source>
+			</trans-unit>
+			<trans-unit id="is_function_department.description">
+				<source>Is department a function-department. z.B. Vorstand</source>
+			</trans-unit>
+			<trans-unit id="department_description.description">
+				<source>Description of the department.</source>
+			</trans-unit>
+			<trans-unit id="department_logo.description">
+				<source>Logo of the department.</source>
+			</trans-unit>
+			<trans-unit id="department_has_workers.description">
+				<source>departmentHasWorkers</source>
+			</trans-unit>
+			<trans-unit id="department_has_groups.description">
+				<source>departmentHasGroups</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

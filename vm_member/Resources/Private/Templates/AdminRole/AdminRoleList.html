@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+	<h4>Administrationsgruppen:</h4>
+	<table>
+		<ul>
+			<f:for each="{usergroups}" as="usergroup">
+
+				<li><b>{usergroup.name}</b> - ({usergroup.count} verknüpfte Mitglieder) - Löschen|Edit</li>
+
+			</f:for>
+		</ul>
+	</table>
+<hr>
+	Formular einfügen
+</f:section>
+</html>

@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubSocialMediaInstagram">
+		<i class="fab fa-instagram"></i> <f:translate key="tx_vmclub_domain_model_club.club_social_media_instagram" />
+	</label>
+	<f:security.ifHasRole role="10">
+		<f:then>
+			<f:form.textfield property="clubSocialMediaInstagram" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubSocialMediaInstagram" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

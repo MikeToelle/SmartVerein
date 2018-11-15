@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-29T23:11:53Z" product-name="vm_base">
+		<header/>
+		<body>
+			<trans-unit id="tx_vm_base_domain_model_fesettings">
+				<source>FE Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_fesettings.description">
+				<source>FE settings modul for SmartVerein club management.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_syssettings">
+				<source>Systems Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_syssettings.description">
+				<source>System settings modul for SmartVerein club management.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_masettings">
+				<source>Member Area Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_base_domain_model_masettings.description">
+				<source>Member area settings modul for SmartVerein club management.</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_fesettings">
+				<source>F E Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_fesettings.my_profil">
+				<source>My Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings">
+				<source>S Y S Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.member_i_d_format">
+				<source>Member I D Format</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.auto_member_i_d">
+				<source>Auto Member I D</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.supplement_member_i_d">
+				<source>Supplement Member I D</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.club_anniversaries">
+				<source>Club Anniversaries</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.sent_anniversaries_email">
+				<source>Sent Anniversaries Email</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.show_member_birthdays">
+				<source>Show Member Birthdays</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_syssettings.sent_birthday_email">
+				<source>Sent Birthday Email</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings">
+				<source>M A Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.edit_own_member_data">
+				<source>Edit Own Member Data</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.show_bulletin_board">
+				<source>Show Bulletin Board</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.show_events">
+				<source>Show Events</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.show_member_list_all">
+				<source>Show Member List All</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.show_member_list_by_groups">
+				<source>Show Member List By Groups</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.show_club_finances">
+				<source>Show Club Finances</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_masettings.show_download_area">
+				<source>Show Download Area</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_notificationtemplates">
+				<source>Notification Templates</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_notificationtemplates.template_title">
+				<source>Template Title</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_notificationtemplates.template_source">
+				<source>Template Source</source>
+			</trans-unit>
+			<trans-unit id="tx_vmbase_domain_model_notificationtemplates.template_type">
+				<source>Template Type</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

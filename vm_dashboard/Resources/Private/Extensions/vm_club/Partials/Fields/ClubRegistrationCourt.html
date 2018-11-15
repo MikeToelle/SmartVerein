@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="clubRegistrationCourt">
+		<f:translate key="tx_vmclub_domain_model_club.club_registration_court" />
+	</label>
+	<f:security.ifHasRole role="6">
+		<f:then>
+			<f:form.textfield property="clubRegistrationCourt" class="form-control" readonly="true" />
+		</f:then>
+		<f:else>
+			<f:form.textfield property="clubRegistrationCourt" class="form-control"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>

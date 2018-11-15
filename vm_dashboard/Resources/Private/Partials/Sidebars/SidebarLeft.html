@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:section name="Default">
+<aside class="main-sidebar">
+
+	<!-- sidebar: style can be found in sidebar.less -->
+	<section class="sidebar">
+
+		<!-- Sidebar user panel (optional) -->
+		<f:if condition="{settings.userPanel}">
+			<f:render partial="Sidebars/UserPanel" section="Default" arguments="{_all}"/>
+		</f:if>
+		<!-- search form (Optional) -->
+		<f:if condition="{settings.sidebarSearchbox}">
+			<f:render partial="Sidebars/SearchForm" section="Default" arguments="{_all}"/>
+		<!-- /.search form -->
+		</f:if>
+		<!-- Sidebar Menu -->
+		<f:render partial="Navigation/SidebarLeftMenu" section="Default" arguments="{_all}"/>
+		<!-- /.sidebar-menu -->
+	</section>
+	<!-- /.sidebar -->
+</aside>
+</f:section>
+</html>

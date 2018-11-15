@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<f:section name="Default">
+
+	<f:if condition="{menuMain}">
+		<ul class="sidebar-menu" data-widget="tree">
+			<f:for each="{menuMain}" as="mainItem">
+				<f:render partial="Navigation/Item" arguments="{_all}"/>
+				<f:if condition="{mainItem.children}">
+					<f:render section="submenu" arguments="{submenu: mainItem.children}"/>
+				</f:if>
+				</li>
+			</f:for>
+		</ul>
+	</f:if>
+
+	<f:section name="submenu">
+		<ul class="treeview-menu">
+			<f:for each="{submenu}" as="subItem">
+				<f:render partial="Navigation/Item" arguments="{mainItem: subItem}"/>
+				<f:if condition="{subItem.children}">
+					<f:render section="submenu" arguments="{submenu: subItem.children}"/>
+				</f:if>
+				</li>
+			</f:for>
+		</ul>
+	</f:section>
+</f:section>
+</html>

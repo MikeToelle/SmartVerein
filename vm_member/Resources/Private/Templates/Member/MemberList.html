@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+<div class="pull-right">Buttons Top</div>
+	<f:link.action action="new">New Member</f:link.action>
+<f:flashMessages />
+
+<table  class="tx_vmmember" >
+	<tr>
+
+		<th><f:translate key="memberlist.name" /></th>
+
+
+		<th><f:translate key="memberlist.address" /></th>
+
+
+		<th><f:translate key="memberlist.telephone" /></th>
+		<th><f:translate key="tx_vmmember_domain_model_member.member_email" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{members}" as="member">
+		<tr>
+			<td>{member.memberLastname} {member.memberFirstname}</td>
+			<td> {member.memberStreet}<br>{member.memberZipCode} {member.memberCity}</td>
+			<td> {member.memberPhone1}<br>{member.memberPhone2}<br>{member.memberMobile}</td>
+			<td> {member.memberEmail}</td>
+			<td><f:link.action action="editMember" arguments="{member : member}">Edit</f:link.action></td>
+			<td><f:link.action action="deleteMember" arguments="{member : member}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+</f:section>
+</html>

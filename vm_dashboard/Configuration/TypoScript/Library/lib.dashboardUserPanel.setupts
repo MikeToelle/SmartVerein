@@ -1,0 +1,15 @@
+lib.dashboardUserPanel = USER
+lib.dashboardUserPanel {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	extensionName = VmDashboard
+	pluginName = UserPanel
+	vendorName = Typo3graf
+	controller = Dashboard
+	action = userPanel
+
+	view < plugin.tx_vmdashboard_userpanel.view
+	persistence < plugin.tx_vmdashboard_userpanel.persistence
+	settings < plugin.tx_vmdashboard_userpanel.settings
+}
+
+page.10.< lib.dashboardUserPanel

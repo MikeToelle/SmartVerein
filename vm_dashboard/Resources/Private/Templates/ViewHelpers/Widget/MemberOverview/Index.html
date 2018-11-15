@@ -1,0 +1,68 @@
+<div class="box box-primary hidden-xs">
+
+	<div class="box-header with-border">
+		<h4 class="box-title">Entwicklung Vereinsmitglieder</h4>
+		<div class="box-tools pull-right">
+			<button type="button" class="btn btn-box-tool" data-widget="collapse">
+				<i class="fa fa-minus"></i>
+			</button>
+			<i class="fa fa-question-circle helper" data-toggle="tooltip" title="Verlauf der Mitgliederzahlen im letzten Jahr"></i>
+		</div>
+	</div>
+	<div class="box-body">
+		<canvas id="members" height="90"></canvas>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+var ctx = document.getElementById("members").getContext("2d");
+ctx.height = '100px';
+var myChart = new Chart(ctx, {
+type: 'line',
+maintainAspectRatio: false,
+data: {
+labels: [<f:format.raw>{memberLabels}</f:format.raw>],
+datasets: [{
+lineTension: 0,
+label: 'Austritte',
+data: [{leavingCount}],
+backgroundColor: 'rgba(221, 75, 57, 0.7)',
+pointBackgroundColor: 'rgba(221, 75, 57, 1)',
+borderColor: 'rgba(221, 75, 57, 1.00)',
+borderWidth: 1
+}, {
+lineTension: 0,
+label: 'Eintritte',
+data: [{entryCount}],
+backgroundColor: 'rgba(245, 157, 0, 0.6)',
+pointBackgroundColor: 'rgba(245, 157, 0, 1)',
+borderColor: 'rgba(245, 157, 0, 1.00)',
+borderWidth: 1
+}, {
+lineTension: 0,
+label: 'Anzahl Mitglieder',
+data: [{memberCount}],
+backgroundColor: 'rgba(0, 166, 90, 0.4)',
+pointBackgroundColor: 'rgba(0, 166, 90, 1)',
+borderColor: 'rgba(0, 166, 90, 1.00)',
+borderWidth: 1
+}]
+},
+options: {
+	responsive: true,
+	tooltips: {
+		mode: 'point',
+		intersect: false,
+	},
+scales: {
+yAxes: [{
+ticks: {
+beginAtZero: true
+}
+}]
+}
+}
+});
+});
+	</script>

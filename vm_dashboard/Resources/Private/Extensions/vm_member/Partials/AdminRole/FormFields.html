@@ -1,0 +1,180 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="input-group">
+	<f:form.textfield property="title" class="form-control"/>
+	<span class="help-block">Name der Administrationsgruppe (z.B. Kassenwart)</span>
+</div>
+
+
+<br>
+<h4>Berechtigungen</h4>
+<ul class="list-unstyled">
+	<li>
+		<div class="checkbox">
+			<label>
+				<f:form.checkbox property="editRoles" multiple="1" value="19"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+				<b>Mitgliederverwaltung</b>
+			</label>
+		</div>
+		<ul style="list-style-type: none;">
+			<li>
+				<div class="row">
+					<div class="col-md-2">Mitglieder: Stammdaten</div>
+					<div class="col-md-2"><f:form.select class="form-control" property="editRights.0" options="{roles.Mitglieder.MP.Verwaltung.Tabs.Stammdaten}" /></div>
+				</div>
+			</li><br/>
+			<li>
+				<div class="row">
+					<div class="col-md-2">Mitglieder: Vereinsdaten</div>
+					<div class="col-md-2"><f:form.select class="form-control" property="editRights.1" options="{roles.Mitglieder.MP.Verwaltung.Tabs.Vereindaten}" /></div>
+				</div>
+			</li><br/>
+			<li>
+				<div class="row">
+					<div class="col-md-2">Mitglieder: Beiträge</div>
+					<div class="col-md-2"><f:form.select class="form-control" property="editRights.2" options="{roles.Mitglieder.MP.Verwaltung.Tabs.Beitraege}" /></div>
+				</div>
+			</li><br/>
+			<li>
+				<div class="row">
+					<div class="col-md-2">Mitglieder: Zugangsdaten</div>
+					<div class="col-md-2"><f:form.select class="form-control" property="editRights.3" options="{roles.Mitglieder.MP.Verwaltung.Tabs.Login}" /></div>
+				</div>
+			</li><br/>
+			<li>
+				<div class="row">
+					<div class="col-md-2">Mitglieder: Dokumente</div>
+					<div class="col-md-2"><f:form.select class="form-control" property="editRights.4" options="{roles.Mitglieder.MP.Verwaltung.Tabs.Dokumente}" /></div>
+				</div>
+			</li><br/>
+			<li>
+				<div class="row">
+					<div class="col-md-2">Mitglieder: History</div>
+					<div class="col-md-2"><f:form.select class="form-control" property="editRights.5" options="{roles.Mitglieder.MP.Verwaltung.Tabs.History}" /></div>
+				</div>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<div class="checkbox">
+			<label>
+				<f:form.checkbox property="editRoles" multiple="1" value="19"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+				<b>Kalendar</b>
+			</label>
+		</div>
+	</li>
+	<li>
+		<div class="checkbox">
+			<label>
+				<f:form.checkbox property="editRoles" multiple="1" value="19"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+				<b>Projekte & Aufgaben</b>
+			</label>
+		</div>
+	</li>
+	<li>
+		<div class="checkbox">
+			<label>
+				<f:form.checkbox property="editRoles" multiple="1" value="19"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+				<b>Versammlungsplaner</b>
+			</label>
+		</div>
+	</li>
+	<li>Buchhaltung <i class="fas fa-angle-down"></i></li>
+	<li>Adressbuch</li>
+	<li>Schriftverkehr <i class="fas fa-angle-down"></i></li>
+	<li>Inventarverwaltung <i class="fas fa-angle-down"></i></li>
+	<li>Dateiverwaltung</li>
+	<li><b>Mein Verein</b>
+		<ul style="list-style-type: none;">
+			<li>
+				<div class="checkbox">
+					<label>
+						<f:form.checkbox property="editRoles" multiple="1" value="2"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+						Stammdaten verwalten
+					</label>
+				</div>
+				<ul style="list-style-type: none;">
+					<li>
+						<div class="row">
+							<div class="col-md-2">Vereins: Stammdaten</div>
+							<div class="col-md-2"><f:form.select class="form-control" property="editRights.6" options="{roles.MeinVerein.MP.VereinStamdaten.Tabs.Stammdaten}" /></div>
+						</div>
+					</li><br/>
+					<li>
+						<div class="row">
+							<div class="col-md-2">Vereins: Finanzamt/Amtsgericht</div>
+							<div class="col-md-2"><f:form.select class="form-control" property="editRights.7" options="{roles.MeinVerein.MP.VereinStamdaten.Tabs.VereinGericht}" /></div>
+						</div>
+					</li><br/>
+					<li>
+						<div class="row">
+							<div class="col-md-2">Vereins: Bank & SEPA</div>
+							<div class="col-md-2"><f:form.select class="form-control" property="editRights.8" options="{roles.MeinVerein.MP.VereinStamdaten.Tabs.VereinBank}" /></div>
+						</div>
+					</li><br/>
+					<li>
+						<div class="row">
+							<div class="col-md-2">Vereins: Social-Media Links</div>
+							<div class="col-md-2"><f:form.select class="form-control" property="editRights.9" options="{roles.MeinVerein.MP.VereinStamdaten.Tabs.VereinSocials}" /></div>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="checkbox">
+					<label>
+						<f:form.checkbox property="editRoles" multiple="1" value="11"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+						Vereinsfunktionen
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="checkbox">
+					<label>
+						<f:form.checkbox property="editRoles" multiple="1" value="12"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+						Abteilungen & Funktionäre
+					</label>
+				</div>
+			</li>
+		</ul>
+	</li>
+	<li><b>Einstellungen</b>
+		<ul style="list-style-type: none;">
+			<li><div class="checkbox">
+				<label>
+					<f:form.checkbox property="editRoles" multiple="1" value="14"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+					Systemeinstellungen
+				</label>
+			</div></li>
+			<li><div class="checkbox">
+				<label>
+					<f:form.checkbox property="editRoles" multiple="1" value="15"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+					Mitglieder Basisdaten
+				</label>
+			</div></li>
+			<li><div class="checkbox">
+				<label>
+					<f:form.checkbox property="editRoles" multiple="1" value="16"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+					Administratorgruppen
+				</label>
+			</div></li>
+			<li><div class="checkbox">
+				<label>
+					<f:form.checkbox property="editRoles" multiple="1" value="17"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+					Buchhaltung & Finanzen
+				</label>
+			</div></li>
+			<li><div class="checkbox">
+				<label>
+					<f:form.checkbox property="editRoles" multiple="1" value="18"  additionalAttributes="{data-toggle: 'toggle', data-size: 'mini', data-onstyle:'success', data-offstyle:'danger', data-width: '45', data-height: '22', data-on:'<i class=\"fas fa-check\"></i>', data-off:'<i class=\"fas fa-times\"></i>'}" />
+					Dateispeicher
+				</label>
+			</div></li>
+		</ul>
+	</li>
+</ul>
+
+<f:link.action action="adminRoleList" class="btn btn-default"><i class="fas fa-ban"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:cancel" /></f:link.action>
+	<f:form.button type="submit" class="btn btn-success"><i class="fas fa-save" aria-hidden="true"></i> Gruppe speichern</f:form.button>
+
+
+</html>

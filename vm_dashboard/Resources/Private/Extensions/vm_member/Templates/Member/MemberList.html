@@ -1,0 +1,448 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true"
+      xmlns:vm = "Typo3graf\VmBase\ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="main">
+
+    <br/><br/>
+    <f:flashMessages/>
+
+    <div class="box box-primary">
+        <div class="box-header">
+            <h4>Mitglieder Kurzinfo</h4>
+            <f:link.action class="btn btn-primary" action="newMember"><i class="fas fa-user-plus"></i>
+                <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:newMember"/>
+            </f:link.action>
+            <div class="box-tools pull-right">
+                <h4></h4>
+                <button type="button" id="js-memberlist-button" class="btn btn-warning" aria-expanded="false">
+                    <i class="fas fa-clone"></i> Doppelte Einträge finden
+                </button>
+                <f:link.page pageUid="{settings.csvImportPage}" class="btn btn-success"><i class="fas fa-file-import"></i>
+                    <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:csvImport"/>
+                </f:link.page>
+                <!--div class="btn-group pull-right" style="margin-top: 20px;"-->
+                    <button type="button" id="js-export-button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-file-export"></i>
+                        <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:csvExport"/> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" id="js-export">
+                        <li >
+                            <f:link.action
+                                    target="_blank"
+                                    title="Exel EXPORT"
+                                    additionalAttributes="{data-toggle:'tooltip', data-placement:'left'}"
+                                    action="csvExport" arguments="{list:'exel'}"><i class="fas fa-file-excel"></i> XLSX (Exel Datei)
+                            </f:link.action>
+                        </li>
+                        <li>
+                            <f:link.action
+                                    target="_blank"
+                                    title="CSV EXPORT"
+                                    additionalAttributes="{data-toggle:'tooltip', data-placement:'left'}"
+                                    action="csvExport" arguments="{list:'csv'}"><i class="fas fa-file-csv"></i> CSV (Kommaseperiert)
+                            </f:link.action>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <f:link.action
+                                    target="_blank"
+                                    title="VCards Export"
+                                    additionalAttributes="{data-toggle:'tooltip', data-placement:'left'}"
+                                    action="csvExport" arguments="{list:'vcards'}"><i class="fas fa-address-card"></i> VCards
+                            </f:link.action>
+                        </li>
+                    </ul>
+                <!--/div-->
+            </div>
+            <br/>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive">
+            <f:render partial="Member/ListViewButton" arguments="{_all}"/>
+            <vm:widget.AtoZNav objects="{members}" as="sortedMembers" property="memberLastname">
+
+                <table id="memberlist" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.memberID"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.name"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.address"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.telephone"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.email"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.birthday"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.bankDetails"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.entryDate"/>
+                        </th>
+                        <th>
+                            <f:translate
+                                    key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xml:memberlist.leavingDate"/>
+                        </th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <f:for each="{sortedMembers}" as="member">
+                        <tr>
+                            <td>{member.memberID}<br/><span class="label label-success">{member.memberStatus.statusTitle}</span>
+                            </td>
+                            <td>{member.memberLastname} {member.memberFirstname}<br/>
+                                <f:if condition="{member.memberTitle}">{member.memberTitle}<br/></f:if>
+                                <f:if condition="{member.memberLeaving} == 1"><span class="label label-danger"><i class="fas fa-user-slash"></i> ausgetreten</span>
+                                </f:if>
+                            </td>
+                            <td>{member.memberStreet}<br/>{member.memberZipCode} {member.memberCity}</td>
+                            <td>
+                                <f:if condition="{member.memberPhone1}">
+                                    <i class="fas fa-phone-square"></i> {member.memberPhone1}<br/>
+                                </f:if>
+                                <f:if condition="{member.memberPhone2}">
+                                    <i class="fas fa-phone-square"></i> {member.memberPhone2}<br/>
+                                </f:if>
+                                <f:if condition="{member.memberMobile}">
+                                    <i class="fas fa-mobile-alt"></i> {member.memberMobile}
+                                </f:if>
+                            </td>
+                            <td>{member.memberEmail}</td>
+
+                            <f:if condition="{member.memberBirthday}">
+                                <f:then>
+                                    <td data-order="{member.memberBirthday->f:format.date(format: 'md')}">
+                                        {member.memberBirthday->f:format.date(format: 'd.m.Y')}
+                                        <br/>
+                                        <vm:age date="{member.memberBirthday}" option="currentAge"/>
+                                        <f:translate
+                                                key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.years"/>
+                                    </td>
+                                </f:then>
+                                <f:else>
+                                    <td data-order="-9000000000">
+                                        k.A.
+                                        <br/>
+                                        <vm:age date="{member.memberBirthday}" option="currentAge"/>
+                                        <f:translate
+                                                key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.years"/>
+                                    </td>
+                                </f:else>
+                            </f:if>
+                            <f:security.ifHasRole role="24">
+                                <f:then>
+                                    <td> </td>
+                                </f:then>
+                                <f:else>
+                                    <td>{member.memberIBAN}<br/>{member.memberBIC}</td>
+                                </f:else>
+                            </f:security.ifHasRole>
+
+                            <f:if condition="{member.memberEntryDate}">
+                                <f:then>
+                                    <td data-order="{member.memberEntryDate->f:format.date(format: 'U')}">
+                                        {member.memberEntryDate->f:format.date(format: 'd.m.Y')}
+                                        <br/>
+                                        <vm:age date="{member.memberEntryDate}" option="duration"/>
+                                        <f:translate
+                                                key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.years"/>
+                                    </td>
+                                </f:then>
+                                <f:else>
+                                    <td data-order="-9000000000">
+                                        k.A.
+                                        <br/>
+                                        <vm:age date="{member.memberEntryDate}" option="duration"/>
+                                        <f:translate
+                                                key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.years"/>
+                                    </td>
+                                </f:else>
+                            </f:if>
+                            <td data-order="{member.memberLeavingDate->f:format.date(format: 'U')}">
+                                {member.memberLeavingDate->f:format.date(format: 'd.m.Y')}<br/>
+                                {member.memberReasonForLeaving}
+                            </td>
+                            <td>
+                                <f:link.action
+                                        title="{f:if(condition: '{member.uid} == {user}', then: 'eigenes Profil bearbeiten', else: 'Mitglied bearbeiten')}"
+                                        additionalAttributes="{data-toggle:'tooltip', data-placement:'left'}"
+                                        class="btn {f:if(condition: '{member.uid} == {user}', then: 'btn-primary', else: 'btn-default')}"
+                                        action="editMember" arguments="{member : member}"><i class="fas fa-user-edit"></i>
+                                </f:link.action>
+                            </td>
+                        </tr>
+                    </f:for>
+                    </tbody>
+                </table>
+            </vm:widget.AtoZNav>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+
+    <!-- add Member Modal -->
+    <div class="modal fade" id="addMemberModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">L: Mitglied anlegen</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var header = 'Mitgliederliste - {club.clubShortName}';
+        var subheader = 'Stand: {f:format.date(date: "now", format: "d.m.Y H:i")} Uhr';
+        var printFooter = '<b>{club.clubName} - {club.clubStreet} - {club.clubZipCode} {club.clubCity} -- <i class="fas fa-phone"></i> {club.clubPhone} - <i class="far fa-envelope"></i> {club.clubEmail}</b><br/><h6>Erstellt mit SmartVerein - https://www.typo3graf.de</h6>';
+        var clublogo = '<f:image image="{club.clubLogo.0}" style="position:absolute; top:0; left:0;" />'
+        var pdfFooter = '{club.clubName} - {club.clubStreet} - {club.clubZipCode} {club.clubCity} -- {club.clubPhone} - {club.clubEmail} -- Erstellt mit SmartVerein - https://www.typo3graf.de';
+        var filename = 'Mitgliederliste {f:format.date(date: "now", format: "d.m.Y")}';
+
+        $(document).ready(function () {
+
+            $('#memberlist').DataTable({
+
+                drawCallback: function( settings ) {
+
+                    $('[data-toggle="tooltip"]').tooltip();
+                },
+                scrollX: true,
+                dom: 'lBfrtip',
+                stateSave: true,
+                responsive:true,
+                buttons: [
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fas fa-file-pdf" aria-hidden="true"></i>',
+                        titleAttr: 'PDF-Export',
+                        filename: filename,
+                        orientation: 'landscape',
+                        customize: function (doc) {
+                            //Remove the title created by datatTables
+                            doc.content.splice(0, 1);
+                            // It's important to create enough space at the top for a header !!!
+                            doc.pageMargins = [20, 60, 20, 30];
+                            // Set the font size fot the entire document
+                            doc.defaultStyle.fontSize = 7;
+                            // Set the fontsize for the table header
+                            doc.styles.tableHeader.fontSize = 7;
+                            // Create a header object with 3 columns
+                            // Left side: Logo
+                            // Middle: brandname
+                            // Right side: A document title
+                            doc['header'] = (function () {
+                                return {
+                                    columns: [
+                                        {
+                                            image: '<vm:image.base64 image="{club.clubLogo.0}" convert="1"/>',
+                                            width: 24
+                                        },
+                                        {
+                                            alignment: 'left',
+                                            italics: true,
+                                            text: header,
+                                            fontSize: 18,
+                                            margin: [10, 0]
+                                        },
+                                        {
+                                            alignment: 'right',
+                                            fontSize: 10,
+                                            text: subheader
+                                        }
+                                    ],
+                                    margin: 20
+                                }
+                            });
+                            doc['footer'] = (function (page, pages) {
+                                return {
+                                    columns: [
+                                        {
+                                            width: 'auto',
+                                            alignment: 'left',
+                                            text: pdfFooter,
+                                        },
+                                        {
+                                            width: '*',
+                                            alignment: 'right',
+                                            text: ['Seite ', {text: page.toString()}, ' von ', {text: pages.toString()}]
+                                        }
+                                    ],
+                                    margin: 10
+                                }
+                            });
+                        },
+                        exportOptions: {
+                            columns: ':visible',
+                            stripNewlines: false,
+                            format: {
+                                body: function (data, column, row) {
+                                    data = data.replace(/<br\s*\/?>/ig, "\r\n");
+                                    data = data.replace(/<.*?>/g, "");
+                                    data = data.replace("label label-danger", "");
+                                    data = data.replace("fas fa-phone-square", "");
+                                    data = data.replace("fas fa-mobile-alt", "");
+                                    return data;
+                                }
+
+
+                            }
+                        }
+                    },
+                    {
+                        extend: 'print',
+                        text: '<i class="fas fa-print" aria-hidden="true"></i>',
+                        title: header,
+                        messageTop: subheader,
+                        messageBottom: printFooter,
+                        customize: function ( win ) {
+                            var last = null;
+                            var current = null;
+                            var bod = [];
+
+                            var css = '@page { size: landscape; }',
+                                head = win.document.head || win.document.getElementsByTagName('head')[0],
+                                style = win.document.createElement('style');
+
+                            style.type = 'text/css';
+                            style.media = 'print';
+
+                            if (style.styleSheet)
+                            {
+                                style.styleSheet.cssText = css;
+                            }
+                            else
+                            {
+                                style.appendChild(win.document.createTextNode(css));
+                            }
+
+                            head.appendChild(style);
+
+                            $(win.document.body)
+                                .css( 'font-size', '10pt' )
+                                .prepend(
+                                    '<f:image image="{club.clubLogo.0}" width="50c" height="50c" absolute="1"/>'
+                                );
+
+                            $(win.document.body).find( 'table' )
+                                .addClass( 'compact' )
+                                .css( 'font-size', 'inherit' );
+                        },
+                        exportOptions: {
+                            columns: ':visible:not(.noVis)',
+                            stripHtml: false
+
+                        }
+                    },
+                    {
+                        extend: 'colvis',
+                        text: '<i class="fas fa-eye" aria-hidden="true"></i>',
+                        collectionLayout: 'fixed three-column',
+                        columns: ':not(.noVis)'
+                    }
+                ],
+                'paging': true,
+                'lengthChange': true,
+                'searching': true,
+                'order': [[1, 'asc']],
+                'ordering': true,
+                'info': true,
+                'autoWidth': false,
+                "columnDefs": [
+                    {
+                        targets: 0,
+                        visible: false
+                    },
+                    {
+                        targets: 5,
+                        visible: false
+                    },
+                    {
+                        targets: 6,
+                        visible: false
+                    },
+                    {
+                        targets: 7,
+                        visible: false
+                    },
+                    {
+                        targets: 8,
+                        visible: false
+                    },
+                    {
+                        targets: 9,
+                        className: 'noVis'
+                    },
+                    {"orderable": false, "targets": 3},
+                    {"orderable": false, "targets": 6},
+                    {"orderable": false, "targets": 9}
+                ],
+                language: {
+                    buttons: {
+                        colvis: 'Tabelle anpassen'
+                    },
+                    "sEmptyTable": "Keine Daten in der Tabelle vorhanden",
+                    "sInfo": "_START_ bis _END_ von _TOTAL_ Einträgen",
+                    "sInfoEmpty": "0 bis 0 von 0 Einträgen",
+                    "sInfoFiltered": "(gefiltert von _MAX_ Einträgen)",
+                    "sInfoPostFix": "",
+                    "sInfoThousands": ".",
+                    "sLengthMenu": "_MENU_ Einträge/Seite",
+                    "sLoadingRecords": "Wird geladen...",
+                    "sProcessing": "Bitte warten...",
+                    "sSearch": "Suchen",
+                    "sZeroRecords": "Keine Einträge vorhanden.",
+                    "oPaginate": {
+                        "sFirst": "Erste",
+                        "sPrevious": "Zurück",
+                        "sNext": "Nächste",
+                        "sLast": "Letzte"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": aktivieren, um Spalte aufsteigend zu sortieren",
+                        "sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
+                    },
+                    select: {
+                        rows: {
+                            _: '%d Zeilen ausgewählt',
+                            0: 'Zum Auswählen auf eine Zeile klicken',
+                            1: '1 Zeile ausgewählt'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</f:section>
+</html>

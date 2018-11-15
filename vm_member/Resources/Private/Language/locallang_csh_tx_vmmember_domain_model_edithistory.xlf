@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-23T18:55:08Z" product-name="vm_member">
+		<header/>
+		<body>
+			<trans-unit id="tx_vm_member_domain_model_memberlist">
+				<source>Member List</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberlist.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil">
+				<source>Member Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_vm_member_domain_model_memberprofil.description">
+				<source>Member management module for Vereinsmeier.</source>
+			</trans-unit>
+			<trans-unit id="edit_history_title.description">
+				<source>Title of the processingevent.</source>
+			</trans-unit>
+			<trans-unit id="edit_history_description.description">
+				<source>editHistoryDescription</source>
+			</trans-unit>
+			<trans-unit id="edit_history_date_time.description">
+				<source>Date/Time of the processing event.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

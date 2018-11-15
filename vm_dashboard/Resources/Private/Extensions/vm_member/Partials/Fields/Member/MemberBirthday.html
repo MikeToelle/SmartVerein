@@ -1,0 +1,32 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<div class="row">
+	<div class="col-md-8">
+		<div class="form-group">
+			<label for="memberBirthday">
+				<f:translate key="tx_vmmember_domain_model_member.member_birthday" />
+			</label>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<i class="fas fa-calendar"></i>
+				</div>
+				<f:security.ifHasRole role="21">
+					<f:then>
+						<f:form.textfield property="memberBirthday" class="form-control" value="{member.memberBirthday->f:format.date(format: 'd.m.Y')}" readonly="true" />
+					</f:then>
+					<f:else>
+						<f:form.textfield id="birthdate" property="memberBirthday" class="form-control" value="{member.memberBirthday->f:format.date(format: 'd.m.Y')}" />
+					</f:else>
+				</f:security.ifHasRole>
+
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="form-group">
+			<label>
+				<f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.age" />
+			</label>
+			<p class="form-control-static"><vm:age date="{member.memberBirthday}" option="currentAge"/> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:dashboard.text.years" /></p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+{namespace vm = Typo3graf\VmBase\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+	<h1>CSV Import</h1>
+
+	<f:flashMessages />
+
+	<f:form action="csvUpload" enctype="multipart/form-data">
+		<f:form.upload name="csvFile" />
+		<f:form.submit value="Save" />
+	</f:form>
+</f:section>
+</html>

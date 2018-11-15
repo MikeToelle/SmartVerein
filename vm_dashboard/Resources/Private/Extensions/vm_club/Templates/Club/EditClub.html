@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="main">
+<f:flashMessages />
+	<div class="box box-primary">
+		<div class="box-body">
+<f:render partial="FormErrors" arguments="{object:Club}" />
+
+<f:form action="updateClub" enctype="multipart/form-data" name="club" object="{club}">
+<f:render partial="Club/FormFields" arguments="{club:club}" />
+
+		</div>
+		<!-- /.box-body -->
+		<div class="box-footer">
+			<div class="form-group">
+				<button type="submit" class="btn btn-success"><i class="fas fa-save"></i> <f:translate key="LLL:EXT:vm_dashboard/Resources/Private/Language/locallang.xlf:save"/></button>
+			</div>
+		</div>
+		<!-- box-footer -->
+
+</f:form>
+	</div>
+	<!-- /.box -->
+
+	<div class="modal fade" id="mimetypeimage" tabindex="-1" role="dialog" aria-labelledby="mimetype">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"><f:translate key="club.form.errorText"/></h4>
+				</div>
+				<div class="modal-body">
+					<p>L : Vereins Logo darf nur 10 MB groß sein,<br/>
+					Erlaubte Dateien: <small class="label bg-green">png</small> <small class="label  bg-green">jpg/jpeg</small> <small class="label  bg-green">svg</small>
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</f:section>
+</html>

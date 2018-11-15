@@ -1,0 +1,19 @@
+<div class="form-group">
+	<label for="memberMandateValid">
+		<f:translate key="tx_vmmember_domain_model_member.member_mandate_valid" />
+	</label>
+	<div class="input-group">
+		<div class="input-group-addon">
+			<i class="fas fa-calendar"></i>
+		</div>
+		<f:security.ifHasRole role="21">
+			<f:then>
+				<f:form.textfield id="mandantevalid" class="form-control" property="memberMandateValid" value="{member.memberMandateValid->f:format.date(format: 'd.m.Y')}" readonly="true" />
+			</f:then>
+			<f:else>
+				<f:form.textfield id="mandantevalid" class="form-control" property="memberMandateValid" value="{member.memberMandateValid->f:format.date(format: 'd.m.Y')}" />
+			</f:else>
+		</f:security.ifHasRole>
+
+	</div>
+</div>

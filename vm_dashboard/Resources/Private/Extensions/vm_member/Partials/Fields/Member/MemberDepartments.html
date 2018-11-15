@@ -1,0 +1,14 @@
+<div class="form-group">
+	<label for="memberDepartments">
+		Abteilungen
+	</label>
+	<f:security.ifHasRole role="21">
+		<f:then>
+			<f:form.select options="{departments}" optionLabelField="departmentName" property="memberDepartments" sortByOptionLabel="1" size="5" multiple="1" class="form-control select2" style="width: 100%;" disabled="true" />
+		</f:then>
+		<f:else>
+			<f:form.select options="{departments}" optionLabelField="departmentName" property="memberDepartments" sortByOptionLabel="1" size="5" multiple="1" class="form-control select2" style="width: 100%;"/>
+		</f:else>
+	</f:security.ifHasRole>
+
+</div>
